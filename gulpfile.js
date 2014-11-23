@@ -59,7 +59,7 @@ gulp.task('build:js',function() {
 gulp.task('build:html',function() {
   return gulp.src('**/*.html', {base: './'})
 	.pipe(plugins.plumber())
-	.pipe(plugins.prettify({indent_size: 2}))
+	.pipe(plugins.prettify({indent_size: 4}))
     .pipe(gulp.dest('./'));
 });
 
