@@ -1,212 +1,93 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../pocketknife/dist/pocketknife.min.css">
-    <style>
-    </style>
-    <!--[if lt IE 9]>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/public-site.min.css">
+        <style>
+        </style>
+        <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="lib/html5shiv.js"><\/script>')</script>
         <![endif]-->
-  </head>
+    </head>
 
-  <body>
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Open UI</h1>
-        <p>Beautiful open source UI components written in lean, clean Javascript with no dependancies</p>
-        <p><a href='../docs/index.html' target='_new'>View API Docs</a>
-        </p>
-      </div>
+    <body>
+	
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><b>Open</b>UI</a>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Pie and Donut Charts</h1><span id='chart1' style='width:100%;height:210px'></span> </div>
-        <div class="col-md-6" style='text-align:justify;'>
-          <h1>Sliders</h1><span id='slider1' style='float:right;height:205px;'></span> <span id='slider3' style='width:calc(33% - 10px);'></span> <span id='slider4' style='width:calc(33% - 10px);'></span> <span id='slider5' style='width:calc(33% - 10px);'></span>
-          <br>
-          <br> <span id='slider2' style='width:calc(100% - 35px);'></span> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h1>Datepicker</h1><span id='datepicker1'></span> </div>
-        <div class="col-md-3">
-          <h1>Colorpicker</h1><span id='colorpicker1'></span> </div>
-        <div class="col-md-5">
-          <h1>Color Utility Methods</h1><span id='colorpicker1'></span>
-          <div id='colorOutput' style='line-height:40px;-webkit-column-count:3;column-width:33%;'> Complement:
-            <div data-color='complement'></div> Complement (split):
-            <div data-color='complement' data-type='split'></div> Complement (double):
-            <div data-color='complement' data-type='double'></div> Triadic:
-            <div data-color='triadic'></div> Tetradic:
-            <div data-color='tetradic'></div> Pentadic:
-            <div data-color='pentadic'></div>
-          </div>
-          <h4>....and many <a href='../docs/classes/pk.color.html' target-'_new'>more!</a></h4> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12" style='overflow:hidden;'>
-          <div class='item'>
-            <h1>Checkbox</h1><span id='checkbox1'></span> </div>
-          <div class='item'>
-            <h1>Notification</h1>
-            <button onclick="event.preventDefault();pk.notify.add({content:'Default message'});">Notify me!</button>
-          </div>
-          <div class='item'>
-            <h1>Switch</h1><span id='switch1'></span> </div>
-          <div class='item'>
-            <h1>Rating</h1><span id='rating1'></span> </div>
-          <div class='item'>
-            <h1>Toggle</h1><span id='toggle1'></span> </div>
-          <div class='item'>
-            <h1>Modal</h1>
-            <button onclick="event.preventDefault();pk.modal({header:'Look, its a modal!',content:'Any content, including HTML can go here', draggable:true});">Click me!</button>
-          </div>
-          <div class='item'>
-            <h1>Tooltips</h1><a href='#' id='tooltip1' onclick="event.preventDefault();">Top</a>, <a href='#' id='tooltip2' onclick="event.preventDefault();">Right</a>, <a href='#' id='tooltip3' onclick="event.preventDefault();">Bottom</a>, <a href='#' id='tooltip4' onclick="event.preventDefault();">Left</a>            </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Components</a></li>
+		<li><a href="docs/index.html">API Documentation</a></li>
+		<li><a href="https://github.com/open-ui/open-ui">GitHub Repository</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>	
+	
+	
+        <div class="jumbotron">
+            <div class="container"> 
+				<div class='logo'></div>
+                <h1>Open<span class='light200'>UI</span></h1>
+                <p>Beautiful open source UI components written in lean, clean Javascript with no dependancies</p>
+                <a class="btn btn-default btn-lg" href="https://github.com/open-ui/open-ui/archive/master.zip">
+					<i class="fa fa-download fa-lg"></i>&nbsp;&nbsp;
+					Download
+				</a>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6" style='height:240px;'>
-          <h1>Multi and single select</h1>
-          <div class='item'>
-            <select id='select1'>
-              <option value='val1'> option 1 </option>
-              <option value='val2'> option 2 </option>
-              <option value='val3'> option 3 </option>
-              <option selected value='val4'> option 4 </option>
-              <option value='val5'> option 5 </option>
-            </select>
-          </div>
-          <div class='item'>
-            <select id='select2'>
-              <option value='val1'> option 1 </option>
-              <option value='val2'> option 2 </option>
-              <option value='val3'> option 3 </option>
-              <option value='val4'> option 4 </option>
-              <option value='val5'> option 5 </option>
-            </select>
-          </div>
-        </div>
-        <div class="col-md-6" style='height:240px;'>
-          <h1>...with dropdowns</h1>
-          <select id='select3' style='width:100%;'>
-            <option value='val1'> option 1 </option>
-            <option value='val2'> option 2 </option>
-            <option value='val3'> option 3 </option>
-            <option value='val4'> option 4 </option>
-            <option value='val5'> option 5 </option>
-          </select>
-          <select id='select4' style='width:100%;margin-top:20px;'>
-            <option value='val1'> option 1 </option>
-            <option value='val2'> option 2 </option>
-            <option value='val3'> option 3 </option>
-            <option value='val4'> option 4 </option>
-            <option value='val5'> option 5 </option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Line Charts</h1><span id='chart2' style='width:100%;height:210px'></span> </div>
-        <div class="col-md-6">
-          <h1>Scatter Charts</h1><span id='chart3' style='width:100%;height:210px'></span> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Bubble Charts</h1><span id='chart4' style='width:100%;height:210px'></span> </div>
-        <div class="col-md-6">
-          <h1>Area Charts</h1><span id='chart5' style='width:100%;height:210px'></span> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Carousel</h1>
-          <ul id='carousel1'>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        </div>
-        <div class="col-md-6" style='text-align:justify;'>
-          <h1>Accordian</h1>
-          <ul class='pk-accordian' id='accordian1'>
-            <li class='pk-show'>
-              <h3 class='pk-content-header'>Title Content</h3>
-              <div class='pk-content'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-                a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. </div>
-            </li>
-            <li>
-              <h3 class='pk-content-header'>Title Content</h3>
-              <div class='pk-content'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-                a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. </div>
-            </li>
-            <li>
-              <h3 class='pk-content-header'>Title Content</h3>
-              <div class='pk-content'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-                a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Custom scrollbars</h1>
-          <div id='scroll1' style='width:100%;height:200px;'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi a
-            varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. Nulla vel sem elementum, laoreet tortor ac, porta mauris. Curabitur a nulla velit. Integer
-            sit amet risus elementum, faucibus orci at, iaculis dui. Maecenas id aliquet sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut faucibus varius ipsum vitae vestibulum. Etiam rhoncus lacus
-            quis massa sodales, at pulvinar sapien aliquet. Sed justo metus, finibus non consectetur placerat, lobortis eu justo.
-            <br />
-            <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-            a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. Nulla vel sem elementum, laoreet tortor ac, porta mauris. Curabitur a nulla velit. Integer
-            sit amet risus elementum, faucibus orci at, iaculis dui. Maecenas id aliquet sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut faucibus varius ipsum vitae vestibulum. Etiam rhoncus lacus
-            quis massa sodales, at pulvinar sapien aliquet. Sed justo metus, finibus non consectetur placerat, lobortis eu justo.
-            <br />
-            <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-            a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. Nulla vel sem elementum, laoreet tortor ac, porta mauris. Curabitur a nulla velit. Integer
-            sit amet risus elementum, faucibus orci at, iaculis dui. Maecenas id aliquet sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut faucibus varius ipsum vitae vestibulum. Etiam rhoncus lacus
-            quis massa sodales, at pulvinar sapien aliquet. Sed justo metus, finibus non consectetur placerat, lobortis eu justo.
-            <br />
-            <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-            a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. Nulla vel sem elementum, laoreet tortor ac, porta mauris. Curabitur a nulla velit. Integer
-            sit amet risus elementum, faucibus orci at, iaculis dui. Maecenas id aliquet sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut faucibus varius ipsum vitae vestibulum. Etiam rhoncus lacus
-            quis massa sodales, at pulvinar sapien aliquet. Sed justo metus, finibus non consectetur placerat, lobortis eu justo.
-            <br />
-            <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-            a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. Nulla vel sem elementum, laoreet tortor ac, porta mauris. Curabitur a nulla velit. Integer
-            sit amet risus elementum, faucibus orci at, iaculis dui. Maecenas id aliquet sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut faucibus varius ipsum vitae vestibulum. Etiam rhoncus lacus
-            quis massa sodales, at pulvinar sapien aliquet. Sed justo metus, finibus non consectetur placerat, lobortis eu justo.
-            <br />
-            <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a fermentum turpis, a vulputate est. Praesent nunc mi, elementum et eleifend in, semper quis lacus. Duis velit neque, feugiat eget sodales eget, blandit in lacus. Morbi
-            a varius urna, id eleifend est. Maecenas varius erat id augue ullamcorper, at sodales quam condimentum. Fusce et finibus metus. Sed sed lacinia magna. Nulla vel sem elementum, laoreet tortor ac, porta mauris. Curabitur a nulla velit. Integer
-            sit amet risus elementum, faucibus orci at, iaculis dui. Maecenas id aliquet sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut faucibus varius ipsum vitae vestibulum. Etiam rhoncus lacus
-            quis massa sodales, at pulvinar sapien aliquet. Sed justo metus, finibus non consectetur placerat, lobortis eu justo.
-            <br />
-            <br /> </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Column Charts</h1><span id='chart6' style='width:100%;height:210px'></span> </div>
-          <div class="col-md-6">
-            <h1>Bar Charts</h1><span id='chart7' style='width:100%;height:210px'></span> </div>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <hr>
-        <footer>
-          <p>&copy; Pocketknife Ltd. 2014</p>
-        </footer>
-      </div>
-      <script src="dist/site.min.js"></script>
-  </body>
+		
+		
+
+
+<hr />
+
+
+<footer class="container text-center">
+
+
+<div class='small'>
+
+Originally conceived and coded by <a href='https://github.com/sw4' target='_new'>sw4</a>.
+The project is open source and welcomes new contributors, please help and visit the <a href='https://github.com/open-ui/open-ui/' target='_new'>project repository</a>.
+Code and documentation available under the <a href='https://github.com/open-ui/open-ui/blob/master/README.md' target='_new'>MIT license</a>.
+
+
+</div>
+<br /><br />
+		<iframe src="http://ghbtns.com/github-btn.html?user=open-ui&repo=open-ui&type=watch&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  
+		<iframe src="http://ghbtns.com/github-btn.html?user=open-ui&repo=open-ui&type=fork&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  
+		<iframe src="http://ghbtns.com/github-btn.html?user=open-ui&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+</footer>
+		
+		
+        <script src="dist/public-site.min.js"></script>
+    </body>
 
 </html>
