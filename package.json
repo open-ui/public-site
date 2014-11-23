@@ -1,5 +1,5 @@
 {
-  "name": "Open UI Public Site",
+  "name": "public-site",
   "title": "Open UI Public Site",
   "description": "Public website content",
   "version": "0.0.0",
@@ -35,8 +35,8 @@
     "gulp-cache": "^0.2.4",
     "gulp-concat": "^2.4.1",
     "gulp-concat-css": "^1.1.0",
-    "gulp-csslint": "^0.1.5"
-    "gulp-header": "^1.2.2"
+    "gulp-csslint": "^0.1.5",
+    "gulp-header": "^1.2.2",
     "gulp-jsbeautifier": "0.0.3",
     "gulp-jshint": "^1.8.6",
     "gulp-less": "^1.3.6",
