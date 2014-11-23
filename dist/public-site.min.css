@@ -1,0 +1,8 @@
+/**
+ * Open UI Public Site
+ * @version v0.0.137
+ * @link https://github.com/open-ui/public-site
+ * @copyright (c)2014 Open UI
+ * @license MIT (https://github.com/open-ui/public-site/blob/master/LICENSE-MIT.md)
+ */
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);body,html{height:100%;font-family:Raleway,tahoma,Sans-Serif}.navbar{margin-bottom:0;border:none;position:fixed;z-index:99;width:100%;border-radius:0;top:0;transition:all 200ms ease-in}.navbar .active a{transition:all 200ms ease-in}.navbar.navbar-inverse{background:#1c2631}.jumbotron{background-color:#2e3f52;color:#fff;margin-bottom:0;height:520px;box-sizing:border-box;overflow:hidden;text-align:center;margin-top:50px}.jumbotron h1{margin:30px 0 40px}.jumbotron .version{margin-top:10px;color:#8da5bf}.jumbotron .btn{transition:all 150ms ease-in;color:#2e3f52;margin-top:10px}.jumbotron .btn:hover{background:0 0;color:#fff}.weight200{font-weight:200}.weight300{font-weight:300}.logo{height:130px;width:130px;border:1px solid #fff;border-radius:20%;position:relative;font-size:130px;display:inline-block}.logo:after{position:absolute;left:0;display:inline-block;content:'UI';line-height:2em;font-size:.5em;width:100%;font-weight:500;text-align:center}i.bottom-brace:after{content:'\23DF';font-size:5em}section{margin:100px 0}section>i.fa{font-size:5em;color:#8da5bf}.icon-calc{display:inline-block;vertical-align:top;margin:0 40px;color:#ced8e3;font-size:80px;overflow:hidden;line-height:80px}#componentList a{display:block}
