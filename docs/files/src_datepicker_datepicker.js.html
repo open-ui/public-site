@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src/datepicker/datepicker.js - Pocketknife UI</title>
+    <title>src/datepicker/datepicker.js - Open UI</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -14,7 +14,7 @@
 <div id="doc">
     <div id="hd" class="yui3-g header">
         <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="Pocketknife UI"></h1>
+                <h1><img src="../assets/css/logo.png" title="Open UI"></h1>
         </div>
         <div class="yui3-u-1-4 version">
             <em>API Docs for: 0.0.1</em>
@@ -38,25 +38,25 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
+                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
+                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
+                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
+                                <li><a href="../classes/oui.color.html">oui.color</a></li>
+                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
+                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
+                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
+                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
+                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
+                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
+                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
+                                <li><a href="../classes/oui.select.html">oui.select</a></li>
+                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
+                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
+                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
+                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
+                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
                                 <li><a href="../classes/pk.html">pk</a></li>
-                                <li><a href="../classes/pk.accordian.html">pk.accordian</a></li>
-                                <li><a href="../classes/pk.carousel.html">pk.carousel</a></li>
-                                <li><a href="../classes/pk.chart.html">pk.chart</a></li>
-                                <li><a href="../classes/pk.checkbox.html">pk.checkbox</a></li>
-                                <li><a href="../classes/pk.color.html">pk.color</a></li>
-                                <li><a href="../classes/pk.colorpicker.html">pk.colorpicker</a></li>
-                                <li><a href="../classes/pk.datepicker.html">pk.datepicker</a></li>
-                                <li><a href="../classes/pk.drag.html">pk.drag</a></li>
-                                <li><a href="../classes/pk.modal.html">pk.modal</a></li>
-                                <li><a href="../classes/pk.notify.html">pk.notify</a></li>
-                                <li><a href="../classes/pk.rating.html">pk.rating</a></li>
-                                <li><a href="../classes/pk.scroll.html">pk.scroll</a></li>
-                                <li><a href="../classes/pk.select.html">pk.select</a></li>
-                                <li><a href="../classes/pk.slider.html">pk.slider</a></li>
-                                <li><a href="../classes/pk.svg.html">pk.svg</a></li>
-                                <li><a href="../classes/pk.switch.html">pk.switch</a></li>
-                                <li><a href="../classes/pk.toggle.html">pk.toggle</a></li>
-                                <li><a href="../classes/pk.tooltip.html">pk.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -108,24 +108,24 @@
                         
                         Javascript
                         
-                        	pk.datepicker({
+                        	oui.datepicker({
                         		element: document.getElementById(&#x27;datepicker&#x27;)
                         	});	
                         			
                         	
-                        @class pk.datepicker
+                        @class oui.datepicker
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to convert to control
                         @param [options.value=0] {String} Value of initially selected option, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
-                        @param [options.name=pk-select-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;pk-select-RandInt&#x60;
+                        @param [options.name=oui-select-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;oui-select-RandInt&#x60;
                         @param [options.tabindex=0] {Number} Tabindex of control, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
                         @param [options.disabled=false] {Boolean} Disabled state of control, defaults to the attribute value set on the passed element, or &#x60;false&#x60;
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
                         (function(pk) {
-                            pk.datepicker = function(opt) {
+                            oui.datepicker = function(opt) {
                         		var y = opt.year || 2014,
                         			m = opt.month || 11,
                         			d = opt.day || 1,
@@ -137,7 +137,7 @@
                         			month={
                         				m:[&#x27;Jan&#x27;,&#x27;Feb&#x27;,&#x27;Mar&#x27;,&#x27;Apr&#x27;,&#x27;May&#x27;,&#x27;Jun&#x27;,&#x27;Jul&#x27;,&#x27;Aug&#x27;,&#x27;Sep&#x27;,&#x27;Oct&#x27;,&#x27;Nov&#x27;,&#x27;Dec&#x27;]		
                         			},
-                        			tpl=&quot;&lt;div class=&#x27;pk-datepicker&#x27;&gt;&lt;/div&gt;&quot;,			
+                        			tpl=&quot;&lt;div class=&#x27;oui-datepicker&#x27;&gt;&lt;/div&gt;&quot;,			
                         			el=opt.element,
                         			yearEl=null,
                         			yearsEl=null,
@@ -146,7 +146,7 @@
                         			sD=0,
                         			eD=0,
                         			pD=0;
-                        		el=pk.replaceEl(el, tpl);		
+                        		el=oui.replaceEl(el, tpl);		
                         		function parseDate(){
                         			function normalizeDay(v){
                         				if(v===0){
@@ -184,9 +184,9 @@
                         				if(c&gt;=sD &amp;&amp; c&lt;=eD+sD-1){
                         					tpl+=&quot;&lt;td data-day=&#x27;&quot;+(c-sD+1)+&quot;&#x27;&gt;&quot;+(c-sD+1)+&quot;&lt;/td&gt;&quot;;
                         				}else if(c&lt;sD){
-                        					tpl+=&quot;&lt;td class=&#x27;pk-prev&#x27; data-day=&#x27;&quot;+(pD-(sD-c-1))+&quot;&#x27; data-month=&#x27;&quot;+(m-2 &lt; 0 ? 11 : m-2)+&quot;&#x27; &quot;+(m-2 &lt; 0 ? &quot;data-year=&#x27;&quot;+(y-1)+&quot;&#x27;&quot;: &#x27;&#x27;)+&quot;&gt;&quot;+(pD-(sD-c-1))+&quot;&lt;/td&gt;&quot;; 
+                        					tpl+=&quot;&lt;td class=&#x27;oui-prev&#x27; data-day=&#x27;&quot;+(pD-(sD-c-1))+&quot;&#x27; data-month=&#x27;&quot;+(m-2 &lt; 0 ? 11 : m-2)+&quot;&#x27; &quot;+(m-2 &lt; 0 ? &quot;data-year=&#x27;&quot;+(y-1)+&quot;&#x27;&quot;: &#x27;&#x27;)+&quot;&gt;&quot;+(pD-(sD-c-1))+&quot;&lt;/td&gt;&quot;; 
                         				}else{
-                        					tpl+=&quot;&lt;td class=&#x27;pk-next&#x27; data-day=&#x27;&quot;+(c-sD-eD+1)+&quot;&#x27; data-month=&#x27;&quot;+(m===12 ? 0 : m)+&quot;&#x27; &quot;+(m===12 ? &quot;data-year=&#x27;&quot;+(y+1)+&quot;&#x27;&quot;: &#x27;&#x27;)+&quot;&gt;&quot;+(c-sD-eD+1)+&quot;&lt;/td&gt;&quot;; 
+                        					tpl+=&quot;&lt;td class=&#x27;oui-next&#x27; data-day=&#x27;&quot;+(c-sD-eD+1)+&quot;&#x27; data-month=&#x27;&quot;+(m===12 ? 0 : m)+&quot;&#x27; &quot;+(m===12 ? &quot;data-year=&#x27;&quot;+(y+1)+&quot;&#x27;&quot;: &#x27;&#x27;)+&quot;&gt;&quot;+(c-sD-eD+1)+&quot;&lt;/td&gt;&quot;; 
                         				}
                         				if(c%7 === 6){
                         					tpl+=&quot;&lt;/tr&gt;&quot;;
@@ -212,26 +212,26 @@
                         			yearsEl.innerHTML=tpl;
                         		}
                         		
-                        		metaEl=pk.createEl(&quot;&lt;div class=&#x27;pk-datepicker-meta&#x27;&gt;&quot;+666+&quot;&lt;/div&gt;&quot;);
+                        		metaEl=oui.createEl(&quot;&lt;div class=&#x27;oui-datepicker-meta&#x27;&gt;&quot;+666+&quot;&lt;/div&gt;&quot;);
                         		el.appendChild(metaEl);			
-                        		yearEl=pk.createEl(&quot;&lt;div class=&#x27;pk-datepicker-year&#x27;&gt;&quot;+y+&quot;&lt;/div&gt;&quot;);
+                        		yearEl=oui.createEl(&quot;&lt;div class=&#x27;oui-datepicker-year&#x27;&gt;&quot;+y+&quot;&lt;/div&gt;&quot;);
                         		el.appendChild(yearEl);
                         		
-                        		tpl=&quot;&lt;ul class=&#x27;pk-datepicker-month&#x27;&gt;&quot;;
+                        		tpl=&quot;&lt;ul class=&#x27;oui-datepicker-month&#x27;&gt;&quot;;
                         		for(var n=0;n&lt;12;n++){		
                         			tpl+=&quot;&lt;li data-month=&#x27;&quot;+n+&quot;&#x27;&gt;&quot;+month.m[n]+&quot;&lt;/li&gt;&quot;;
                         		}
                         		tpl+=&quot;&lt;/ul&gt;&quot;;
-                        		monthEl=pk.createEl(tpl);
+                        		monthEl=oui.createEl(tpl);
                         		el.appendChild(monthEl);	
                         		
                         		
-                        		tpl=&quot;&lt;table class=&#x27;pk-datepicker-day&#x27;&gt;&lt;/table&gt;&quot;;
-                        		daysEl=pk.createEl(tpl);
+                        		tpl=&quot;&lt;table class=&#x27;oui-datepicker-day&#x27;&gt;&lt;/table&gt;&quot;;
+                        		daysEl=oui.createEl(tpl);
                         		el.appendChild(daysEl);		
                         		
                         			
-                        		yearsEl=pk.createEl(&quot;&lt;table class=&#x27;pk-datepicker-years&#x27;&gt;&lt;/table&gt;&quot;);
+                        		yearsEl=oui.createEl(&quot;&lt;table class=&#x27;oui-datepicker-years&#x27;&gt;&lt;/table&gt;&quot;);
                         		el.appendChild(yearsEl); 
                         		createYears();
                         		
@@ -249,9 +249,9 @@
                         		}		
                         		function setMonth(){		
                         			for(var n=0;n&lt;12;n++){			
-                        				pk.removeClass(monthEl.children[n], &#x27;selected&#x27;);
+                        				oui.removeClass(monthEl.children[n], &#x27;selected&#x27;);
                         			}
-                        			pk.addClass(monthEl.children[m-1], &#x27;selected&#x27;);
+                        			oui.addClass(monthEl.children[m-1], &#x27;selected&#x27;);
                         			createDays();	
                         		}
                         		function setDay(){	
@@ -259,33 +259,33 @@
                         			for(w=0;w&lt;6;w++){
                         				for(c=0;c&lt;7;c++){
                         					i++;	 				
-                        					pk.removeClass(daysEl.children[1].children[w].children[c], &#x27;selected&#x27;);
+                        					oui.removeClass(daysEl.children[1].children[w].children[c], &#x27;selected&#x27;);
                         					if(i===sD+d){
-                        						pk.addClass(daysEl.children[1].children[w].children[c], &#x27;selected&#x27;);
+                        						oui.addClass(daysEl.children[1].children[w].children[c], &#x27;selected&#x27;);
                         					}
                         				}		
                         			}
                         		}				
                         		function resolveClick(e){
                         			var tEl=e.target;
-                        			if(pk.attribute(tEl, &#x27;year&#x27;)!==null){ 			
-                        				y=parseInt(pk.attribute(tEl, &#x27;year&#x27;),0);	
+                        			if(oui.attribute(tEl, &#x27;year&#x27;)!==null){ 			
+                        				y=parseInt(oui.attribute(tEl, &#x27;year&#x27;),0);	
                         				setYear();		
                         			}			
-                        			if(pk.attribute(tEl, &#x27;month&#x27;)!==null){
-                        				m=parseInt(pk.attribute(tEl, &#x27;month&#x27;),0)+1;		
+                        			if(oui.attribute(tEl, &#x27;month&#x27;)!==null){
+                        				m=parseInt(oui.attribute(tEl, &#x27;month&#x27;),0)+1;		
                         				setMonth();				
                         			}
-                        			if(pk.attribute(tEl, &#x27;day&#x27;)!==null){ 			
-                        				d=parseInt(pk.attribute(tEl, &#x27;day&#x27;),0);		
+                        			if(oui.attribute(tEl, &#x27;day&#x27;)!==null){ 			
+                        				d=parseInt(oui.attribute(tEl, &#x27;day&#x27;),0);		
                         				setDay();
                         			}
                         			setMeta();
                         		}
-                        		pk.bindEvent(&#x27;click&#x27;, el, resolveClick);	
+                        		oui.bindEvent(&#x27;click&#x27;, el, resolveClick);	
                         
-                        		pk.bindEvent(&quot;mousewheel&quot;, yearEl, function(e) { 
-                        			pk.preventBubble(e);
+                        		oui.bindEvent(&quot;mousewheel&quot;, yearEl, function(e) { 
+                        			oui.preventBubble(e);
                         			if (e.wheelDelta &gt; 0 || e.detail &lt; 0) {
                         				y++;
                                     }else{ 
@@ -294,8 +294,8 @@
                         			setYear();
                         			setMeta();
                         		});		
-                        		pk.bindEvent(&quot;mousewheel&quot;, monthEl, function(e) { 
-                        			pk.preventBubble(e);
+                        		oui.bindEvent(&quot;mousewheel&quot;, monthEl, function(e) { 
+                        			oui.preventBubble(e);
                         			if (e.wheelDelta &gt; 0 || e.detail &lt; 0) {
                         				d=d &gt; parseDate().nextend ? parseDate().nextend : d;
                         				if(m===12){
@@ -316,8 +316,8 @@
                         			setYear();
                         			setMeta();
                         		});
-                        		pk.bindEvent(&quot;mousewheel&quot;, daysEl, function(e) { 
-                        		 	pk.preventBubble(e); 
+                        		oui.bindEvent(&quot;mousewheel&quot;, daysEl, function(e) { 
+                        		 	oui.preventBubble(e); 
                         			if (e.wheelDelta &gt; 0 || e.detail &lt; 0) {
                         				if(d===eD){				
                         					d=1;
