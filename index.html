@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../open-ui/dist/open-ui.min.css">
         <link rel="stylesheet" href="dist/public-site.min.css">
         <style>
         </style>
@@ -25,16 +26,12 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#"><b>Open</b>UI</a> </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li><a href="#">Components</a>
-                        </li>
-                        <li><a href="docs/index.html">API Documentation</a>
-                        </li>
-                        <li><a href="https://github.com/open-ui/open-ui">GitHub Repository</a>
-                        </li>
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a> </li>
+                        <li><a href="#">Components</a> </li>
+                        <li><a href="docs/index.html">API Documentation</a> </li>
+                        <li><a href="https://github.com/open-ui/open-ui">GitHub Repository</a> </li>
                     </ul>
                 </div>
             </div>
@@ -52,13 +49,58 @@
             <h1 class="weight300">Turbo Charge Your UI</h1>
             <p class="lead">OpenUI has been built around the principles of bringing together some of the most common user interface components under a single open source wrapper. Why include multiple libraries, when you can reduce your footprint with a single framework</p>
             <div class='row'>
-                <div class='col-sm-4'>
-                    <h3>Charts</h3> <a href='#'>Column</a> <a href='#'>Bubble</a> <a href='#'>Scatter</a> <a href='#'>Donut</a> <a href='#'>Area</a> <a href='#'>Line</a> <a href='#'>Bar</a> <a href='#'>Pie</a> </div>
-                <div class='col-sm-4'>
-                    <h3>Controls</h3> <a href='#'>Single Select</a> <a href='#'>Multi Select</a> <a href='#'>Colorpicker</a> <a href='#'>Dropdown</a> <a href='#'>Sliders</a> <a href='#'>Toggle</a> <a href='#'>Switch</a> </div>
-                <div class='col-sm-4'>
-                    <h3>Content</h3> <a href='#'>Custom Scrollbars</a> <a href='#'>Notifications</a> <a href='#'>Accordian</a> <a href='#'>Tooltips</a> <a href='#'>Modals</a> </div>
+                <div class='col-xs-4'>
+                    <h3>Charts</h3>
+                    <br /><a href='#'>Column</a>
+                    <br /><a href='#'>Bubble</a>
+                    <br /><a href='#'>Scatter</a>
+                    <br /><a href='#'>Donut</a>
+                    <br /><a href='#'>Area</a>
+                    <br /><a href='#'>Line</a>
+                    <br /><a href='#'>Bar</a>
+                    <br /><a href='#'>Pie</a> </div>
+                <div class='col-xs-4'>
+                    <h3>Controls</h3>
+                    <br /><a href='#'>Single Select</a>
+                    <br /><a href='#'>Multi Select</a>
+                    <br /><a href='#'>Colorpicker</a>
+                    <br /><a href='#'>Dropdown</a>
+                    <br /><a href='#'>Sliders</a>
+                    <br /><a href='#'>Toggle</a>
+                    <br /><a href='#'>Switch</a> </div>
+                <div class='col-xs-4'>
+                    <h3>Content</h3>
+                    <br /><a href='#'>Custom Scrollbars</a>
+                    <br /><a href='#'>Notifications</a>
+                    <br /><a href='#'>Accordian</a>
+                    <br /><a href='#'>Tooltips</a>
+                    <br /><a href='#'>Modals</a> </div>
             </div>
+        </section>
+        <hr />
+        <section class='container text-center'> <i class="fa fa-flash"></i>
+            <h1>Charting</h1>
+            <p class="lead">A wide range of charting components to cover your graphing needs</p>
+            <ul id='carousel'>
+                <li>
+                    <div id='lineChart'></div>
+                </li>
+                <li>
+                    <div id='scatterChart'></div>
+                </li>
+                <li>
+                    <div id='areaChart'></div>
+                </li>
+                <li>
+                    <div id='bubbleChart'></div>
+                </li>
+                <li>
+                    <div id='barChart'></div>
+                </li>
+                <li>
+                    <div id='columnChart'></div>
+                </li>
+            </ul>
         </section>
         <hr />
         <section class='container text-center'> <i class="fa fa-fire"></i>
@@ -85,6 +127,7 @@
             <br /> <a href='https://github.com/open-ui/open-ui'>GitHub</a> &bull; <a href=''>Examples</a> &bull; <a href='docs/index.html'>API Docs</a> &bull; <a href='https://github.com/open-ui/open-ui/issues'>Issues</a> &bull; <a href='https://github.com/open-ui/open-ui/releases'>Releases</a>
             <br />
             <br /> </footer>
+        <script src="../open-ui/dist/open-ui.min.js"></script>
         <script src="dist/public-site.min.js"></script>
     </body>
 

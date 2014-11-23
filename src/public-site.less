@@ -107,7 +107,7 @@ i.bottom-brace:after{
 	font-size:5em;
 }
 section{
-	margin:100px 0;
+	margin:70px 0 100px 0;
 	>i.fa{
 		font-size:5em;
 		color:lighten(@color-highlight, 40%);
@@ -122,8 +122,21 @@ section{
 	overflow:hidden;
 	line-height:80px;
 }
-#componentList{
-	a{
-		display:block;
+#carousel{
+	.oui-nav-prev,.oui-nav-next{
+		color:@color-highlight;
+	}
+	.oui-nav-item:after{
+		background:@color-highlight;
+	}
+	li{
+		text-align:center;
+		.oui-chart{
+		height:100%;
+		width:calc(~"100% - 150px");
+		height:calc(~"100% - 50px");
+		display:inline-block;
+		text-align:left;
+		}
 	}
 }
