@@ -54,10 +54,10 @@
         "src/core/core.js": {
             "name": "src/core/core.js",
             "modules": {
-                "pocketknife": 1
+                "open-ui": 1
             },
             "classes": {
-                "pk": 1
+                "oui": 1
             },
             "fors": {},
             "namespaces": {}
@@ -181,8 +181,8 @@
         }
     },
     "modules": {
-        "pocketknife": {
-            "name": "pocketknife",
+        "open-ui": {
+            "name": "open-ui",
             "submodules": {},
             "classes": {
                 "oui.accordian": 1,
@@ -190,7 +190,7 @@
                 "oui.chart": 1,
                 "oui.checkbox": 1,
                 "oui.colorpicker": 1,
-                "pk": 1,
+                "oui": 1,
                 "oui.datepicker": 1,
                 "oui.drag": 1,
                 "oui.modal": 1,
@@ -221,7 +221,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "file": "src/accordian/accordian.js",
             "line": 2,
             "description": "Create a new accordian component from an unordered list element `<ul>` with the below structure:\n\nHTML:\n\n\t<ul id='accordian'>\n        <li>\n            <h3 class='oui-content-header'>Content header</h3>\n            <div class='oui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\n        <li>\n            <h3 class='oui-content-header'>Content header</h3>\n            <div class='oui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\n        <li>\n            <h3 class='oui-content-header'>Content header</h3>\n            <div class='oui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\t\t\n    </ul>\n\nJavascript:\n\n\toui.accordian({\n\t\telement: document.getElementById('accordian'),\n\t\tanimate: true,\n\t\tmultiple: true\n\t});",
@@ -268,7 +268,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "file": "src/carousel/carousel.js",
             "line": 2,
             "description": "Create a new carousel component from an unordered list element `<ul>`\n\nHTML:\n\n    <ul id='carousel'>\n        <li>Slide 1</li>\n        <li>Slide 2</li>\n        <li>Slide 3</li>\n    </ul>\n\nJavascript:\n\t\n\toui.carousel({\n\t\telement: document.getElementById('carousel'),\n\t\tdelay:5000\n\t});",
@@ -322,7 +322,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "file": "src/chart/chart.js",
             "line": 2,
             "description": "Create a new chart component\n\nHTML\n\n\t<div id='chart'></div>\n\nJavascript:\n\n\toui.chart({\n\t\telement: document.getElementById('chart'),\n\t\ttype:'pie',\n\t\tdata: [\n\t\t\t{category:\"cat\",series1:8, series2:2},\n\t\t\t{category:\"pig\",series1:2, series2:6},\n\t\t\t{category:\"cow\",series1:9, series2:9},\n\t\t\t{category:\"bird\",series1:5, series2:2},\n\t\t\t{category:\"dog\",series1:2, series2:7},\n\t\t\t{category:\"emu\",series1:6, series2:3},\n\t\t\t{category:\"hamster\",series1:2, series2:3}\n\t\t],\n\t\tcenter:20,\n\t\tlegend:true,\n\t\taxis:{\n\t\t\tx:'category'\n\t\t},\n\t\tseries: ['series1', 'series2']\n\t});",
@@ -419,7 +419,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "file": "src/checkbox/checkbox.js",
             "line": 3,
             "description": "Create a new checkbox control\n\nHTML:\n\n\t<input type='checkbox' id='checkbox' />\n\nJavascript:\n\t\n\toui.checkbox({\n\t\telement: document.getElementById('checkbox'),\n\t\tlabel: 'Checked',\n\t\tvalue: true\n\t});",
@@ -493,7 +493,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "file": "src/colorpicker/colorpicker.js",
             "line": 2,
             "description": "Create a new colorpicker control\n\nHTML\n\n\t<div id='colorpicker'></div>\n\nJavascript:\n\n\toui.colorpicker({\n\t\telement: document.getElementById('colorpicker'),\n\t\tvalue:'#FF0000',\n\t\tlisteners:{\n\t\t\tchange:function(oldCol,newCol){\n\t\t\t\t// do something\n\t\t\t}\n\t\t}\n\t});",
@@ -531,15 +531,15 @@
             },
             "chainable": 1
         },
-        "pk": {
-            "name": "pk",
-            "shortname": "pk",
+        "oui": {
+            "name": "oui",
+            "shortname": "oui",
             "classitems": [],
             "plugins": [],
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/core/core.js",
             "line": 47,
@@ -553,7 +553,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/datepicker/datepicker.js",
             "line": 2,
@@ -615,7 +615,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/drag/drag.js",
             "line": 2,
@@ -684,7 +684,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/modal/modal.js",
             "line": 3,
@@ -736,7 +736,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/notify/notify.js",
             "line": 2,
@@ -751,7 +751,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/rating/rating.js",
             "line": 2,
@@ -826,7 +826,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/scroll/scroll.js",
             "line": 2,
@@ -874,7 +874,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/select/select.js",
             "line": 2,
@@ -979,7 +979,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/slider/slider.js",
             "line": 2,
@@ -1105,7 +1105,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/switch/switch.js",
             "line": 3,
@@ -1172,7 +1172,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/toggle/toggle.js",
             "line": 2,
@@ -1257,7 +1257,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/tooltip/tooltip.js",
             "line": 2,
@@ -1311,7 +1311,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/utils/color.js",
             "line": 2,
@@ -1325,7 +1325,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "pocketknife",
+            "module": "open-ui",
             "namespace": "",
             "file": "src/utils/svg.js",
             "line": 2,
@@ -1450,8 +1450,8 @@
                 "description": "Returns `false`",
                 "type": "Boolean"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1480,8 +1480,8 @@
                 "description": "`true` if class added, `false` if removed.",
                 "type": "Boolean"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1505,8 +1505,8 @@
                 "description": "`true` if class found, `false` if not.",
                 "type": "Boolean"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1526,8 +1526,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1551,8 +1551,8 @@
                 "description": "Returns style property value",
                 "type": "String"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1577,8 +1577,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1603,8 +1603,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1634,8 +1634,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1665,8 +1665,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1691,8 +1691,8 @@
                 "description": "Returns object consisting of `top`, `right`, `bottom`, `left`, `height` and `width` values as well as sub `offset` and `parent` objects",
                 "type": "Object"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1717,8 +1717,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1742,8 +1742,8 @@
                 "description": "Returns pseudo-random number between §min§ and §max§",
                 "type": "Number"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1762,8 +1762,8 @@
                 "description": "Returns unit type",
                 "type": "String"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1821,8 +1821,8 @@
                 "description": "Returns matching DOM elements",
                 "type": "Array"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1847,8 +1847,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1868,8 +1868,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1888,8 +1888,8 @@
                 "description": "Returns index of passed element",
                 "type": "Number"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1914,8 +1914,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1934,8 +1934,8 @@
                 "description": "Returns array of passed variable",
                 "type": "Array"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1966,8 +1966,8 @@
                 "description": "Returns resulting `array`",
                 "type": "Array"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -1991,8 +1991,8 @@
                 "description": "Returns noramlized percentage value between 1 and 0",
                 "type": "Float"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -2023,8 +2023,8 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -2043,8 +2043,8 @@
                 "description": "Returns object with the additional attributes `posX`, `posY` are normalized absolutes, `offsetX`, offsetY` are normalized parent offsets, `viewportX`, `viewportY` are normalized viewport offsets",
                 "type": "Object"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/core/core.js",
@@ -2063,8 +2063,8 @@
                 "description": "Returns object comprising of normalized `x` and `y` offsets",
                 "type": "Object"
             },
-            "class": "pk",
-            "module": "pocketknife"
+            "class": "oui",
+            "module": "open-ui"
         },
         {
             "file": "src/drag/drag.js",
@@ -2085,7 +2085,7 @@
                 }
             ],
             "class": "oui.drag",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/drag/drag.js",
@@ -2106,7 +2106,7 @@
                 }
             ],
             "class": "oui.drag",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/drag/drag.js",
@@ -2127,7 +2127,7 @@
                 }
             ],
             "class": "oui.drag",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/modal/modal.js",
@@ -2136,7 +2136,7 @@
             "itemtype": "method",
             "name": "close",
             "class": "oui.modal",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/notify/notify.js",
@@ -2171,7 +2171,7 @@
                 "type": "Object"
             },
             "class": "oui.notify",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/notify/notify.js",
@@ -2187,7 +2187,7 @@
                 }
             ],
             "class": "oui.notify",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/rating/rating.js",
@@ -2208,7 +2208,7 @@
                 "type": "String"
             },
             "class": "oui.rating",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/rating/rating.js",
@@ -2229,7 +2229,7 @@
                 "type": "Boolean"
             },
             "class": "oui.rating",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/slider/slider.js",
@@ -2250,7 +2250,7 @@
                 }
             ],
             "class": "oui.slider",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/slider/slider.js",
@@ -2271,7 +2271,7 @@
                 }
             ],
             "class": "oui.slider",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/slider/slider.js",
@@ -2292,7 +2292,7 @@
                 }
             ],
             "class": "oui.slider",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/slider/slider.js",
@@ -2313,7 +2313,7 @@
                 "type": "Number"
             },
             "class": "oui.slider",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/slider/slider.js",
@@ -2334,7 +2334,7 @@
                 "type": "Boolean"
             },
             "class": "oui.slider",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/switch/switch.js",
@@ -2355,7 +2355,7 @@
                 "type": "String"
             },
             "class": "oui.switch",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/switch/switch.js",
@@ -2376,7 +2376,7 @@
                 "type": "Boolean"
             },
             "class": "oui.switch",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/toggle/toggle.js",
@@ -2397,7 +2397,7 @@
                 "type": "String"
             },
             "class": "oui.toggle",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/toggle/toggle.js",
@@ -2418,7 +2418,7 @@
                 "type": "Boolean"
             },
             "class": "oui.toggle",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2438,7 +2438,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2458,7 +2458,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2478,7 +2478,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2498,7 +2498,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2518,7 +2518,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2538,7 +2538,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2558,7 +2558,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2578,7 +2578,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2598,7 +2598,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2618,7 +2618,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2638,7 +2638,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2658,7 +2658,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2690,7 +2690,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2716,7 +2716,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2736,7 +2736,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2756,7 +2756,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2776,7 +2776,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2810,7 +2810,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2848,7 +2848,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2880,7 +2880,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2912,7 +2912,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2944,7 +2944,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -2976,7 +2976,7 @@
                 "type": "String"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
@@ -3031,7 +3031,7 @@
                 "type": "Array"
             },
             "class": "oui.color",
-            "module": "pocketknife"
+            "module": "open-ui"
         }
     ],
     "warnings": []

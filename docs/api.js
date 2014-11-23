@@ -1,6 +1,7 @@
 YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
+        "oui",
         "oui.accordian",
         "oui.carousel",
         "oui.chart",
@@ -18,16 +19,15 @@ YUI.add("yuidoc-meta", function(Y) {
         "oui.svg",
         "oui.switch",
         "oui.toggle",
-        "oui.tooltip",
-        "pk"
+        "oui.tooltip"
     ],
     "modules": [
-        "pocketknife"
+        "open-ui"
     ],
     "allModules": [
         {
-            "displayName": "pocketknife",
-            "name": "pocketknife"
+            "displayName": "open-ui",
+            "name": "open-ui"
         }
     ]
 } };
