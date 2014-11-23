@@ -1,1 +1,54 @@
 
+@import "variables.less";
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);
+
+
+html,body{
+	height:100%;
+	font-family:@font-family;
+}
+.navbar{
+	margin-bottom:0;
+}
+.jumbotron{
+	background-color:@color-highlight;
+	color:@color-background;
+	overflow:hidden;
+	margin-bottom:0;
+	text-align:center;
+	h1{
+		margin:30px 0 40px;
+	}
+	.btn{
+		transition:all 150ms ease-in;
+		color:@color-highlight;
+		margin-top:10px;
+		&:hover{
+			background:transparent;
+			color:@color-background;
+		}
+	}
+}
+.light200{
+	font-weight:200;
+}
+.logo{
+	height:130px;
+	width:130px; 
+	border:1px solid @color-background;
+	border-radius:20%;
+	position:relative;
+	font-size:130px;
+	display:inline-block;
+	&:after{
+		position:absolute;
+		left:0;
+		display:inline-block;
+		content:'UI';
+		line-height:2em;
+		font-size:.5em;
+		width:100%;
+		font-weight:500;
+		text-align:center;
+	}
+}
