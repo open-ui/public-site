@@ -56,6 +56,13 @@ gulp.task('build:js',function() {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('build:html',function() {
+  return gulp.src('**/*.html', {base: './'})
+	.pipe(plugins.plumber())
+	.pipe(plugins.prettify({indent_size: 2}))
+    .pipe(gulp.dest('./'));
+});
+
 gulp.task('browser-sync', function () {
    var files = [
       'dist/*.css',
@@ -72,6 +79,7 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', ['browser-sync'], function () {
    gulp.watch('src/**/*.less', ['build:styles', 'bump']);
    gulp.watch('src/**/*.js', ['build:js', 'bump']);
+   gulp.watch('src/**/*.html', ['build:html']);
    return true;
 });
 
