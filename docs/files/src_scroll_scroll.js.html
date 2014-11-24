@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Attach custom scrollbars to an element
                         
@@ -117,27 +117,27 @@
                         	
                         Javascript:
                         
-                        	oui.scroll({
+                        	$ui.scroll({
                         		element: document.getElementById(&#x27;scroll&#x27;),
                         		axis: &#x27;xy&#x27;
                         	});
                         	
-                        @class oui.scroll
+                        @class $ui.scroll
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to attach drag handlers to
                         @param [options.sensitivity=60] {Number} Number in px to scroll incrementally on &#x60;mousewheel&#x60; and &#x60;key&#x60; events. Can also be expressed as percentage, e.g. &#x60;10%&#x60; of content
-                        @param [options.axis=y] {Object} Object consisting of &#x60;x&#x60; and &#x60;y&#x60; {Boolean} values denoting scrollable axis, DOM element to attach drag handlers to. Defaults to element attribute &#x60;oui-scroll&#x60; or &#x60;y&#x60;
+                        @param [options.axis=y] {Object} Object consisting of &#x60;x&#x60; and &#x60;y&#x60; {Boolean} values denoting scrollable axis, DOM element to attach drag handlers to. Defaults to element attribute &#x60;ui-scroll&#x60; or &#x60;y&#x60;
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;)
                         @chainable
                         */
-                        (function(oui) {
+                        (function($ui) {
                             // HELPERS FOR jQUERY+ANGULAR
                             if (typeof jQuery === &#x27;object&#x27;) {
                                 // jquery available
                                 jQuery.fn.extend({
-                                    ouiScroll: function(axis) {
-                                        oui.scroll({
+                                    $uiScroll: function(axis) {
+                                        $ui.scroll({
                                             element: this[0],
                                             axis: axis
                                         });
@@ -149,21 +149,21 @@
                                 ( 
                         
                                     function() {
-                                        angular.module(&#x27;oui-scroll&#x27;, [&#x27;ng&#x27;])
-                                            .directive(&#x27;ouiScroll&#x27;, function() {
+                                        angular.module(&#x27;ui-scroll&#x27;, [&#x27;ng&#x27;])
+                                            .directive(&#x27;$uiScroll&#x27;, function() {
                                                 return {
                                                     restrict: &#x27;A&#x27;,
                                                     link: function(scope, el) {
-                                                        oui.scroll({
+                                                        $ui.scroll({
                                                             element: el[0],
-                                                            axis: el[0].getAttribute(&#x27;oui-scroll&#x27;)
+                                                            axis: el[0].getAttribute(&#x27;ui-scroll&#x27;)
                                                         });
                                                     }
                                                 };
                                             });
                                     })();
                             }
-                            oui.scroll = function(opt) {
+                            $ui.scroll = function(opt) {
                         
                                 var el = opt.element,
                         			sensitivity=60,
@@ -181,31 +181,31 @@
                                     contentHeight = 0,
                                     containerWidth = 0,
                                     containerHeight = 0,
-                                    scrollDir = opt.axis ? opt.axis.toLowerCase() : (oui.attribute(el, &#x27;oui-scroll&#x27;) ? oui.attribute(el, &#x27;oui-scroll&#x27;) : &quot;y&quot;),
-                        			tpl = &quot;&lt;div class=&#x27;oui-scroll-container&#x27;&gt;\
-                                    &lt;&quot; + el.nodeName + &quot; class=&#x27;oui-scroll-content&#x27;&gt;\
+                                    scrollDir = opt.axis ? opt.axis.toLowerCase() : ($ui.attribute(el, &#x27;ui-scroll&#x27;) ? $ui.attribute(el, &#x27;ui-scroll&#x27;) : &quot;y&quot;),
+                        			tpl = &quot;&lt;div class=&#x27;ui-scroll-container&#x27;&gt;\
+                                    &lt;&quot; + el.nodeName + &quot; class=&#x27;ui-scroll-content&#x27;&gt;\
                                         &quot; + el.innerHTML + &quot;\
                                     &lt;/&quot; + el.nodeName + &quot;&gt;\
-                                    &lt;div class=&#x27;oui-scroll-trackY&#x27;&gt;\
-                                        &lt;div class=&#x27;oui-scroll-floatY&#x27;&gt;&lt;/div&gt;\
+                                    &lt;div class=&#x27;ui-scroll-trackY&#x27;&gt;\
+                                        &lt;div class=&#x27;ui-scroll-floatY&#x27;&gt;&lt;/div&gt;\
                                     &lt;/div&gt;\
-                                    &lt;div class=&#x27;oui-scroll-trackX&#x27;&gt;\
-                                        &lt;div class=&#x27;oui-scroll-floatX&#x27;&gt;&lt;/div&gt;\
+                                    &lt;div class=&#x27;ui-scroll-trackX&#x27;&gt;\
+                                        &lt;div class=&#x27;ui-scroll-floatX&#x27;&gt;&lt;/div&gt;\
                                     &lt;/div&gt;\
                                 &lt;/div&gt;&quot;;
                         		el.innerHTML=&#x27;&#x27;;
-                                el = oui.replaceEl(el, tpl);
+                                el = $ui.replaceEl(el, tpl);
                                 var container = el.children[0],
                                     trackY = el.children[1],
                                     floatY = trackY.children[0],
                                     trackX = el.children[2],
                                     floatX = trackX.children[0];
                         			
-                                if (oui.getStyle(el, &#x27;position&#x27;) === &quot;static&quot;) {
+                                if ($ui.getStyle(el, &#x27;position&#x27;) === &quot;static&quot;) {
                                     el.style.position = &quot;relative&quot;;
                                 }
                         
-                                oui.bindEvent(&quot;scroll&quot;, container, function() {
+                                $ui.bindEvent(&quot;scroll&quot;, container, function() {
                                     percY = container.scrollTop / (contentH - containerH);
                                     percX = container.scrollLeft / (contentW - containerW);
                                     percY = percY &lt; 0 ? 0 : percY &gt; 1 ? 1 : percY;
@@ -214,10 +214,10 @@
                                     floatX.style.left = (containerW - floatXw) * percX + &#x27;px&#x27;;
                                 });
                         		
-                        		oui.bindEvent(&quot;scroll&quot;, el, function(e){
+                        		$ui.bindEvent(&quot;scroll&quot;, el, function(e){
                         			container.scrollTop=el.scrollTop;
                         			container.scrollLeft=el.scrollLeft;
-                        			oui.preventBubble(e);
+                        			$ui.preventBubble(e);
                         		});
                         		
                         
@@ -228,22 +228,22 @@
                                     containerW = el.offsetWidth;
                                     if (scrollDir.indexOf(&quot;y&quot;) &gt; -1 &amp;&amp; contentH &gt; containerH) {
                                         allowY = true;
-                                        oui.addClass(el, &#x27;oui-scroll-enableY&#x27;);
+                                        $ui.addClass(el, &#x27;ui-scroll-enableY&#x27;);
                                         floatYh = floatY.offsetHeight;
                                         container.scrollTop = (contentH - containerH) * percY;
                                     } else {
                                         allowY = false;
-                                        oui.removeClass(el, &#x27;oui-scroll-enableY&#x27;);
+                                        $ui.removeClass(el, &#x27;ui-scroll-enableY&#x27;);
                                         container.scrollTop = 0;
                                     }
                                     if (scrollDir.indexOf(&quot;x&quot;) &gt; -1 &amp;&amp; contentW &gt; containerW) {
                                         allowX = true;
-                                        oui.addClass(el, &#x27;oui-scroll-enableX&#x27;);
+                                        $ui.addClass(el, &#x27;ui-scroll-enableX&#x27;);
                                         floatXw = floatX.offsetWidth;
                                         container.scrollLeft = (contentW - containerW) * percX;
                                     } else {
                                         allowX = false;
-                                        oui.removeClass(el, &#x27;oui-scroll-enableX&#x27;);
+                                        $ui.removeClass(el, &#x27;ui-scroll-enableX&#x27;);
                                         container.scrollLeft = 0;
                                     }
                                 }
@@ -266,7 +266,7 @@
                                 // DRAG HANDLERS
                         
                                 if (allowY) {
-                                    oui.drag({
+                                    $ui.drag({
                                         element: floatY,
                                         move: {
                                             y: true
@@ -282,7 +282,7 @@
                                     });
                                 }
                                 if (allowX) {
-                                    oui.drag({
+                                    $ui.drag({
                                         element: floatX,
                                         move: {
                                             x: true
@@ -298,19 +298,19 @@
                                         }
                                     });
                                 }
-                                oui.bindEvent(&quot;click&quot;, floatY, function(e) {
-                                    oui.preventBubble(e);
+                                $ui.bindEvent(&quot;click&quot;, floatY, function(e) {
+                                    $ui.preventBubble(e);
                                 });
-                                oui.bindEvent(&quot;click&quot;, floatX, function(e) {
-                                    oui.preventBubble(e);
+                                $ui.bindEvent(&quot;click&quot;, floatX, function(e) {
+                                    $ui.preventBubble(e);
                                 });
                         
                                 // TRACK CLICKING HANDLERS
-                                oui.bindEvent(&quot;click&quot;, trackY, function(e) {
-                                    container.scrollTop = (oui.getEventOffset(e).y / containerH * (contentH - containerH));
+                                $ui.bindEvent(&quot;click&quot;, trackY, function(e) {
+                                    container.scrollTop = ($ui.getEventOffset(e).y / containerH * (contentH - containerH));
                                 });
-                                oui.bindEvent(&quot;click&quot;, trackX, function(e) {
-                                    container.scrollLeft = (oui.getEventOffset(e).x / containerW * (contentW - containerW));
+                                $ui.bindEvent(&quot;click&quot;, trackX, function(e) {
+                                    container.scrollLeft = ($ui.getEventOffset(e).x / containerW * (contentW - containerW));
                                 });
                         
                                 // MOUSE WHEEL HANDLERS
@@ -327,10 +327,10 @@
                         				container.scrollLeft += typeof sensitivity === &#x27;string&#x27; &amp;&amp; sensitivity.indexOf(&#x27;%&#x27;) ?  containerW * parseInt(sensitivity.replace(&#x27;%&#x27;,&#x27;&#x27;),0)/100 : sensitivity;			
                         			}
                                     /* Stop wheel propogation (prevent parent scrolling) */
-                                    oui.preventBubble(e);
+                                    $ui.preventBubble(e);
                                 }
                         
-                                oui.bindEvent(&quot;mousewheel&quot;, container, mouseScroll);
+                                $ui.bindEvent(&quot;mousewheel&quot;, container, mouseScroll);
                         
                                 // TOUCH EVENT HANDLERS
                         
@@ -388,14 +388,14 @@
                                     return false;
                                 }
                                 if (typeof window.ontouchstart !== &#x27;undefined&#x27;) {
-                                    oui.bindEvent(&#x27;touchstart&#x27;, container[0], tap);
-                                    oui.bindEvent(&#x27;touchmove&#x27;, container[0], drag);
-                                    oui.bindEvent(&#x27;touchend&#x27;, window, release);
+                                    $ui.bindEvent(&#x27;touchstart&#x27;, container[0], tap);
+                                    $ui.bindEvent(&#x27;touchmove&#x27;, container[0], drag);
+                                    $ui.bindEvent(&#x27;touchend&#x27;, window, release);
                                 }
                         
                                 // KEYBOARD HANDLERS    
                                 container.setAttribute(&quot;tabindex&quot;, 0);
-                                oui.bindEvent(&#x27;keydown&#x27;, container, function(e) {
+                                $ui.bindEvent(&#x27;keydown&#x27;, container, function(e) {
                                     if (document.activeElement !== container) {
                                         return;
                                     }
@@ -403,28 +403,28 @@
                                         switch (e.keyCode) {
                                             case 38: //up cursor						
                                                 container.scrollTop -= typeof sensitivity === &#x27;string&#x27; &amp;&amp; sensitivity.indexOf(&#x27;%&#x27;) ?  containerH * parseInt(sensitivity.replace(&#x27;%&#x27;,&#x27;&#x27;),0)/100 : sensitivity;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                             case 40: //down cursor
                                             case 32: //spacebar
                                                 container.scrollTop += typeof sensitivity === &#x27;string&#x27; &amp;&amp; sensitivity.indexOf(&#x27;%&#x27;) ?  containerH * parseInt(sensitivity.replace(&#x27;%&#x27;,&#x27;&#x27;),0)/100 : sensitivity;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                             case 33: //page up
                                                 container.scrollTop -= containerH;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                             case 34: //page down
                                                 container.scrollTop += containerH;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                             case 36: //home
                                                 container.scrollTop = 0;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                             case 35: //end
                                                 container.scrollTop = contentH;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                         }
                                     }
@@ -432,11 +432,11 @@
                                         switch (e.keyCode) {
                                             case 37: //left cursor
                                                 container.scrollLeft -= typeof sensitivity === &#x27;string&#x27; &amp;&amp; sensitivity.indexOf(&#x27;%&#x27;) ?  containerW * parseInt(sensitivity.replace(&#x27;%&#x27;,&#x27;&#x27;),0)/100 : sensitivity;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                             case 39: //right cursor
                                                 container.scrollLeft += typeof sensitivity === &#x27;string&#x27; &amp;&amp; sensitivity.indexOf(&#x27;%&#x27;) ?  containerW * parseInt(sensitivity.replace(&#x27;%&#x27;,&#x27;&#x27;),0)/100 : sensitivity;
-                                                oui.preventBubble(e);
+                                                $ui.preventBubble(e);
                                                 break;
                                         }
                                     }
@@ -446,8 +446,8 @@
                         
                                 });
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

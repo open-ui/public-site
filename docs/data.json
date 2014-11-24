@@ -10,7 +10,7 @@
             "name": "src/accordian/accordian.js",
             "modules": {},
             "classes": {
-                "oui.accordian": 1
+                "$ui.accordian": 1
             },
             "fors": {},
             "namespaces": {}
@@ -19,7 +19,7 @@
             "name": "src/carousel/carousel.js",
             "modules": {},
             "classes": {
-                "oui.carousel": 1
+                "$ui.carousel": 1
             },
             "fors": {},
             "namespaces": {}
@@ -28,7 +28,7 @@
             "name": "src/chart/chart.js",
             "modules": {},
             "classes": {
-                "oui.chart": 1
+                "$ui.chart": 1
             },
             "fors": {},
             "namespaces": {}
@@ -37,7 +37,7 @@
             "name": "src/checkbox/checkbox.js",
             "modules": {},
             "classes": {
-                "oui.checkbox": 1
+                "$ui.checkbox": 1
             },
             "fors": {},
             "namespaces": {}
@@ -46,7 +46,7 @@
             "name": "src/colorpicker/colorpicker.js",
             "modules": {},
             "classes": {
-                "oui.colorpicker": 1
+                "$ui.colorpicker": 1
             },
             "fors": {},
             "namespaces": {}
@@ -57,7 +57,7 @@
                 "open-ui": 1
             },
             "classes": {
-                "oui": 1
+                "$ui": 1
             },
             "fors": {},
             "namespaces": {}
@@ -66,7 +66,7 @@
             "name": "src/datepicker/datepicker.js",
             "modules": {},
             "classes": {
-                "oui.datepicker": 1
+                "$ui.datepicker": 1
             },
             "fors": {},
             "namespaces": {}
@@ -75,7 +75,7 @@
             "name": "src/drag/drag.js",
             "modules": {},
             "classes": {
-                "oui.drag": 1
+                "$ui.drag": 1
             },
             "fors": {},
             "namespaces": {}
@@ -84,7 +84,7 @@
             "name": "src/fileinput/fileinput.js",
             "modules": {},
             "classes": {
-                "oui.fileinput": 1
+                "$ui.fileinput": 1
             },
             "fors": {},
             "namespaces": {}
@@ -93,7 +93,7 @@
             "name": "src/modal/modal.js",
             "modules": {},
             "classes": {
-                "oui.modal": 1
+                "$ui.modal": 1
             },
             "fors": {},
             "namespaces": {}
@@ -102,7 +102,7 @@
             "name": "src/notify/notify.js",
             "modules": {},
             "classes": {
-                "oui.notify": 1
+                "$ui.notify": 1
             },
             "fors": {},
             "namespaces": {}
@@ -111,7 +111,7 @@
             "name": "src/rating/rating.js",
             "modules": {},
             "classes": {
-                "oui.rating": 1
+                "$ui.rating": 1
             },
             "fors": {},
             "namespaces": {}
@@ -120,7 +120,7 @@
             "name": "src/scroll/scroll.js",
             "modules": {},
             "classes": {
-                "oui.scroll": 1
+                "$ui.scroll": 1
             },
             "fors": {},
             "namespaces": {}
@@ -129,7 +129,7 @@
             "name": "src/select/select.js",
             "modules": {},
             "classes": {
-                "oui.select": 1
+                "$ui.select": 1
             },
             "fors": {},
             "namespaces": {}
@@ -138,7 +138,7 @@
             "name": "src/slider/slider.js",
             "modules": {},
             "classes": {
-                "oui.slider": 1
+                "$ui.slider": 1
             },
             "fors": {},
             "namespaces": {}
@@ -147,7 +147,7 @@
             "name": "src/switch/switch.js",
             "modules": {},
             "classes": {
-                "oui.switch": 1
+                "$ui.switch": 1
             },
             "fors": {},
             "namespaces": {}
@@ -156,7 +156,7 @@
             "name": "src/toggle/toggle.js",
             "modules": {},
             "classes": {
-                "oui.toggle": 1
+                "$ui.toggle": 1
             },
             "fors": {},
             "namespaces": {}
@@ -165,7 +165,7 @@
             "name": "src/tooltip/tooltip.js",
             "modules": {},
             "classes": {
-                "oui.tooltip": 1
+                "$ui.tooltip": 1
             },
             "fors": {},
             "namespaces": {}
@@ -174,7 +174,7 @@
             "name": "src/utils/color.js",
             "modules": {},
             "classes": {
-                "oui.color": 1
+                "$ui.color": 1
             },
             "fors": {},
             "namespaces": {}
@@ -183,7 +183,7 @@
             "name": "src/utils/svg.js",
             "modules": {},
             "classes": {
-                "oui.svg": 1
+                "$ui.svg": 1
             },
             "fors": {},
             "namespaces": {}
@@ -194,26 +194,26 @@
             "name": "open-ui",
             "submodules": {},
             "classes": {
-                "oui.accordian": 1,
-                "oui.carousel": 1,
-                "oui.chart": 1,
-                "oui.checkbox": 1,
-                "oui.colorpicker": 1,
-                "oui": 1,
-                "oui.datepicker": 1,
-                "oui.drag": 1,
-                "oui.fileinput": 1,
-                "oui.modal": 1,
-                "oui.notify": 1,
-                "oui.rating": 1,
-                "oui.scroll": 1,
-                "oui.select": 1,
-                "oui.slider": 1,
-                "oui.switch": 1,
-                "oui.toggle": 1,
-                "oui.tooltip": 1,
-                "oui.color": 1,
-                "oui.svg": 1
+                "$ui.accordian": 1,
+                "$ui.carousel": 1,
+                "$ui.chart": 1,
+                "$ui.checkbox": 1,
+                "$ui.colorpicker": 1,
+                "$ui": 1,
+                "$ui.datepicker": 1,
+                "$ui.drag": 1,
+                "$ui.fileinput": 1,
+                "$ui.modal": 1,
+                "$ui.notify": 1,
+                "$ui.rating": 1,
+                "$ui.scroll": 1,
+                "$ui.select": 1,
+                "$ui.slider": 1,
+                "$ui.switch": 1,
+                "$ui.toggle": 1,
+                "$ui.tooltip": 1,
+                "$ui.color": 1,
+                "$ui.svg": 1
             },
             "fors": {},
             "namespaces": {},
@@ -223,9 +223,9 @@
         }
     },
     "classes": {
-        "oui.accordian": {
-            "name": "oui.accordian",
-            "shortname": "oui.accordian",
+        "$ui.accordian": {
+            "name": "$ui.accordian",
+            "shortname": "$ui.accordian",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -234,7 +234,7 @@
             "module": "open-ui",
             "file": "src/accordian/accordian.js",
             "line": 2,
-            "description": "Create a new accordian component from an unordered list element `<ul>` with the below structure:\n\nHTML:\n\n\t<ul id='accordian'>\n        <li>\n            <h3 class='oui-content-header'>Content header</h3>\n            <div class='oui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\n        <li>\n            <h3 class='oui-content-header'>Content header</h3>\n            <div class='oui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\n        <li>\n            <h3 class='oui-content-header'>Content header</h3>\n            <div class='oui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\t\t\n    </ul>\n\nJavascript:\n\n\toui.accordian({\n\t\telement: document.getElementById('accordian'),\n\t\tanimate: true,\n\t\tmultiple: true\n\t});",
+            "description": "Create a new accordian component from an unordered list element `<ul>` with the below structure:\n\nHTML:\n\n\t<ul id='accordian'>\n        <li>\n            <h3 class='ui-content-header'>Content header</h3>\n            <div class='ui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\n        <li>\n            <h3 class='ui-content-header'>Content header</h3>\n            <div class='ui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\n        <li>\n            <h3 class='ui-content-header'>Content header</h3>\n            <div class='ui-content'>\n\t\t\t\tContent to collapse\n\t\t\t</div>\n        </li>\t\t\n    </ul>\n\nJavascript:\n\n\t$ui.accordian({\n\t\telement: document.getElementById('accordian'),\n\t\tanimate: true,\n\t\tmultiple: true\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -270,9 +270,9 @@
             },
             "chainable": 1
         },
-        "oui.carousel": {
-            "name": "oui.carousel",
-            "shortname": "oui.carousel",
+        "$ui.carousel": {
+            "name": "$ui.carousel",
+            "shortname": "$ui.carousel",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -281,7 +281,7 @@
             "module": "open-ui",
             "file": "src/carousel/carousel.js",
             "line": 2,
-            "description": "Create a new carousel component from an unordered list element `<ul>`\n\nHTML:\n\n    <ul id='carousel'>\n        <li>Slide 1</li>\n        <li>Slide 2</li>\n        <li>Slide 3</li>\n    </ul>\n\nJavascript:\n\t\n\toui.carousel({\n\t\telement: document.getElementById('carousel'),\n\t\tdelay:5000\n\t});",
+            "description": "Create a new carousel component from an unordered list element `<ul>`\n\nHTML:\n\n    <ul id='carousel'>\n        <li>Slide 1</li>\n        <li>Slide 2</li>\n        <li>Slide 3</li>\n    </ul>\n\nJavascript:\n\t\n\t$ui.carousel({\n\t\telement: document.getElementById('carousel'),\n\t\tdelay:5000\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -324,9 +324,9 @@
             },
             "chainable": 1
         },
-        "oui.chart": {
-            "name": "oui.chart",
-            "shortname": "oui.chart",
+        "$ui.chart": {
+            "name": "$ui.chart",
+            "shortname": "$ui.chart",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -335,7 +335,7 @@
             "module": "open-ui",
             "file": "src/chart/chart.js",
             "line": 2,
-            "description": "Create a new chart component\n\nHTML\n\n\t<div id='chart'></div>\n\nJavascript:\n\n\toui.chart({\n\t\telement: document.getElementById('chart'),\n\t\ttype:'pie',\n\t\tdata: [\n\t\t\t{category:\"cat\",series1:8, series2:2},\n\t\t\t{category:\"pig\",series1:2, series2:6},\n\t\t\t{category:\"cow\",series1:9, series2:9},\n\t\t\t{category:\"bird\",series1:5, series2:2},\n\t\t\t{category:\"dog\",series1:2, series2:7},\n\t\t\t{category:\"emu\",series1:6, series2:3},\n\t\t\t{category:\"hamster\",series1:2, series2:3}\n\t\t],\n\t\tcenter:20,\n\t\tlegend:true,\n\t\taxis:{\n\t\t\tx:'category'\n\t\t},\n\t\tseries: ['series1', 'series2']\n\t});",
+            "description": "Create a new chart component\n\nHTML\n\n\t<div id='chart'></div>\n\nJavascript:\n\n\t$ui.chart({\n\t\telement: document.getElementById('chart'),\n\t\ttype:'pie',\n\t\tdata: [\n\t\t\t{category:\"cat\",series1:8, series2:2},\n\t\t\t{category:\"pig\",series1:2, series2:6},\n\t\t\t{category:\"cow\",series1:9, series2:9},\n\t\t\t{category:\"bird\",series1:5, series2:2},\n\t\t\t{category:\"dog\",series1:2, series2:7},\n\t\t\t{category:\"emu\",series1:6, series2:3},\n\t\t\t{category:\"hamster\",series1:2, series2:3}\n\t\t],\n\t\tcenter:20,\n\t\tlegend:true,\n\t\taxis:{\n\t\t\tx:'category'\n\t\t},\n\t\tseries: ['series1', 'series2']\n\t});",
             "is_constructor": 1,
             "beta": 1,
             "params": [
@@ -421,9 +421,9 @@
             ],
             "chainable": 1
         },
-        "oui.checkbox": {
-            "name": "oui.checkbox",
-            "shortname": "oui.checkbox",
+        "$ui.checkbox": {
+            "name": "$ui.checkbox",
+            "shortname": "$ui.checkbox",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -432,7 +432,7 @@
             "module": "open-ui",
             "file": "src/checkbox/checkbox.js",
             "line": 3,
-            "description": "Create a new checkbox control\n\nHTML:\n\n\t<input type='checkbox' id='checkbox' />\n\nJavascript:\n\t\n\toui.checkbox({\n\t\telement: document.getElementById('checkbox'),\n\t\tlabel: 'Checked',\n\t\tvalue: true\n\t});",
+            "description": "Create a new checkbox control\n\nHTML:\n\n\t<input type='checkbox' id='checkbox' />\n\nJavascript:\n\t\n\t$ui.checkbox({\n\t\telement: document.getElementById('checkbox'),\n\t\tlabel: 'Checked',\n\t\tvalue: true\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -454,10 +454,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-checkbox-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-checkbox-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-checkbox-RandInt"
+                            "optdefault": "ui-checkbox-RandInt"
                         },
                         {
                             "name": "label",
@@ -495,9 +495,9 @@
             },
             "chainable": 1
         },
-        "oui.colorpicker": {
-            "name": "oui.colorpicker",
-            "shortname": "oui.colorpicker",
+        "$ui.colorpicker": {
+            "name": "$ui.colorpicker",
+            "shortname": "$ui.colorpicker",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -506,7 +506,7 @@
             "module": "open-ui",
             "file": "src/colorpicker/colorpicker.js",
             "line": 2,
-            "description": "Create a new colorpicker control\n\nHTML\n\n\t<div id='colorpicker'></div>\n\nJavascript:\n\n\toui.colorpicker({\n\t\telement: document.getElementById('colorpicker'),\n\t\tvalue:'#FF0000',\n\t\tlisteners:{\n\t\t\tchange:function(oldCol,newCol){\n\t\t\t\t// do something\n\t\t\t}\n\t\t}\n\t});",
+            "description": "Create a new colorpicker control\n\nHTML\n\n\t<div id='colorpicker'></div>\n\nJavascript:\n\n\t$ui.colorpicker({\n\t\telement: document.getElementById('colorpicker'),\n\t\tvalue:'#FF0000',\n\t\tlisteners:{\n\t\t\tchange:function(oldCol,newCol){\n\t\t\t\t// do something\n\t\t\t}\n\t\t}\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -541,9 +541,9 @@
             },
             "chainable": 1
         },
-        "oui": {
-            "name": "oui",
-            "shortname": "oui",
+        "$ui": {
+            "name": "$ui",
+            "shortname": "$ui",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -555,9 +555,9 @@
             "line": 47,
             "static": 1
         },
-        "oui.datepicker": {
-            "name": "oui.datepicker",
-            "shortname": "oui.datepicker",
+        "$ui.datepicker": {
+            "name": "$ui.datepicker",
+            "shortname": "$ui.datepicker",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -567,7 +567,7 @@
             "namespace": "",
             "file": "src/datepicker/datepicker.js",
             "line": 2,
-            "description": "Create a new datepicker control\n\nHTML\n\n    <div id='datepicker'></div>\n\nJavascript\n\n\toui.datepicker({\n\t\telement: document.getElementById('datepicker')\n\t});",
+            "description": "Create a new datepicker control\n\nHTML\n\n    <div id='datepicker'></div>\n\nJavascript\n\n\t$ui.datepicker({\n\t\telement: document.getElementById('datepicker')\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -589,10 +589,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-select-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-select-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-select-RandInt"
+                            "optdefault": "ui-select-RandInt"
                         },
                         {
                             "name": "tabindex",
@@ -617,9 +617,9 @@
             },
             "chainable": 1
         },
-        "oui.drag": {
-            "name": "oui.drag",
-            "shortname": "oui.drag",
+        "$ui.drag": {
+            "name": "$ui.drag",
+            "shortname": "$ui.drag",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -629,7 +629,7 @@
             "namespace": "",
             "file": "src/drag/drag.js",
             "line": 2,
-            "description": "Utility class for creating draggable elements\n\nHTML:\n\n\t<div id='draggable'></div>\n\nJavascript:\n\t\n\toui.drag({\n\t\telement: document.getElementById('draggable'),\n\t\tmove: true,\n\t\tcontainer:{\n\t\t\telement:document.body,\n\t\t\tstyle:'restrict'\n\t\t},\n\t\tlisteners: {\n\t\t\tdragstart: function() {\n\t\t\t\t// started dragging\n\t\t\t},\n\t\t\tdragging: function() {\n\t\t\t\t// dragging\n\t\t\t},\n\t\t\tdragend: function() {\n\t\t\t\t// stopped dragging\n\t\t\t}\n\t\t}\n\t});",
+            "description": "Utility class for creating draggable elements\n\nHTML:\n\n\t<div id='draggable'></div>\n\nJavascript:\n\t\n\t$ui.drag({\n\t\telement: document.getElementById('draggable'),\n\t\tmove: true,\n\t\tcontainer:{\n\t\t\telement:document.body,\n\t\t\tstyle:'restrict'\n\t\t},\n\t\tlisteners: {\n\t\t\tdragstart: function() {\n\t\t\t\t// started dragging\n\t\t\t},\n\t\t\tdragging: function() {\n\t\t\t\t// dragging\n\t\t\t},\n\t\t\tdragend: function() {\n\t\t\t\t// stopped dragging\n\t\t\t}\n\t\t}\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -686,9 +686,9 @@
             },
             "chainable": 1
         },
-        "oui.fileinput": {
-            "name": "oui.fileinput",
-            "shortname": "oui.fileinput",
+        "$ui.fileinput": {
+            "name": "$ui.fileinput",
+            "shortname": "$ui.fileinput",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -698,7 +698,7 @@
             "namespace": "",
             "file": "src/fileinput/fileinput.js",
             "line": 3,
-            "description": "Create a new fileinput control\n\nHTML:\n\n\t<input type='file' id='fileinput' />\n\nJavascript:\n\t\n\toui.checkbox({\n\t\telement: document.getElementById('fileinput')\n\t});",
+            "description": "Create a new fileinput control\n\nHTML:\n\n\t<input type='file' id='fileinput' />\n\nJavascript:\n\t\n\t$ui.checkbox({\n\t\telement: document.getElementById('fileinput')\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -720,10 +720,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-fileinput-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-fileinput-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-fileinput-RandInt"
+                            "optdefault": "ui-fileinput-RandInt"
                         },
                         {
                             "name": "label",
@@ -761,9 +761,9 @@
             },
             "chainable": 1
         },
-        "oui.modal": {
-            "name": "oui.modal",
-            "shortname": "oui.modal",
+        "$ui.modal": {
+            "name": "$ui.modal",
+            "shortname": "$ui.modal",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -773,7 +773,7 @@
             "namespace": "",
             "file": "src/modal/modal.js",
             "line": 3,
-            "description": "Create a new modal component\n\nHTML:\n\n\t<button onclick=\"showModal();\">Show Modal</button>\n\nJavascript: \n\n\tfunction showModal(){\n\t\toui.modal({\n\t\t\theader:'Modal header',\n\t\t\tcontent:'Modal content', \n\t\t\tdraggable:true\n\t\t});\n\t}",
+            "description": "Create a new modal component\n\nHTML:\n\n\t<button onclick=\"showModal();\">Show Modal</button>\n\nJavascript: \n\n\tfunction showModal(){\n\t\t$ui.modal({\n\t\t\theader:'Modal header',\n\t\t\tcontent:'Modal content', \n\t\t\tdraggable:true\n\t\t});\n\t}",
             "is_constructor": 1,
             "params": [
                 {
@@ -813,9 +813,9 @@
             },
             "chainable": 1
         },
-        "oui.notify": {
-            "name": "oui.notify",
-            "shortname": "oui.notify",
+        "$ui.notify": {
+            "name": "$ui.notify",
+            "shortname": "$ui.notify",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -825,12 +825,12 @@
             "namespace": "",
             "file": "src/notify/notify.js",
             "line": 2,
-            "description": "Class used for notification management\n\nHTML\n\n    <button onclick=\"showNotification();\">Show Notification</button>\n\nJavascript:\n\n\tfunction showNotification(){\n\t\toui.notify.push({\n\t\t\tcontent:'Default message'\n\t\t});\n\t}",
+            "description": "Class used for notification management\n\nHTML\n\n    <button onclick=\"showNotification();\">Show Notification</button>\n\nJavascript:\n\n\tfunction showNotification(){\n\t\t$ui.notify.push({\n\t\t\tcontent:'Default message'\n\t\t});\n\t}",
             "static": 1
         },
-        "oui.rating": {
-            "name": "oui.rating",
-            "shortname": "oui.rating",
+        "$ui.rating": {
+            "name": "$ui.rating",
+            "shortname": "$ui.rating",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -840,7 +840,7 @@
             "namespace": "",
             "file": "src/rating/rating.js",
             "line": 2,
-            "description": "Create a new rating control\n\nHTML:\n\n\t<input id='rating' />\n\t\nJavascript:\n\n\toui.rating({\n\t\telement: document.getElementById('rating'),\n\t\tvalue: 3\n\t});",
+            "description": "Create a new rating control\n\nHTML:\n\n\t<input id='rating' />\n\t\nJavascript:\n\n\t$ui.rating({\n\t\telement: document.getElementById('rating'),\n\t\tvalue: 3\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -869,10 +869,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-toggle-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-toggle-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-toggle-RandInt"
+                            "optdefault": "ui-toggle-RandInt"
                         },
                         {
                             "name": "tabindex",
@@ -903,9 +903,9 @@
             },
             "chainable": 1
         },
-        "oui.scroll": {
-            "name": "oui.scroll",
-            "shortname": "oui.scroll",
+        "$ui.scroll": {
+            "name": "$ui.scroll",
+            "shortname": "$ui.scroll",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -915,7 +915,7 @@
             "namespace": "",
             "file": "src/scroll/scroll.js",
             "line": 2,
-            "description": "Attach custom scrollbars to an element\n\nHTML:\n\n\t<div id='scroll'>\n\t\t...long content....\n    </div>\n\t\nJavascript:\n\n\toui.scroll({\n\t\telement: document.getElementById('scroll'),\n\t\taxis: 'xy'\n\t});",
+            "description": "Attach custom scrollbars to an element\n\nHTML:\n\n\t<div id='scroll'>\n\t\t...long content....\n    </div>\n\t\nJavascript:\n\n\t$ui.scroll({\n\t\telement: document.getElementById('scroll'),\n\t\taxis: 'xy'\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -937,7 +937,7 @@
                         },
                         {
                             "name": "axis",
-                            "description": "Object consisting of `x` and `y` {Boolean} values denoting scrollable axis, DOM element to attach drag handlers to. Defaults to element attribute `oui-scroll` or `y`",
+                            "description": "Object consisting of `x` and `y` {Boolean} values denoting scrollable axis, DOM element to attach drag handlers to. Defaults to element attribute `ui-scroll` or `y`",
                             "type": "Object",
                             "optional": true,
                             "optdefault": "y"
@@ -951,9 +951,9 @@
             },
             "chainable": 1
         },
-        "oui.select": {
-            "name": "oui.select",
-            "shortname": "oui.select",
+        "$ui.select": {
+            "name": "$ui.select",
+            "shortname": "$ui.select",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -963,7 +963,7 @@
             "namespace": "",
             "file": "src/select/select.js",
             "line": 2,
-            "description": "Create a new select control. Controls can be converted from existing `select` or `ul` elements, or generated by passing an `options` parameter\n\nHTML\n\n\t<!-- Generate from an existing element -->\n\t\n    <select id='selectFromEl'>\n        <option value='val1'>\n            option 1\n        </option>\n        <option value='val2'>\n            option 2\n        </option>\n        <option value='val3'>\n            option 3\n        </option>\n        <option value='val4'>\n            option 4\n        </option>\n        <option value='val5'>\n            option 5\n        </option>\n    </select>\n\t\n\t<!-- Generate from passing an options object -->\n\t\n\t<div id='selectFromObject'></div>\n\nJavascript\n\t\n\t// Single select with no dropdown and pre-selected value\n\t\n\toui.select({\n\t\telement: document.getElementById('selectFromEl'),\n\t\tvalue: 'val3'\n\t});\t\n\t\n\t// Multiple select with dropdown\n\t\n\toui.select({\n\t\telement: document.getElementById('selectFromObject'),\n\t\toptions:[\n\t\t\t{\n\t\t\t\tvalue:'val1',\n\t\t\t\tname:'value 1'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val2',\n\t\t\t\tname:'value 2'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val3',\n\t\t\t\tname:'value 3'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val4',\n\t\t\t\tname:'value 4'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val5',\n\t\t\t\tname:'value 5'\n\t\t\t},\n\t\t]\n\t});",
+            "description": "Create a new select control. Controls can be converted from existing `select` or `ul` elements, or generated by passing an `options` parameter\n\nHTML\n\n\t<!-- Generate from an existing element -->\n\t\n    <select id='selectFromEl'>\n        <option value='val1'>\n            option 1\n        </option>\n        <option value='val2'>\n            option 2\n        </option>\n        <option value='val3'>\n            option 3\n        </option>\n        <option value='val4'>\n            option 4\n        </option>\n        <option value='val5'>\n            option 5\n        </option>\n    </select>\n\t\n\t<!-- Generate from passing an options object -->\n\t\n\t<div id='selectFromObject'></div>\n\nJavascript\n\t\n\t// Single select with no dropdown and pre-selected value\n\t\n\t$ui.select({\n\t\telement: document.getElementById('selectFromEl'),\n\t\tvalue: 'val3'\n\t});\t\n\t\n\t// Multiple select with dropdown\n\t\n\t$ui.select({\n\t\telement: document.getElementById('selectFromObject'),\n\t\toptions:[\n\t\t\t{\n\t\t\t\tvalue:'val1',\n\t\t\t\tname:'value 1'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val2',\n\t\t\t\tname:'value 2'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val3',\n\t\t\t\tname:'value 3'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val4',\n\t\t\t\tname:'value 4'\n\t\t\t},\n\t\t\t{\n\t\t\t\tvalue:'val5',\n\t\t\t\tname:'value 5'\n\t\t\t},\n\t\t]\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -1007,10 +1007,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-select-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-select-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-select-RandInt"
+                            "optdefault": "ui-select-RandInt"
                         },
                         {
                             "name": "placeholder",
@@ -1056,9 +1056,9 @@
             },
             "chainable": 1
         },
-        "oui.slider": {
-            "name": "oui.slider",
-            "shortname": "oui.slider",
+        "$ui.slider": {
+            "name": "$ui.slider",
+            "shortname": "$ui.slider",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -1068,7 +1068,7 @@
             "namespace": "",
             "file": "src/slider/slider.js",
             "line": 2,
-            "description": "Create a new slider control\n\nHTML:\n\n\t<input id='slider' />\n\t\nJavascript:\n\n\toui.slider({\n\t\telement: document.getElementById('slider'),\n\t\tunits: 'mm',\n\t\tmin: 30,\n\t\tmax: 980, \n\t\tvalue: 133\n\t});",
+            "description": "Create a new slider control\n\nHTML:\n\n\t<input id='slider' />\n\t\nJavascript:\n\n\t$ui.slider({\n\t\telement: document.getElementById('slider'),\n\t\tunits: 'mm',\n\t\tmin: 30,\n\t\tmax: 980, \n\t\tvalue: 133\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -1118,10 +1118,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-slider-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-slider-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-slider-RandInt"
+                            "optdefault": "ui-slider-RandInt"
                         },
                         {
                             "name": "tabindex",
@@ -1182,9 +1182,9 @@
             },
             "chainable": 1
         },
-        "oui.switch": {
-            "name": "oui.switch",
-            "shortname": "oui.switch",
+        "$ui.switch": {
+            "name": "$ui.switch",
+            "shortname": "$ui.switch",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -1194,7 +1194,7 @@
             "namespace": "",
             "file": "src/switch/switch.js",
             "line": 3,
-            "description": "Create a new switch control\n\nHTML: \n\n\t<input type='switch' id='switch' />\n\nJavascript:\n\t\n\toui.switch({\n\t\telement: document.getElementById('switch')\n\t});",
+            "description": "Create a new switch control\n\nHTML: \n\n\t<input type='switch' id='switch' />\n\nJavascript:\n\t\n\t$ui.switch({\n\t\telement: document.getElementById('switch')\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -1215,10 +1215,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-switch-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-switch-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-switch-RandInt"
+                            "optdefault": "ui-switch-RandInt"
                         },
                         {
                             "name": "tabindex",
@@ -1249,9 +1249,9 @@
             },
             "chainable": 1
         },
-        "oui.toggle": {
-            "name": "oui.toggle",
-            "shortname": "oui.toggle",
+        "$ui.toggle": {
+            "name": "$ui.toggle",
+            "shortname": "$ui.toggle",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -1261,7 +1261,7 @@
             "namespace": "",
             "file": "src/toggle/toggle.js",
             "line": 2,
-            "description": "Create a new toggle control\n\nHTML:\n\n\t<input id='toggle' />\n\nJavascript:\n\n\toui.toggle({\n\t\telement: document.getElementById('toggle'),\n\t\toptions: [{\n\t\t\tvalue: true,\n\t\t\tname: 'yes'\n\t\t}, {\n\t\t\tvalue: false,\n\t\t\tname: 'no'\n\t\t}, {\n\t\t\tvalue: 'other',\n\t\t\tname: 'other'\n\t\t}],\n\t\tvalue: false\n\t});",
+            "description": "Create a new toggle control\n\nHTML:\n\n\t<input id='toggle' />\n\nJavascript:\n\n\t$ui.toggle({\n\t\telement: document.getElementById('toggle'),\n\t\toptions: [{\n\t\t\tvalue: true,\n\t\t\tname: 'yes'\n\t\t}, {\n\t\t\tvalue: false,\n\t\t\tname: 'no'\n\t\t}, {\n\t\t\tvalue: 'other',\n\t\t\tname: 'other'\n\t\t}],\n\t\tvalue: false\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -1300,10 +1300,10 @@
                         },
                         {
                             "name": "name",
-                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-toggle-RandInt`",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `ui-toggle-RandInt`",
                             "type": "String",
                             "optional": true,
-                            "optdefault": "oui-toggle-RandInt"
+                            "optdefault": "ui-toggle-RandInt"
                         },
                         {
                             "name": "tabindex",
@@ -1334,9 +1334,9 @@
             },
             "chainable": 1
         },
-        "oui.tooltip": {
-            "name": "oui.tooltip",
-            "shortname": "oui.tooltip",
+        "$ui.tooltip": {
+            "name": "$ui.tooltip",
+            "shortname": "$ui.tooltip",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -1346,7 +1346,7 @@
             "namespace": "",
             "file": "src/tooltip/tooltip.js",
             "line": 2,
-            "description": "Class used for creating tooltips\n\n<div class='info-well'>\nThe value passed to the `position` attribute is added to the tooltip as a CSS class of the format `oui-*position*`. Custom positions containing the keywords `top`, `left`, `bottom` and/or `right` can be applied to assume the relevant attributes, i.e. `bottomright`\n</div>\n\nHTML\n\n    <span id='tooltip'>Show Tooltip</span>\n\t\nJavascript:\n\n\toui.tooltip({\n\t\telement:document.getElementById('tooltip'),\n\t\tcontent:'Tooltip content',\n\t\tposition:'left'\n\t});",
+            "description": "Class used for creating tooltips\n\n<div class='info-well'>\nThe value passed to the `position` attribute is added to the tooltip as a CSS class of the format `ui-*position*`. Custom positions containing the keywords `top`, `left`, `bottom` and/or `right` can be applied to assume the relevant attributes, i.e. `bottomright`\n</div>\n\nHTML\n\n    <span id='tooltip'>Show Tooltip</span>\n\t\nJavascript:\n\n\t$ui.tooltip({\n\t\telement:document.getElementById('tooltip'),\n\t\tcontent:'Tooltip content',\n\t\tposition:'left'\n\t});",
             "is_constructor": 1,
             "params": [
                 {
@@ -1388,9 +1388,9 @@
             },
             "chainable": 1
         },
-        "oui.color": {
-            "name": "oui.color",
-            "shortname": "oui.color",
+        "$ui.color": {
+            "name": "$ui.color",
+            "shortname": "$ui.color",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -1402,9 +1402,9 @@
             "line": 2,
             "description": "Utility class for converting color types and generating color schemes. \n\n<div class='info-well'>\nFor color conversion methods, where the expected parameter is an array e.g `[0,0,0]`, the method can also be passed a comma separated value string, e.g. `'0,0,0'`, from which an array will automatically be extrapolated.\n</div>"
         },
-        "oui.svg": {
-            "name": "oui.svg",
-            "shortname": "oui.svg",
+        "$ui.svg": {
+            "name": "$ui.svg",
+            "shortname": "$ui.svg",
             "classitems": [],
             "plugins": [],
             "extensions": [],
@@ -1436,7 +1436,7 @@
                 "description": "Returns current item index",
                 "type": "Number"
             },
-            "class": "oui.carousel"
+            "class": "$ui.carousel"
         },
         {
             "file": "src/checkbox/checkbox.js",
@@ -1456,7 +1456,7 @@
                 "description": "Returns current value",
                 "type": "String"
             },
-            "class": "oui.checkbox"
+            "class": "$ui.checkbox"
         },
         {
             "file": "src/checkbox/checkbox.js",
@@ -1476,7 +1476,7 @@
                 "description": "Returns disabled state",
                 "type": "Boolean"
             },
-            "class": "oui.checkbox"
+            "class": "$ui.checkbox"
         },
         {
             "file": "src/colorpicker/colorpicker.js",
@@ -1496,7 +1496,7 @@
                     "type": "String"
                 }
             ],
-            "class": "oui.colorpicker"
+            "class": "$ui.colorpicker"
         },
         {
             "file": "src/colorpicker/colorpicker.js",
@@ -1516,7 +1516,7 @@
                 "description": "Returns current value",
                 "type": "String"
             },
-            "class": "oui.colorpicker"
+            "class": "$ui.colorpicker"
         },
         {
             "file": "src/core/core.js",
@@ -1535,7 +1535,7 @@
                 "description": "Returns `false`",
                 "type": "Boolean"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1565,7 +1565,7 @@
                 "description": "`true` if class added, `false` if removed.",
                 "type": "Boolean"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1590,7 +1590,7 @@
                 "description": "`true` if class found, `false` if not.",
                 "type": "Boolean"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1611,7 +1611,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1636,7 +1636,7 @@
                 "description": "Returns style property value",
                 "type": "String"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1662,7 +1662,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1688,7 +1688,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1719,7 +1719,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1750,7 +1750,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1776,7 +1776,7 @@
                 "description": "Returns object consisting of `top`, `right`, `bottom`, `left`, `height` and `width` values as well as sub `offset` and `parent` objects",
                 "type": "Object"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1802,7 +1802,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1827,7 +1827,7 @@
                 "description": "Returns pseudo-random number between §min§ and §max§",
                 "type": "Number"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1847,7 +1847,7 @@
                 "description": "Returns unit type",
                 "type": "String"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1906,7 +1906,7 @@
                 "description": "Returns matching DOM elements",
                 "type": "Array"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1932,7 +1932,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1953,7 +1953,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1973,7 +1973,7 @@
                 "description": "Returns index of passed element",
                 "type": "Number"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -1999,7 +1999,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2019,7 +2019,7 @@
                 "description": "Returns array of passed variable",
                 "type": "Array"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2051,7 +2051,7 @@
                 "description": "Returns resulting `array`",
                 "type": "Array"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2076,7 +2076,7 @@
                 "description": "Returns noramlized percentage value between 1 and 0",
                 "type": "Float"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2108,7 +2108,7 @@
                 "type": "Object"
             },
             "chainable": 1,
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2128,7 +2128,7 @@
                 "description": "Returns object with the additional attributes `posX`, `posY` are normalized absolutes, `offsetX`, offsetY` are normalized parent offsets, `viewportX`, `viewportY` are normalized viewport offsets",
                 "type": "Object"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2148,7 +2148,7 @@
                 "description": "Returns object comprising of normalized `x` and `y` offsets",
                 "type": "Object"
             },
-            "class": "oui",
+            "class": "$ui",
             "module": "open-ui"
         },
         {
@@ -2169,7 +2169,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.drag",
+            "class": "$ui.drag",
             "module": "open-ui"
         },
         {
@@ -2190,7 +2190,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.drag",
+            "class": "$ui.drag",
             "module": "open-ui"
         },
         {
@@ -2211,7 +2211,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.drag",
+            "class": "$ui.drag",
             "module": "open-ui"
         },
         {
@@ -2232,7 +2232,7 @@
                 "description": "Returns disabled state",
                 "type": "Boolean"
             },
-            "class": "oui.fileinput",
+            "class": "$ui.fileinput",
             "module": "open-ui"
         },
         {
@@ -2241,7 +2241,7 @@
             "description": "Closes modal and removes from DOM",
             "itemtype": "method",
             "name": "close",
-            "class": "oui.modal",
+            "class": "$ui.modal",
             "module": "open-ui"
         },
         {
@@ -2276,7 +2276,7 @@
                 "description": "Object  Returns notification element (item `0`)",
                 "type": "Object"
             },
-            "class": "oui.notify",
+            "class": "$ui.notify",
             "module": "open-ui"
         },
         {
@@ -2292,7 +2292,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.notify",
+            "class": "$ui.notify",
             "module": "open-ui"
         },
         {
@@ -2313,7 +2313,7 @@
                 "description": "Returns current value",
                 "type": "String"
             },
-            "class": "oui.rating",
+            "class": "$ui.rating",
             "module": "open-ui"
         },
         {
@@ -2334,7 +2334,7 @@
                 "description": "Returns disabled state",
                 "type": "Boolean"
             },
-            "class": "oui.rating",
+            "class": "$ui.rating",
             "module": "open-ui"
         },
         {
@@ -2355,7 +2355,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.slider",
+            "class": "$ui.slider",
             "module": "open-ui"
         },
         {
@@ -2376,7 +2376,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.slider",
+            "class": "$ui.slider",
             "module": "open-ui"
         },
         {
@@ -2397,7 +2397,7 @@
                     "type": "Object"
                 }
             ],
-            "class": "oui.slider",
+            "class": "$ui.slider",
             "module": "open-ui"
         },
         {
@@ -2418,7 +2418,7 @@
                 "description": "Returns current value",
                 "type": "Number"
             },
-            "class": "oui.slider",
+            "class": "$ui.slider",
             "module": "open-ui"
         },
         {
@@ -2439,7 +2439,7 @@
                 "description": "Returns disabled state",
                 "type": "Boolean"
             },
-            "class": "oui.slider",
+            "class": "$ui.slider",
             "module": "open-ui"
         },
         {
@@ -2460,7 +2460,7 @@
                 "description": "Returns current value",
                 "type": "String"
             },
-            "class": "oui.switch",
+            "class": "$ui.switch",
             "module": "open-ui"
         },
         {
@@ -2481,7 +2481,7 @@
                 "description": "Returns disabled state",
                 "type": "Boolean"
             },
-            "class": "oui.switch",
+            "class": "$ui.switch",
             "module": "open-ui"
         },
         {
@@ -2502,7 +2502,7 @@
                 "description": "Returns current value",
                 "type": "String"
             },
-            "class": "oui.toggle",
+            "class": "$ui.toggle",
             "module": "open-ui"
         },
         {
@@ -2523,13 +2523,13 @@
                 "description": "Returns disabled state",
                 "type": "Boolean"
             },
-            "class": "oui.toggle",
+            "class": "$ui.toggle",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 15,
-            "description": "Convert a HEX color string to an RGB\n\n    var color=oui.color.hex2rgb('#FF0000');\n    // color = [255,0,0]",
+            "description": "Convert a HEX color string to an RGB\n\n    var color=$ui.color.hex2rgb('#FF0000');\n    // color = [255,0,0]",
             "itemtype": "method",
             "name": "hex2rgb",
             "params": [
@@ -2543,13 +2543,13 @@
                 "description": "Returns array of red, blue and green components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 40,
-            "description": "Convert an RGB array to a HEX color string\n\n    var color=oui.color.rgb2hex([255,0,0]);\n    // color = '#FF0000'",
+            "description": "Convert an RGB array to a HEX color string\n\n    var color=$ui.color.rgb2hex([255,0,0]);\n    // color = '#FF0000'",
             "itemtype": "method",
             "name": "rgb2hex",
             "params": [
@@ -2563,13 +2563,13 @@
                 "description": "Returns HEX color string",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 62,
-            "description": "Convert an RGB array to a HSV array\n\n    var color=oui.color.rgb2hsv([255,0,0]);\n    // color = [0,100,100]",
+            "description": "Convert an RGB array to a HSV array\n\n    var color=$ui.color.rgb2hsv([255,0,0]);\n    // color = [0,100,100]",
             "itemtype": "method",
             "name": "rgb2hsv",
             "params": [
@@ -2583,13 +2583,13 @@
                 "description": "Returns array of hue, saturation and value components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 106,
-            "description": "Convert an HSV array to a RGB array\n\n    var color=oui.color.hsv2rgb([0,100,100]);\n    // color = [255,0,0]",
+            "description": "Convert an HSV array to a RGB array\n\n    var color=$ui.color.hsv2rgb([0,100,100]);\n    // color = [255,0,0]",
             "itemtype": "method",
             "name": "hsv2rgb",
             "params": [
@@ -2603,13 +2603,13 @@
                 "description": "Returns array of red, blue and green components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 175,
-            "description": "Convert an RGB array to a HSL array\n\n    var color=oui.color.rgb2hsl([255,0,0]);\n    // color = [0,100,50]",
+            "description": "Convert an RGB array to a HSL array\n\n    var color=$ui.color.rgb2hsl([255,0,0]);\n    // color = [0,100,50]",
             "itemtype": "method",
             "name": "rgb2hsl",
             "params": [
@@ -2623,13 +2623,13 @@
                 "description": "Returns array of hue, saturation and lightness components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 216,
-            "description": "Convert an HSL array to a RGB array\n\n    var color=oui.color.hsl2rgb([0,100,50]);\n    // color = [255,0,0]",
+            "description": "Convert an HSL array to a RGB array\n\n    var color=$ui.color.hsl2rgb([0,100,50]);\n    // color = [255,0,0]",
             "itemtype": "method",
             "name": "hsl2rgb",
             "params": [
@@ -2643,13 +2643,13 @@
                 "description": "Returns array of red, green and blue components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 264,
-            "description": "Convert a HEX color string to a HSL array\n\n    var color=oui.color.hex2hsl('#FF0000');\n    // color = [0,100,50]",
+            "description": "Convert a HEX color string to a HSL array\n\n    var color=$ui.color.hex2hsl('#FF0000');\n    // color = [0,100,50]",
             "itemtype": "method",
             "name": "hex2hsl",
             "params": [
@@ -2663,13 +2663,13 @@
                 "description": "Returns array of hue, saturation and lightness components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 277,
-            "description": "Convert an HSL array to a HEX color string\n\n    var color=oui.color.hsl2hex([0,100,50]);\n    // color = '#FF0000'",
+            "description": "Convert an HSL array to a HEX color string\n\n    var color=$ui.color.hsl2hex([0,100,50]);\n    // color = '#FF0000'",
             "itemtype": "method",
             "name": "hsl2hex",
             "params": [
@@ -2683,13 +2683,13 @@
                 "description": "Returns HEX color string",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 291,
-            "description": "Convert an HSV array to HSL array\n\n    var color=oui.color.hsv2hsl([0,100,100]);\n    // color = [0,100,50]",
+            "description": "Convert an HSV array to HSL array\n\n    var color=$ui.color.hsv2hsl([0,100,100]);\n    // color = [0,100,50]",
             "itemtype": "method",
             "name": "hsv2hsl",
             "params": [
@@ -2703,13 +2703,13 @@
                 "description": "Returns array of hue, saturation and lightness components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 305,
-            "description": "Convert an HSL array to HSV array\n\n    var color=oui.color.hsl2hsv([0,100,50]);\n    // color = [0,100,100]",
+            "description": "Convert an HSL array to HSV array\n\n    var color=$ui.color.hsl2hsv([0,100,50]);\n    // color = [0,100,100]",
             "itemtype": "method",
             "name": "hsl2hsv",
             "params": [
@@ -2723,13 +2723,13 @@
                 "description": "Returns array of hue, saturation and value components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 319,
-            "description": "Convert a HEX color string to a HSV array\n\n    var color=oui.color.hex2hsv('#FF0000');\n    // color = [0,100,100]",
+            "description": "Convert a HEX color string to a HSV array\n\n    var color=$ui.color.hex2hsv('#FF0000');\n    // color = [0,100,100]",
             "itemtype": "method",
             "name": "hex2hsv",
             "params": [
@@ -2743,13 +2743,13 @@
                 "description": "Returns array of hue, saturation and value components",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 332,
-            "description": "Convert an HSV array to a HEX color string\n\n    var color=oui.color.hsv2hex([0,100,100]);\n    // color = '#FF0000'",
+            "description": "Convert an HSV array to a HEX color string\n\n    var color=$ui.color.hsv2hex([0,100,100]);\n    // color = '#FF0000'",
             "itemtype": "method",
             "name": "hsv2hex",
             "params": [
@@ -2763,13 +2763,13 @@
                 "description": "Returns HEX color string",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 345,
-            "description": "Generate a series of color biased (high saturation/lightness) randomized HEX color strings\n\n    var palette=oui.color.random(5);\n    // palette = [\"#efa6a8\", \"#91abb\", \"#ebac2c\", \"#2b561\", \"#7b4b51\"]",
+            "description": "Generate a series of color biased (high saturation/lightness) randomized HEX color strings\n\n    var palette=$ui.color.random(5);\n    // palette = [\"#efa6a8\", \"#91abb\", \"#ebac2c\", \"#2b561\", \"#7b4b51\"]",
             "itemtype": "method",
             "name": "random",
             "params": [
@@ -2795,13 +2795,13 @@
                 "description": "Returns Array of HEX color strings",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 380,
-            "description": "Generate (palette of) complementary color(s) from passed HEX color string\n\t\t\n    var palette=oui.color.complement('#FF0000', 'split');\n    // palette = [\"#80ff00\", \"#00ffff\", \"#8000ff\"]\n\t\t\t\n    var palette=oui.color.complement('#FF0000', 'double');\n    // palette = [\"#80ff00\", \"#00ff40\", \"#00ffff\", \"#0040ff\", \"#8000ff\"]",
+            "description": "Generate (palette of) complementary color(s) from passed HEX color string\n\t\t\n    var palette=$ui.color.complement('#FF0000', 'split');\n    // palette = [\"#80ff00\", \"#00ffff\", \"#8000ff\"]\n\t\t\t\n    var palette=$ui.color.complement('#FF0000', 'double');\n    // palette = [\"#80ff00\", \"#00ff40\", \"#00ffff\", \"#0040ff\", \"#8000ff\"]",
             "itemtype": "method",
             "name": "complement",
             "params": [
@@ -2821,13 +2821,13 @@
                 "description": "Returns array of HEX color strings",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 417,
-            "description": "Generate triadic color palette\n\t\t\n    var palette=oui.color.triadic('#FF0000');\n    // palette = [\"#ff0000\", \"#00ff00\", \"#0000ff\"]",
+            "description": "Generate triadic color palette\n\t\t\n    var palette=$ui.color.triadic('#FF0000');\n    // palette = [\"#ff0000\", \"#00ff00\", \"#0000ff\"]",
             "itemtype": "method",
             "name": "triadic",
             "params": [
@@ -2841,13 +2841,13 @@
                 "description": "Returns array of HEX color strings",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 431,
-            "description": "Generate tetradic color palette\n\t\t\n    var palette=oui.color.triadic('#FF0000');\n    // palette = [\"#ff0000\", \"#80ff00\", \"#00ffff\", \"#8000ff\"]",
+            "description": "Generate tetradic color palette\n\t\t\n    var palette=$ui.color.triadic('#FF0000');\n    // palette = [\"#ff0000\", \"#80ff00\", \"#00ffff\", \"#8000ff\"]",
             "itemtype": "method",
             "name": "tetradic",
             "params": [
@@ -2861,13 +2861,13 @@
                 "description": "Returns array of HEX color strings",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 447,
-            "description": "Generate pentadic color palette\n\t\t\n    var palette=oui.color.triadic('#FF0000');\n    // palette = [\"#ff0000\", \"#ccff00\", \"#00ff66\", \"#0066ff\", \"#cc00ff\"]",
+            "description": "Generate pentadic color palette\n\t\t\n    var palette=$ui.color.triadic('#FF0000');\n    // palette = [\"#ff0000\", \"#ccff00\", \"#00ff66\", \"#0066ff\", \"#cc00ff\"]",
             "itemtype": "method",
             "name": "pentadic",
             "params": [
@@ -2881,13 +2881,13 @@
                 "description": "Returns array of HEX color strings",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 472,
-            "description": "Generate a color from a percentage point between two colors\n\t\t\n    var color=oui.color.percentage(0.5);\n    // color = \"#f2e600\";",
+            "description": "Generate a color from a percentage point between two colors\n\t\t\n    var color=$ui.color.percentage(0.5);\n    // color = \"#f2e600\";",
             "itemtype": "method",
             "name": "percentage",
             "params": [
@@ -2915,13 +2915,13 @@
                 "description": "Returns resulting HEX color",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 491,
-            "description": "Scale either hue, saturation or value of a color by a percentage amount\n\t\t\n    var scale=oui.scale.percentage(0.5);\n    // color = \"#f2e600\";",
+            "description": "Scale either hue, saturation or value of a color by a percentage amount\n\t\t\n    var scale=$ui.scale.percentage(0.5);\n    // color = \"#f2e600\";",
             "itemtype": "method",
             "name": "scale",
             "params": [
@@ -2953,13 +2953,13 @@
                 "description": "Returns resulting HEX color",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 513,
-            "description": "Lighten a color by a percentage amount\n\t\t\n    var color=oui.color.lighten('#840000', 70);\n    // color = \"#da0000\";",
+            "description": "Lighten a color by a percentage amount\n\t\t\n    var color=$ui.color.lighten('#840000', 70);\n    // color = \"#da0000\";",
             "itemtype": "method",
             "name": "lighten",
             "params": [
@@ -2985,13 +2985,13 @@
                 "description": "Returns resulting HEX color",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 529,
-            "description": "Darken a color by a percentage amount\n\t\t\n    var color=oui.color.darken('#840000', 70);\n    // color = \"#da0000\";",
+            "description": "Darken a color by a percentage amount\n\t\t\n    var color=$ui.color.darken('#840000', 70);\n    // color = \"#da0000\";",
             "itemtype": "method",
             "name": "darken",
             "params": [
@@ -3017,13 +3017,13 @@
                 "description": "Returns resulting HEX color",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 545,
-            "description": "Saturate a color by a percentage amount\n\t\t\n    var color=oui.color.saturate('#840000', 70);\n    // color = \"#820000\";",
+            "description": "Saturate a color by a percentage amount\n\t\t\n    var color=$ui.color.saturate('#840000', 70);\n    // color = \"#820000\";",
             "itemtype": "method",
             "name": "saturate",
             "params": [
@@ -3049,13 +3049,13 @@
                 "description": "Returns resulting HEX color",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 561,
-            "description": "Desaturate a color by a percentage amount\n\t\t\n    var color=oui.color.desaturate('#840000', 70);\n    // color = \"#820000\";",
+            "description": "Desaturate a color by a percentage amount\n\t\t\n    var color=$ui.color.desaturate('#840000', 70);\n    // color = \"#820000\";",
             "itemtype": "method",
             "name": "saturate",
             "params": [
@@ -3081,13 +3081,13 @@
                 "description": "Returns resulting HEX color",
                 "type": "String"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         },
         {
             "file": "src/utils/color.js",
             "line": 577,
-            "description": "Generate algorithmic color palette\n\t\t\n    var palette=oui.color.algorithmic ({hex:'#FF0000'});\n    // palette = [\"#ff0000\", \"#00ff00\", \"#0000ff\"] \t\t\n\t\t\n    var palette=oui.color.algorithmic ({hex:'#FF0000', count: 5});\n    // palette = [\"#ff0000\", \"#ccff00\", \"#00ff66\", \"#0066ff\", \"#cc00ff\"]  \t\t\t\n\t\t\n    var palette=oui.color.algorithmic ({hex:'#FF0000', scope: 100, count:4});\n    // palette = [\"#ff00d4\", \"#ff0047\", \"#ff4700\", \"#ffd500\"]\n\n    var palette=oui.color.algorithmic ({hex:'#FF0000', type:'saturation', scope:50});\n    // palette = [\"#ffffff\", \"#ffbfbf\", \"#ff8080\"]",
+            "description": "Generate algorithmic color palette\n\t\t\n    var palette=$ui.color.algorithmic ({hex:'#FF0000'});\n    // palette = [\"#ff0000\", \"#00ff00\", \"#0000ff\"] \t\t\n\t\t\n    var palette=$ui.color.algorithmic ({hex:'#FF0000', count: 5});\n    // palette = [\"#ff0000\", \"#ccff00\", \"#00ff66\", \"#0066ff\", \"#cc00ff\"]  \t\t\t\n\t\t\n    var palette=$ui.color.algorithmic ({hex:'#FF0000', scope: 100, count:4});\n    // palette = [\"#ff00d4\", \"#ff0047\", \"#ff4700\", \"#ffd500\"]\n\n    var palette=$ui.color.algorithmic ({hex:'#FF0000', type:'saturation', scope:50});\n    // palette = [\"#ffffff\", \"#ffbfbf\", \"#ff8080\"]",
             "itemtype": "method",
             "name": "algorithmic",
             "params": [
@@ -3136,7 +3136,7 @@
                 "description": "Returns array of HEX color strings",
                 "type": "Array"
             },
-            "class": "oui.color",
+            "class": "$ui.color",
             "module": "open-ui"
         }
     ],

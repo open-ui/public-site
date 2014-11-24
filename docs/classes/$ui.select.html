@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>oui.fileinput - Open UI</title>
+    <title>$ui.select - Open UI</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -101,12 +101,12 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>oui.fileinput Class</h1>
+                        <h1>$ui.select Class</h1>
                         <div class="box meta">
                         
                         
                                 <div class="foundat">
-                                    Defined in: <a href="../files/src_fileinput_fileinput.js.html#l3"><code>src&#x2F;fileinput&#x2F;fileinput.js:3</code></a>
+                                    Defined in: <a href="../files/src_select_select.js.html#l2"><code>src&#x2F;select&#x2F;select.js:2</code></a>
                                 </div>
                         
                                     Module: <a href="../modules/open-ui.html">open-ui</a>
@@ -115,20 +115,73 @@
                         
                         
                         <div class="box intro">
-                            <p>Create a new fileinput control</p>
-                        <p>HTML:</p>
-                        <pre class="code prettyprint"><code>&lt;input type=&#39;file&#39; id=&#39;fileinput&#39; /&gt;
-                        </code></pre><p>Javascript:</p>
-                        <pre class="code prettyprint"><code>oui.checkbox({
-                            element: document.getElementById(&#39;fileinput&#39;)
+                            <p>Create a new select control. Controls can be converted from existing <code>select</code> or <code>ul</code> elements, or generated by passing an <code>options</code> parameter</p>
+                        <p>HTML</p>
+                        <pre class="code prettyprint"><code>&lt;!-- Generate from an existing element --&gt;
+                        
+                        &lt;select id=&#39;selectFromEl&#39;&gt;
+                            &lt;option value=&#39;val1&#39;&gt;
+                                option 1
+                            &lt;/option&gt;
+                            &lt;option value=&#39;val2&#39;&gt;
+                                option 2
+                            &lt;/option&gt;
+                            &lt;option value=&#39;val3&#39;&gt;
+                                option 3
+                            &lt;/option&gt;
+                            &lt;option value=&#39;val4&#39;&gt;
+                                option 4
+                            &lt;/option&gt;
+                            &lt;option value=&#39;val5&#39;&gt;
+                                option 5
+                            &lt;/option&gt;
+                        &lt;/select&gt;
+                        
+                        &lt;!-- Generate from passing an options object --&gt;
+                        
+                        &lt;div id=&#39;selectFromObject&#39;&gt;&lt;/div&gt;
+                        </code></pre><p>Javascript</p>
+                        <pre class="code prettyprint"><code>// Single select with no dropdown and pre-selected value
+                        
+                        $ui.select({
+                            element: document.getElementById(&#39;selectFromEl&#39;),
+                            value: &#39;val3&#39;
+                        });    
+                        
+                        // Multiple select with dropdown
+                        
+                        $ui.select({
+                            element: document.getElementById(&#39;selectFromObject&#39;),
+                            options:[
+                                {
+                                    value:&#39;val1&#39;,
+                                    name:&#39;value 1&#39;
+                                },
+                                {
+                                    value:&#39;val2&#39;,
+                                    name:&#39;value 2&#39;
+                                },
+                                {
+                                    value:&#39;val3&#39;,
+                                    name:&#39;value 3&#39;
+                                },
+                                {
+                                    value:&#39;val4&#39;,
+                                    name:&#39;value 4&#39;
+                                },
+                                {
+                                    value:&#39;val5&#39;,
+                                    name:&#39;value 5&#39;
+                                },
+                            ]
                         });
                         </code></pre>
                         </div>
                         
                             <div class="constructor">
                                 <h2>Constructor</h2>
-                                <div id="method_oui.fileinput" class="method item">
-                                    <h3 class="name"><code>oui.fileinput</code></h3>
+                                <div id="method_$ui.select" class="method item">
+                                    <h3 class="name"><code>$ui.select</code></h3>
                                 
                                         <div class="args">
                                             <span class="paren">(</span><ul class="args-list inline commas">
@@ -152,7 +205,7 @@
                                     <div class="meta">
                                                 <p>
                                                 Defined in
-                                        <a href="../files/src_fileinput_fileinput.js.html#l3"><code>src&#x2F;fileinput&#x2F;fileinput.js:3</code></a>
+                                        <a href="../files/src_select_select.js.html#l2"><code>src&#x2F;select&#x2F;select.js:2</code></a>
                                         </p>
                                 
                                 
@@ -188,6 +241,42 @@
                                 
                                                             </li>
                                                             <li class="param">
+                                                                    <code class="param-name">options</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+                                
+                                                                <div class="param-description">
+                                                                    <p>Object array of control options</p>
+                                
+                                                                </div>
+                                
+                                                                    <ul class="params-list">
+                                                                        <li class="param">
+                                                                                <code class="param-name">value</code>
+                                                                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                
+                                                                            <div class="param-description">
+                                                                                Option value
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="param">
+                                                                                <code class="param-name">name</code>
+                                                                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                
+                                                                            <div class="param-description">
+                                                                                Option name (displayed label)
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="param">
+                                                                                <code class="param-name">selected</code>
+                                                                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                                
+                                                                            <div class="param-description">
+                                                                                Option selected state
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                            </li>
+                                                            <li class="param">
                                                                     <code class="param-name optional">[value=0]</code>
                                                                     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
                                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
@@ -199,23 +288,45 @@
                                 
                                                             </li>
                                                             <li class="param">
-                                                                    <code class="param-name optional">[name=oui-fileinput-RandInt]</code>
+                                                                    <code class="param-name optional">[name=ui-select-RandInt]</code>
                                                                     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
                                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>Name of underlying input control, defaults to the attribute value set on the passed element, or <code>oui-fileinput-RandInt</code></p>
+                                                                    <p>Name of underlying input control, defaults to the attribute value set on the passed element, or <code>ui-select-RandInt</code></p>
                                 
                                                                 </div>
                                 
                                                             </li>
                                                             <li class="param">
-                                                                    <code class="param-name optional">[label=label]</code>
+                                                                    <code class="param-name optional">[placeholder=string]</code>
                                                                     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
                                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>String to use for the control label, defaults to the attribute value set on the passed element, or its <code>innerHTML</code></p>
+                                                                    <p>Placeholder when no options selected, defaults to the attribute value set on the passed element, or <code>Please select...</code></p>
+                                
+                                                                </div>
+                                
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[multiple=false]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                
+                                                                <div class="param-description">
+                                                                    <p>Whether to allow multiple options to be selected, defaults to the attribute value set on the passed element, or <code>false</code></p>
+                                
+                                                                </div>
+                                
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[dropdown=false]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                
+                                                                <div class="param-description">
+                                                                    <p>Display options in dropdown list</p>
                                 
                                                                 </div>
                                 
@@ -242,17 +353,6 @@
                                                                 </div>
                                 
                                                             </li>
-                                                            <li class="param">
-                                                                    <code class="param-name optional">[listeners]</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                                
-                                                                <div class="param-description">
-                                                                    <p>Object array of event listeners to bind to underlying input(s)</p>
-                                
-                                                                </div>
-                                
-                                                            </li>
                                                         </ul>
                                                 </li>
                                             </ul>
@@ -275,98 +375,17 @@
                             <ul class="api-class-tabs">
                                 <li class="api-class-tab index"><a href="#index">Index</a></li>
                         
-                                    <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
                             </ul>
                         
                             <div>
                                 <div id="index" class="api-class-tabpanel index">
                                     <h2 class="off-left">Item Index</h2>
                         
-                                        <div class="index-section methods">
-                                            <h3>Methods</h3>
-                        
-                                            <ul class="index-list methods">
-                                                    <li class="index-item method">
-                                                        <a href="#method_disabled">disabled</a>
-                        
-                                                    </li>
-                                            </ul>
-                                        </div>
                         
                         
                         
                                 </div>
                         
-                                    <div id="methods" class="api-class-tabpanel">
-                                        <h2 class="off-left">Methods</h2>
-                        
-                                            <div id="method_disabled" class="method item">
-                                                <h3 class="name"><code>disabled</code></h3>
-                                            
-                                                    <div class="args">
-                                                        <span class="paren">(</span><ul class="args-list inline commas">
-                                                            <li class="arg">
-                                                                    <code class="optional">[boolean]</code>
-                                                            </li>
-                                                        </ul><span class="paren">)</span>
-                                                    </div>
-                                            
-                                                    <span class="returns-inline">
-                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                                                    </span>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                                <div class="meta">
-                                                            <p>
-                                                            Defined in
-                                                    <a href="../files/src_fileinput_fileinput.js.html#l65"><code>src&#x2F;fileinput&#x2F;fileinput.js:65</code></a>
-                                                    </p>
-                                            
-                                            
-                                            
-                                                </div>
-                                            
-                                                <div class="description">
-                                                    <p>Gets or sets control disabled state</p>
-                                            
-                                                </div>
-                                            
-                                                    <div class="params">
-                                                        <h4>Parameters:</h4>
-                                            
-                                                        <ul class="params-list">
-                                                            <li class="param">
-                                                                    <code class="param-name optional">[boolean]</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>Disabled state</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                            
-                                                    <div class="returns">
-                                                        <h4>Returns:</h4>
-                                            
-                                                        <div class="returns-description">
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
-                                                                <p>Returns disabled state</p>
-                                            
-                                                        </div>
-                                                    </div>
-                                            
-                                            </div>
-                                    </div>
                         
                         
                         

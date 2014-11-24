@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Create a new carousel component from an unordered list element &#x60;&lt;ul&gt;&#x60;
                         
@@ -119,12 +119,12 @@
                         
                         Javascript:
                         	
-                        	oui.carousel({
+                        	$ui.carousel({
                         		element: document.getElementById(&#x27;carousel&#x27;),
                         		delay:5000
                         	});
                         
-                        @class oui.carousel
+                        @class $ui.carousel
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to convert to component
@@ -134,8 +134,8 @@
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
-                        (function(oui) {
-                            oui.carousel = function(opt) {
+                        (function($ui) {
+                            $ui.carousel = function(opt) {
                                 var el = opt.element,
                                     options = opt.options || [],
                                     value = opt.value || 0,
@@ -148,37 +148,37 @@
                                         options.push(el.children[i].innerHTML);
                                     }
                                 }
-                                var tpl = &quot;&lt;div class=&#x27;oui-carousel&#x27; tabindex=&#x27;&quot; + inputTabIndex + &quot;&#x27;&gt;&lt;ul&gt;&quot;,
+                                var tpl = &quot;&lt;div class=&#x27;ui-carousel&#x27; tabindex=&#x27;&quot; + inputTabIndex + &quot;&#x27;&gt;&lt;ul&gt;&quot;,
                                     navEl = [],
                                     optionEl = [];
                                 for (var o = 0; o &lt; options.length; o++) {
-                                    optionEl.push(oui.createEl(&quot;&lt;li class=&#x27;oui-option&#x27;&gt;&quot; + options[o] + &quot;&lt;/li&gt;&quot;));
-                                    navEl.push(oui.createEl(&quot;&lt;span class=&#x27;oui-nav-item&#x27; data-nav=&#x27;=&quot; + o + &quot;&#x27;&gt;&quot; + o + &quot;&lt;/span&gt;&quot;));
+                                    optionEl.push($ui.createEl(&quot;&lt;li class=&#x27;ui-option&#x27;&gt;&quot; + options[o] + &quot;&lt;/li&gt;&quot;));
+                                    navEl.push($ui.createEl(&quot;&lt;span class=&#x27;ui-nav-item&#x27; data-nav=&#x27;=&quot; + o + &quot;&#x27;&gt;&quot; + o + &quot;&lt;/span&gt;&quot;));
                                 }
-                                tpl += &quot;&lt;/ul&gt;&lt;span class=&#x27;oui-nav-prev&#x27; data-nav=&#x27;-1&#x27;&gt;&lt;/span&gt;&lt;span data-nav=&#x27;+1&#x27; class=&#x27;oui-nav-next&#x27;&gt;&lt;/span&gt;&lt;/div&gt;&quot;;
+                                tpl += &quot;&lt;/ul&gt;&lt;span class=&#x27;ui-nav-prev&#x27; data-nav=&#x27;-1&#x27;&gt;&lt;/span&gt;&lt;span data-nav=&#x27;+1&#x27; class=&#x27;ui-nav-next&#x27;&gt;&lt;/span&gt;&lt;/div&gt;&quot;;
                         
                                 el.innerHTML = &#x27;&#x27;;
-                                el = oui.replaceEl(el, tpl);
+                                el = $ui.replaceEl(el, tpl);
                                 for (o = 0; o &lt; options.length; o++) {
                                     el.children[0].appendChild(optionEl[o]);
                                     el.appendChild(navEl[o]);
                                 }
                         
                                 function clickHandler(e) {
-                                    obj.val(oui.attribute(e.target, &#x27;data-nav&#x27;));
+                                    obj.val($ui.attribute(e.target, &#x27;data-nav&#x27;));
                                 }
                                 for (var c in el.children) {
-                                    if (oui.attribute(el.children[c], &#x27;data-nav&#x27;)) {
-                                        oui.bindEvent(&#x27;click&#x27;, el.children[c], clickHandler);
+                                    if ($ui.attribute(el.children[c], &#x27;data-nav&#x27;)) {
+                                        $ui.bindEvent(&#x27;click&#x27;, el.children[c], clickHandler);
                                     }
                                 }
                         
-                                oui.bindEvent(&quot;mousewheel&quot;, el, function(e) {
-                                    oui.preventBubble(e);
+                                $ui.bindEvent(&quot;mousewheel&quot;, el, function(e) {
+                                    $ui.preventBubble(e);
                                     obj.val((e.wheelDelta &lt; 0 || e.detail &gt; 0) ? &#x27;-1&#x27; : &#x27;+1&#x27;);
                                 });
                         
-                                oui.bindEvent(&#x27;keydown&#x27;, el, function(e) {
+                                $ui.bindEvent(&#x27;keydown&#x27;, el, function(e) {
                                     if (document.activeElement !== el) {
                                         return;
                                     }
@@ -187,22 +187,22 @@
                                         case 40: //down cursor
                                         case 37: //left cursor
                                             obj.val(&#x27;-1&#x27;);
-                                            oui.preventBubble(e);
+                                            $ui.preventBubble(e);
                                             break;
                                         case 33: //page up
                                         case 32: //spacebar				
                                         case 38: //up cursor
                                         case 39: //right cursor
                                             obj.val(&#x27;+1&#x27;);
-                                            oui.preventBubble(e);
+                                            $ui.preventBubble(e);
                                             break;
                                         case 36: //home
                                             obj.val(0);
-                                            oui.preventBubble(e);
+                                            $ui.preventBubble(e);
                                             break;
                                         case 35: //end
                                             obj.val(options.length - 1);
-                                            oui.preventBubble(e);
+                                            $ui.preventBubble(e);
                                             break;
                                     }
                                 });
@@ -243,23 +243,23 @@
                                         }
                                         for (o = 0; o &lt; options.length; o++) {
                                             if (oldVal !== undefined &amp;&amp; oldVal === o) {
-                                                oui.addClass(optionEl[o], &#x27;oui-carousel-out-&#x27; + outClass);
+                                                $ui.addClass(optionEl[o], &#x27;ui-carousel-out-&#x27; + outClass);
                                             } else if (oldVal !== undefined) {
-                                                oui.removeClass(optionEl[o], &#x27;oui-carousel-out-left&#x27;);
-                                                oui.removeClass(optionEl[o], &#x27;oui-carousel-out-right&#x27;);
+                                                $ui.removeClass(optionEl[o], &#x27;ui-carousel-out-left&#x27;);
+                                                $ui.removeClass(optionEl[o], &#x27;ui-carousel-out-right&#x27;);
                                             }
                                             if (parseInt(o, 0) === value) {
                                                 // add the selected class to the current iteration					
-                                                oui.addClass(optionEl[o], &#x27;oui-selected&#x27;);
-                                                oui.addClass(navEl[o], &#x27;oui-selected&#x27;);
+                                                $ui.addClass(optionEl[o], &#x27;ui-selected&#x27;);
+                                                $ui.addClass(navEl[o], &#x27;ui-selected&#x27;);
                                                 if (oldVal !== undefined) {
-                                                    oui.addClass(optionEl[o], &#x27;oui-carousel-in-&#x27; + inClass);
+                                                    $ui.addClass(optionEl[o], &#x27;ui-carousel-in-&#x27; + inClass);
                                                 }
                                             } else {
-                                                oui.removeClass(optionEl[o], &#x27;oui-selected&#x27;);
-                                                oui.removeClass(optionEl[o], &#x27;oui-carousel-in-right&#x27;);
-                                                oui.removeClass(optionEl[o], &#x27;oui-carousel-in-left&#x27;);
-                                                oui.removeClass(navEl[o], &#x27;oui-selected&#x27;);
+                                                $ui.removeClass(optionEl[o], &#x27;ui-selected&#x27;);
+                                                $ui.removeClass(optionEl[o], &#x27;ui-carousel-in-right&#x27;);
+                                                $ui.removeClass(optionEl[o], &#x27;ui-carousel-in-left&#x27;);
+                                                $ui.removeClass(navEl[o], &#x27;ui-selected&#x27;);
                                             }
                                         }
                                         oldVal = value;
@@ -280,8 +280,8 @@
                         
                                 return obj;
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

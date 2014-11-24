@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>oui.scroll - Open UI</title>
+    <title>$ui.tooltip - Open UI</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -101,12 +101,12 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>oui.scroll Class</h1>
+                        <h1>$ui.tooltip Class</h1>
                         <div class="box meta">
                         
                         
                                 <div class="foundat">
-                                    Defined in: <a href="../files/src_scroll_scroll.js.html#l2"><code>src&#x2F;scroll&#x2F;scroll.js:2</code></a>
+                                    Defined in: <a href="../files/src_tooltip_tooltip.js.html#l2"><code>src&#x2F;tooltip&#x2F;tooltip.js:2</code></a>
                                 </div>
                         
                                     Module: <a href="../modules/open-ui.html">open-ui</a>
@@ -115,23 +115,26 @@
                         
                         
                         <div class="box intro">
-                            <p>Attach custom scrollbars to an element</p>
-                        <p>HTML:</p>
-                        <pre class="code prettyprint"><code>&lt;div id=&#39;scroll&#39;&gt;
-                            ...long content....
-                        &lt;/div&gt;
+                            <p>Class used for creating tooltips</p>
+                        <div class='info-well'>
+                        The value passed to the <code>position</code> attribute is added to the tooltip as a CSS class of the format <code>ui-*position*</code>. Custom positions containing the keywords <code>top</code>, <code>left</code>, <code>bottom</code> and/or <code>right</code> can be applied to assume the relevant attributes, i.e. <code>bottomright</code>
+                        </div>
+                        
+                        <p>HTML</p>
+                        <pre class="code prettyprint"><code>&lt;span id=&#39;tooltip&#39;&gt;Show Tooltip&lt;/span&gt;
                         </code></pre><p>Javascript:</p>
-                        <pre class="code prettyprint"><code>oui.scroll({
-                            element: document.getElementById(&#39;scroll&#39;),
-                            axis: &#39;xy&#39;
+                        <pre class="code prettyprint"><code>$ui.tooltip({
+                            element:document.getElementById(&#39;tooltip&#39;),
+                            content:&#39;Tooltip content&#39;,
+                            position:&#39;left&#39;
                         });
                         </code></pre>
                         </div>
                         
                             <div class="constructor">
                                 <h2>Constructor</h2>
-                                <div id="method_oui.scroll" class="method item">
-                                    <h3 class="name"><code>oui.scroll</code></h3>
+                                <div id="method_$ui.tooltip" class="method item">
+                                    <h3 class="name"><code>$ui.tooltip</code></h3>
                                 
                                         <div class="args">
                                             <span class="paren">(</span><ul class="args-list inline commas">
@@ -155,7 +158,7 @@
                                     <div class="meta">
                                                 <p>
                                                 Defined in
-                                        <a href="../files/src_scroll_scroll.js.html#l2"><code>src&#x2F;scroll&#x2F;scroll.js:2</code></a>
+                                        <a href="../files/src_tooltip_tooltip.js.html#l2"><code>src&#x2F;tooltip&#x2F;tooltip.js:2</code></a>
                                         </p>
                                 
                                 
@@ -185,29 +188,40 @@
                                                                     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>DOM element to attach drag handlers to</p>
+                                                                    <p>DOM element to apply tooltip to</p>
                                 
                                                                 </div>
                                 
                                                             </li>
                                                             <li class="param">
-                                                                    <code class="param-name optional">[sensitivity=60]</code>
+                                                                    <code class="param-name optional">[content]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                
+                                                                <div class="param-description">
+                                                                    <p>Tooltip content (<code>HTML</code> allowed)</p>
+                                
+                                                                </div>
+                                
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[position=right]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                
+                                                                <div class="param-description">
+                                                                    <p>Tooltip position (<code>top</code>, <code>right</code>, <code>bottom</code> or <code>left</code>)</p>
+                                
+                                                                </div>
+                                
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[delay=500]</code>
                                                                     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>Number in px to scroll incrementally on <code>mousewheel</code> and <code>key</code> events. Can also be expressed as percentage, e.g. <code>10%</code> of content</p>
-                                
-                                                                </div>
-                                
-                                                            </li>
-                                                            <li class="param">
-                                                                    <code class="param-name optional">[axis=y]</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
-                                
-                                                                <div class="param-description">
-                                                                    <p>Object consisting of <code>x</code> and <code>y</code> {Boolean} values denoting scrollable axis, DOM element to attach drag handlers to. Defaults to element attribute <code>oui-scroll</code> or <code>y</code></p>
+                                                                    <p>Time in <code>ms</code> before tooltip is shown</p>
                                 
                                                                 </div>
                                 
@@ -222,7 +236,7 @@
                                 
                                             <div class="returns-description">
                                                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
-                                                    <p>Object  Consisting of original DOM element (item <code>0</code>)</p>
+                                                    <p>Object  Returns target element (item <code>0</code>)</p>
                                 
                                             </div>
                                         </div>

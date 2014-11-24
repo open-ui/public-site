@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Create a new toggle control
                         
@@ -115,7 +115,7 @@
                         
                         Javascript:
                         
-                        	oui.toggle({
+                        	$ui.toggle({
                         		element: document.getElementById(&#x27;toggle&#x27;),
                         		options: [{
                         			value: true,
@@ -130,7 +130,7 @@
                         		value: false
                         	});
                         	
-                        @class oui.toggle
+                        @class $ui.toggle
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to convert to control
@@ -138,40 +138,40 @@
                         @param options.options.value {String} Option value
                         @param options.options.name {String} Option name (displayed label)
                         @param [options.value=0] {String} Value of initially selected option, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
-                        @param [options.name=oui-toggle-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;oui-toggle-RandInt&#x60;
+                        @param [options.name=ui-toggle-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;ui-toggle-RandInt&#x60;
                         @param [options.tabindex=0] {Number} Tabindex of control, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
                         @param [options.disabled=false] {Boolean} Disabled state of control, defaults to the attribute value set on the passed element, or &#x60;false&#x60;
                         @param [options.listeners] {Object} Object array of event listeners to bind to underlying input(s)
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
-                        (function(oui) {
-                            oui.toggle = function(opt) {
+                        (function($ui) {
+                            $ui.toggle = function(opt) {
                                 var el = opt.element,
                                     options = opt.options || [],
                                     // more complex as can take true/false values
-                                    inputValue = opt.value !== undefined ? opt.value : oui.attribute(el, &#x27;value&#x27;) !== undefined ? oui.attribute(el, &#x27;value&#x27;) : options[0].value,
+                                    inputValue = opt.value !== undefined ? opt.value : $ui.attribute(el, &#x27;value&#x27;) !== undefined ? $ui.attribute(el, &#x27;value&#x27;) : options[0].value,
                                     listeners = opt.listeners === undefined ? {} : opt.listeners,
                                     inputDisabled = (opt.disabled || el.getAttribute(&#x27;disabled&#x27;)) ? &#x27;disabled&#x27; : &#x27;&#x27;,
-                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;oui-toggle-&#x27; + oui.getRand(1, 999),
+                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;ui-toggle-&#x27; + $ui.getRand(1, 999),
                                     inputTabIndex = opt.tabindex || el.getAttribute(&#x27;tabindex&#x27;) || 0;
                         
                                 if (!options) {
                                     return;
                                 }
                         
-                                var tpl = &quot;&lt;div class=&#x27;oui-toggle &quot; + (inputDisabled ? &#x27;oui-disabled&#x27; : &#x27;&#x27;) + &quot;&#x27; tabindex=&#x27;&quot; + inputTabIndex + &quot;&#x27;&gt;\
+                                var tpl = &quot;&lt;div class=&#x27;ui-toggle &quot; + (inputDisabled ? &#x27;ui-disabled&#x27; : &#x27;&#x27;) + &quot;&#x27; tabindex=&#x27;&quot; + inputTabIndex + &quot;&#x27;&gt;\
                         			&lt;input type=&#x27;hidden&#x27; name = &#x27;&quot; + inputName + &quot;&#x27; value=&#x27;&quot; + inputValue + &quot;&#x27;/&gt;\
-                        			&lt;div class=&#x27;oui-toggle-indicator&#x27; style=&#x27;width:&quot; + (100 / options.length) + &quot;%&#x27;&gt;&lt;/div&gt;\
+                        			&lt;div class=&#x27;ui-toggle-indicator&#x27; style=&#x27;width:&quot; + (100 / options.length) + &quot;%&#x27;&gt;&lt;/div&gt;\
                         		&lt;/div&gt;&quot;;
                         
                                 tpl += &quot;&quot;;
                                 el.innerHTML = &#x27;&#x27;;
-                                el = oui.replaceEl(el, tpl);
+                                el = $ui.replaceEl(el, tpl);
                         
                                 var optionEl = [];
                                 for (var o = 0; o &lt; options.length; o++) {
-                                    var oEl = oui.createEl(&quot;&lt;div class=&#x27;oui-option&#x27; style=&#x27;width:&quot; + (100 / options.length) + &quot;%&#x27; data-value=&#x27;&quot; + options[o].value + &quot;&#x27;&gt;&quot; + options[o].name + &quot;&lt;/div&gt;&quot;);
+                                    var oEl = $ui.createEl(&quot;&lt;div class=&#x27;ui-option&#x27; style=&#x27;width:&quot; + (100 / options.length) + &quot;%&#x27; data-value=&#x27;&quot; + options[o].value + &quot;&#x27;&gt;&quot; + options[o].name + &quot;&lt;/div&gt;&quot;);
                                     el.appendChild(oEl);
                                     optionEl.push(oEl);
                                 }
@@ -202,35 +202,35 @@
                                             if (options[o].value.toString() === val) {
                                                 indicatorEl.style.left = parseInt(o, 0) * 100 / options.length + &#x27;%&#x27;;
                                                 inputEl.value = val;
-                                                oui.addClass(optionEl[o], &#x27;oui-selected&#x27;);
+                                                $ui.addClass(optionEl[o], &#x27;ui-selected&#x27;);
                                             } else {
-                                                oui.removeClass(optionEl[o], &#x27;oui-selected&#x27;);
+                                                $ui.removeClass(optionEl[o], &#x27;ui-selected&#x27;);
                                             }
                                         }
                                     },
                                     disabled: function(val) {
                                         if (val !== undefined) {
-                                            oui.toggleClass(el, &#x27;oui-disabled&#x27;, val);
-                                            oui.attribute(inputEl, &#x27;disabled&#x27;, val);
+                                            $ui.toggleClass(el, &#x27;ui-disabled&#x27;, val);
+                                            $ui.attribute(inputEl, &#x27;disabled&#x27;, val);
                                         }
-                                        return oui.attribute(inputEl, &#x27;disabled&#x27;);
+                                        return $ui.attribute(inputEl, &#x27;disabled&#x27;);
                                     }
                                 };
                                 obj.val(inputValue);
                         
                                 function clickOpt(e) {
-                                    obj.val(oui.attribute(e.target, &#x27;data-value&#x27;));
+                                    obj.val($ui.attribute(e.target, &#x27;data-value&#x27;));
                                 }
                                 for (o = 0; o &lt; options.length; o++) {
-                                    oui.bindListeners(listeners, optionEl[o]);
+                                    $ui.bindListeners(listeners, optionEl[o]);
                                     if (!inputDisabled) {
-                                        oui.bindEvent(&#x27;click&#x27;, optionEl[o], clickOpt);
+                                        $ui.bindEvent(&#x27;click&#x27;, optionEl[o], clickOpt);
                                     }
                                 }
                                 return obj;
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

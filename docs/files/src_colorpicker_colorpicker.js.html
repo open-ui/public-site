@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Create a new colorpicker control
                         
@@ -115,7 +115,7 @@
                         
                         Javascript:
                         
-                        	oui.colorpicker({
+                        	$ui.colorpicker({
                         		element: document.getElementById(&#x27;colorpicker&#x27;),
                         		value:&#x27;#FF0000&#x27;,
                         		listeners:{
@@ -125,7 +125,7 @@
                         		}
                         	});
                         	
-                        @class oui.colorpicker
+                        @class $ui.colorpicker
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to convert to control 
@@ -134,24 +134,24 @@
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
-                        (function(oui) {
-                            oui.colorpicker = function(opt) {
+                        (function($ui) {
+                            $ui.colorpicker = function(opt) {
                         
                         
                                 var type = (window.SVGAngle || document.implementation.hasFeature(&quot;http://www.w3.org/TR/SVG11/feature#BasicStructure&quot;, &quot;1.1&quot;) ? &quot;SVG&quot; : &quot;VML&quot;),
                                     listeners = opt.listeners === undefined ? {} : opt.listeners,
                                     el = opt.element,
                                     value = opt.value || &#x27;#000000&#x27;,
-                                    tpl = &quot;&lt;div class=&#x27;oui-colorpicker&#x27;&gt;\
-                        				&lt;div class=&#x27;oui-colorpicker-area&#x27;&gt;\
-                        					&lt;div class=&#x27;oui-colorpicker-slPicker&#x27;&gt;&lt;/div&gt;\
+                                    tpl = &quot;&lt;div class=&#x27;ui-colorpicker&#x27;&gt;\
+                        				&lt;div class=&#x27;ui-colorpicker-area&#x27;&gt;\
+                        					&lt;div class=&#x27;ui-colorpicker-slPicker&#x27;&gt;&lt;/div&gt;\
                         				&lt;/div&gt;\
-                        				&lt;div class=&#x27;oui-colorpicker-range&#x27;&gt;\
-                        					&lt;div class=&#x27;oui-colorpicker-hPicker&#x27;&gt;&lt;/div&gt;\
+                        				&lt;div class=&#x27;ui-colorpicker-range&#x27;&gt;\
+                        					&lt;div class=&#x27;ui-colorpicker-hPicker&#x27;&gt;&lt;/div&gt;\
                         				&lt;/div&gt;\
                         			&lt;/div&gt;&quot;;
                         
-                                el = oui.replaceEl(el, tpl);
+                                el = $ui.replaceEl(el, tpl);
                                 var areaTpl, areaEl, rangeTpl, rangeEl;
                                 if (type === &#x27;SVG&#x27;) {
                                     areaTpl = &quot;&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27; width=&#x27;100%&#x27; height=&#x27;100%&#x27;&gt;\
@@ -208,8 +208,8 @@
                         
                         
                         
-                                areaEl = oui.createEl(areaTpl);
-                                rangeEl = oui.createEl(rangeTpl);
+                                areaEl = $ui.createEl(areaTpl);
+                                rangeEl = $ui.createEl(rangeTpl);
                                 el.children[0].appendChild(areaEl);
                                 el.children[1].appendChild(rangeEl);
                         
@@ -227,10 +227,10 @@
                                     var x = c.x,
                                         y = c.y,
                                         pEl = rEl.parentNode,
-                                        pH = oui.layout(pEl).height,
-                                        pW = oui.layout(pEl).width,
-                                        h = oui.layout(rEl).height,
-                                        w = oui.layout(rEl).width,
+                                        pH = $ui.layout(pEl).height,
+                                        pW = $ui.layout(pEl).width,
+                                        h = $ui.layout(rEl).height,
+                                        w = $ui.layout(rEl).width,
                                         prevCol = color;
                         
                                     if (x) {
@@ -265,36 +265,36 @@
                                     if (rEl === lightnessEl) {
                                         hsv.s = Math.round(c.x * 100);
                                         hsv.v = Math.round((1 - c.y) * 100);
-                                        color = oui.color.hsv2hex([hsv.h, hsv.s, hsv.v]);
+                                        color = $ui.color.hsv2hex([hsv.h, hsv.s, hsv.v]);
                                     }
                                     if (rEl === hueEl) {
                                         hsv.h = Math.round(c.y * 360);
-                                        color = oui.color.hsv2hex([hsv.h, hsv.s, hsv.v]);
-                                        lightnessEl.parentNode.style.backgroundColor = oui.color.hsv2hex([hsv.h, 100, 100]);
+                                        color = $ui.color.hsv2hex([hsv.h, hsv.s, hsv.v]);
+                                        lightnessEl.parentNode.style.backgroundColor = $ui.color.hsv2hex([hsv.h, 100, 100]);
                                     }
                                     if (listeners.change &amp;&amp; typeof listeners.change === &#x27;function&#x27;) {
                                         listeners.change(prevCol, color);
                                     }
                                 }
-                                oui.bindEvent(&#x27;click&#x27;, lightnessEl.parentNode, function(e) {
+                                $ui.bindEvent(&#x27;click&#x27;, lightnessEl.parentNode, function(e) {
                                     if (e.target === lightnessEl) {
                                         return;
                                     }
                                     resolvePos(lightnessEl, {
-                                        x: (oui.getEventOffset(e).x - oui.layout(lightnessEl).width / 2) / oui.layout(lightnessEl.parentNode).width,
-                                        y: (oui.getEventOffset(e).y - oui.layout(lightnessEl).height / 2) / oui.layout(lightnessEl.parentNode).width
+                                        x: ($ui.getEventOffset(e).x - $ui.layout(lightnessEl).width / 2) / $ui.layout(lightnessEl.parentNode).width,
+                                        y: ($ui.getEventOffset(e).y - $ui.layout(lightnessEl).height / 2) / $ui.layout(lightnessEl.parentNode).width
                                     });
                                 });
-                                oui.bindEvent(&#x27;click&#x27;, hueEl.parentNode, function(e) {
+                                $ui.bindEvent(&#x27;click&#x27;, hueEl.parentNode, function(e) {
                                     if (e.target === hueEl) {
                                         return;
                                     }
                                     resolvePos(hueEl, {
                                         x: false,
-                                        y: oui.getEventOffset(e).y / oui.layout(hueEl.parentNode).height
+                                        y: $ui.getEventOffset(e).y / $ui.layout(hueEl.parentNode).height
                                     });
                                 });
-                                oui.drag({
+                                $ui.drag({
                                     element: hueEl.parentNode,
                                     move: false,
                                     container: {
@@ -310,7 +310,7 @@
                                     }
                                 });
                         
-                                oui.drag({
+                                $ui.drag({
                                     element: lightnessEl.parentNode,
                                     move: false,
                                     container: {
@@ -342,7 +342,7 @@
                                         if (!val) {
                                             return color;
                                         }
-                                        var hsvArr = oui.color.hex2hsv(val);
+                                        var hsvArr = $ui.color.hex2hsv(val);
                                         hsv = {
                                             h: hsvArr[0],
                                             s: hsvArr[1],
@@ -362,8 +362,8 @@
                                 return obj;
                         
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

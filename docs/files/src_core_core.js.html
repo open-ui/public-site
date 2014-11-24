@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -149,10 +149,10 @@
                         /**
                         @module open-ui
                         */
-                        var oui = oui || {};
-                        (function(oui) {
+                        var $ui = $ui || {};
+                        (function($ui) {
                         /**
-                        @class oui
+                        @class $ui
                         @static
                         */
                         
@@ -163,7 +163,7 @@
                         @return {Boolean} Returns &#x60;false&#x60;
                         */
                         
-                            oui.preventBubble = function(e) {
+                            $ui.preventBubble = function(e) {
                                 if (e.preventDefault) {
                                     e.preventDefault();
                                 }
@@ -185,16 +185,16 @@
                         */
                         
                         
-                            oui.toggleClass = function(el, c, t) {
+                            $ui.toggleClass = function(el, c, t) {
                                 if (t === true) {
-                                    oui.addClass(el, c);
+                                    $ui.addClass(el, c);
                                     return true;
                                 } else if (t === false) {
-                                    oui.removeClass(el, c);
+                                    $ui.removeClass(el, c);
                                     return false;
                                 }
-                                oui.toggleClass(el, c, !oui.hasClass(el, c));
-                                return oui.hasClass(el, c);
+                                $ui.toggleClass(el, c, !$ui.hasClass(el, c));
+                                return $ui.hasClass(el, c);
                             };
                         
                         /**
@@ -205,7 +205,7 @@
                         @return {Boolean} &#x60;true&#x60; if class found, &#x60;false&#x60; if not.
                         */
                         
-                            oui.hasClass = function(el, c) {
+                            $ui.hasClass = function(el, c) {
                                 var ca = el.getAttribute(&#x27;class&#x27;) || &#x27;&#x27;;
                                 return (ca &amp;&amp; ca.indexOf(c) &gt; -1) ? true : false;
                             };
@@ -216,7 +216,7 @@
                         @return {Object} Returns passed DOM element
                         @chainable
                         */    
-                            oui.center = function(el) {
+                            $ui.center = function(el) {
                                 el.style.top = el.parentNode.clientHeight / 2 - (el.offsetHeight / 2) + &#x27;px&#x27;;
                                 el.style.left = el.parentNode.clientWidth / 2 - (el.offsetWidth / 2) + &#x27;px&#x27;;
                            return el;
@@ -228,7 +228,7 @@
                         @return {String} Returns style property value
                         */   
                             };
-                            oui.getStyle = function(el, p) {
+                            $ui.getStyle = function(el, p) {
                                 return window.getComputedStyle(el).getPropertyValue(p);
                             };
                         
@@ -241,8 +241,8 @@
                         @return {Object} Returns passed DOM element
                         @chainable
                         */  
-                            oui.addClass = function(el, c) {
-                                if (oui.hasClass(el, c)) {
+                            $ui.addClass = function(el, c) {
+                                if ($ui.hasClass(el, c)) {
                                     return;
                                 }
                                 var ca = el.getAttribute(&#x27;class&#x27;) || &#x27;&#x27;;
@@ -257,7 +257,7 @@
                         @return {Object} Returns passed DOM element
                         @chainable
                         */  
-                            oui.removeClass = function(el, c) {
+                            $ui.removeClass = function(el, c) {
                                 var ca = el.getAttribute(&#x27;class&#x27;);
                                 if (!ca) {
                                     return;
@@ -278,7 +278,7 @@
                         @return {Object} Returns passed DOM element
                         @chainable
                         */      
-                            oui.bindEvent = function(e, el, fn) {
+                            $ui.bindEvent = function(e, el, fn) {
                                 if (e === &quot;mousewheel&quot;) {
                                     e = (/Firefox/i.test(navigator.userAgent)) ? &quot;DOMMouseScroll&quot; : &quot;mousewheel&quot;; //FF doesn&#x27;t recognize mousewheel as of FF3.x  
                                 }
@@ -298,7 +298,7 @@
                         @return {Object} Returns passed DOM element
                         @chainable
                         */      
-                        	oui.unbindEvent = function(e, el, fn) {
+                        	$ui.unbindEvent = function(e, el, fn) {
                         		if (el.removeEventListener){
                         			el.removeEventListener (e,fn,false);
                         		}
@@ -315,8 +315,8 @@
                         @param [event] {Object} Event
                         @return {Object} Returns object consisting of &#x60;top&#x60;, &#x60;right&#x60;, &#x60;bottom&#x60;, &#x60;left&#x60;, &#x60;height&#x60; and &#x60;width&#x60; values as well as sub &#x60;offset&#x60; and &#x60;parent&#x60; objects
                         */  
-                        	oui.layout=function(el, e){
-                        		if(e){e=oui.procEvent(e);}
+                        	$ui.layout=function(el, e){
+                        		if(e){e=$ui.procEvent(e);}
                         		var p={
                         			offset:el.getBoundingClientRect(),
                         			parent:{ 
@@ -339,10 +339,10 @@
                         @return {Object} Returns passed DOM element
                         @chainable
                         */ 
-                            oui.bindListeners = function(l, el) {
+                            $ui.bindListeners = function(l, el) {
                                 for (var e in l) {
                         			if(l.hasOwnProperty(e)){
-                        				oui.bindEvent(e, el, l[e]);
+                        				$ui.bindEvent(e, el, l[e]);
                         			}
                                 }
                                 return el;
@@ -354,7 +354,7 @@
                         @param max {Number} Maximum value of calculated number
                         @return {Number} Returns pseudo-random number between §min§ and §max§
                         */     
-                            oui.getRand = function(min, max) {
+                            $ui.getRand = function(min, max) {
                                 return Math.floor(Math.random() * (max - min)) + min;
                             };
                         /**
@@ -363,7 +363,7 @@
                         @param String {String} Alphanumeric string (e.g. style property value)
                         @return {String} Returns unit type
                         */         
-                            oui.getUnits = function(str) {
+                            $ui.getUnits = function(str) {
                                 return str.replace(/\d+/, &#x27;&#x27;);
                             };
                         	
@@ -379,7 +379,7 @@
                         @param [opt.attribute.value] {String} Attribute value to filter
                         @return {Array} Returns matching DOM elements
                         */     
-                            oui.findEl = function(el, opt) {		
+                            $ui.findEl = function(el, opt) {		
                         	
                         	 var nodes=[],
                         		 nType=opt.type || null,
@@ -392,7 +392,7 @@
                         				if(nType &amp;&amp; treeWalker.currentNode.tagName.toLowerCase()!==nType.toLowerCase()){
                         					match=false;
                         				}
-                        				if(nClass &amp;&amp; !oui.hasClass(treeWalker.currentNode, nClass)){
+                        				if(nClass &amp;&amp; !$ui.hasClass(treeWalker.currentNode, nClass)){
                         					match=false;
                         				}
                         				if(
@@ -416,8 +416,8 @@
                         @return {Object} Returns newly created DOM wrapper element
                         @chainable
                         */     
-                            oui.wrapEl = function(el, str) {
-                                var helperEl = oui.createEl(str);
+                            $ui.wrapEl = function(el, str) {
+                                var helperEl = $ui.createEl(str);
                                 el.parentNode.insertBefore(helperEl, el);
                                 helperEl.appendChild(el);
                                 return helperEl;
@@ -430,7 +430,7 @@
                         @chainable
                         */  
                         	
-                        	oui.createEl = function(str, attr) {
+                        	$ui.createEl = function(str, attr) {
                         		var el = document.createElement(&#x27;div&#x27;);    
                         		if ([&#x27;&lt;g&#x27;, &#x27;&lt;path&#x27;, &#x27;&lt;line&#x27;, &#x27;&lt;circle&#x27;, &#x27;&lt;rect&#x27;].some(function(v) { return str.indexOf(v) &gt;= 0; })) {    
                         			el.innerHTML = &#x27;&lt;svg&gt;&#x27; + str + &#x27;&lt;/svg&gt;&#x27;;
@@ -448,7 +448,7 @@
                         @param element {Object} DOM element to return index for
                         @return {Number} Returns index of passed element
                         */  
-                            oui.getIndex = function(el) {
+                            $ui.getIndex = function(el) {
                                 if (!el) {
                                     return null;
                                 }
@@ -467,8 +467,8 @@
                         @return {Object} Returns newly created DOM element
                         @chainable
                         */  
-                            oui.replaceEl = function(el, str, clean) {
-                                var newEl = oui.createEl(str);
+                            $ui.replaceEl = function(el, str, clean) {
+                                var newEl = $ui.createEl(str);
                                 for (var i = 0; i &lt; el.attributes.length; i++) {
                                     newEl.setAttribute(el.attributes[i].nodeName, el.attributes[i].value);
                                 }
@@ -485,7 +485,7 @@
                         @param variable {Undefined} Variable to force into array
                         @return {Array} Returns array of passed variable
                         */  
-                            oui.toArr = function(v) {	
+                            $ui.toArr = function(v) {	
                                 var a = [];
                                 if (v &amp;&amp; typeof v !== &quot;object&quot;) {
                                     if (v.indexOf(&#x27;,&#x27;) !== -1) {
@@ -506,10 +506,10 @@
                         @param [type=0] {Number} Type of collision, &#x60;0&#x60; default, replace &#x60;array1&#x60; with &#x60;array2&#x60;, &#x60;1&#x60; add &#x60;array2&#x60; to &#x60;array1&#x60;, &#x60;2&#x60; remove &#x60;array2&#x60; from &#x60;array1&#x60;, &#x60;3&#x60; toggle &#x60;array2&#x60; values in &#x60;array1&#x60; (intelligent add/replace)
                         @return {Array} Returns resulting &#x60;array&#x60;
                         */  
-                            oui.collide = function(a1, a2, s) {
+                            $ui.collide = function(a1, a2, s) {
                                 s = s || 0;
-                                a1 = oui.toArr(a1);
-                                a2 = oui.toArr(a2);
+                                a1 = $ui.toArr(a1);
+                                a2 = $ui.toArr(a2);
                                 /* 
                                     s = switch
                                     0 (default) = replace a1 with a2
@@ -537,7 +537,7 @@
                         @param Total {Float} total (out of)
                         @return {Float} Returns noramlized percentage value between 1 and 0
                         */ 	
-                            oui.perc = function(v,t) {
+                            $ui.perc = function(v,t) {
                                 v=v/t;
                         		v = v &lt; 0 ? 0 : v;
                         		v = v &gt; 1 ? 1 : v;		
@@ -552,7 +552,7 @@
                         @return {Object} Returns &#x60;element&#x60;
                         @chainable
                         */ 
-                            oui.attribute = function(el, attr, val) {
+                            $ui.attribute = function(el, attr, val) {
                                 if (typeof el !== &quot;object&quot;) {
                                     return false;
                                 }
@@ -590,7 +590,7 @@
                         @param event {Object} Event to normalize
                         @return {Object} Returns object with the additional attributes &#x60;posX&#x60;, &#x60;posY&#x60; are normalized absolutes, &#x60;offsetX&#x60;, offsetY&#x60; are normalized parent offsets, &#x60;viewportX&#x60;, &#x60;viewportY&#x60; are normalized viewport offsets
                         */     
-                            oui.procEvent=function(e){
+                            $ui.procEvent=function(e){
                                 e.posX = 0;
                                 e.posY = 0;
                                 if (!e) {e = window.event;}
@@ -618,15 +618,15 @@
                         @param event {Object} Event to normalize
                         @return {Object} Returns object comprising of normalized &#x60;x&#x60; and &#x60;y&#x60; offsets
                         */ 
-                        	oui.getEventOffset=function(e){
+                        	$ui.getEventOffset=function(e){
                         		return {
                         			x:e.offsetX===undefined?e.layerX:e.offsetX,
                         			y:e.offsetY===undefined?e.layerY:e.offsetY
                         		};
                         	};
                         	
-                            window.onload=function(){oui.addClass(document.body, &#x27;oui-ui&#x27;);};
-                        })(oui);
+                            window.onload=function(){$ui.addClass(document.body, &#x27;ui-ui&#x27;);};
+                        })($ui);
                         
                             </pre>
                         </div>

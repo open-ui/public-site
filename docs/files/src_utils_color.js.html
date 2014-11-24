@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Utility class for converting color types and generating color schemes. 
                         
@@ -113,16 +113,16 @@
                         For color conversion methods, where the expected parameter is an array e.g &#x60;[0,0,0]&#x60;, the method can also be passed a comma separated value string, e.g. &#x60;&#x27;0,0,0&#x27;&#x60;, from which an array will automatically be extrapolated.
                         &lt;/div&gt;
                         
-                        @class oui.color
+                        @class $ui.color
                         */
                         
-                        (function(oui) {
-                            oui.color = {
+                        (function($ui) {
+                            $ui.color = {
                         
                                 /**
                                 Convert a HEX color string to an RGB
                         
-                                    var color=oui.color.hex2rgb(&#x27;#FF0000&#x27;);
+                                    var color=$ui.color.hex2rgb(&#x27;#FF0000&#x27;);
                                     // color = [255,0,0]
                         
                                 @method hex2rgb 
@@ -147,7 +147,7 @@
                                 /**
                                 Convert an RGB array to a HEX color string
                         
-                                    var color=oui.color.rgb2hex([255,0,0]);
+                                    var color=$ui.color.rgb2hex([255,0,0]);
                                     // color = &#x27;#FF0000&#x27;
                         
                                 @method rgb2hex
@@ -155,7 +155,7 @@
                                 @return {String} Returns HEX color string
                                 */
                                 rgb2hex: function(rgb) {
-                        			rgb=oui.toArr(rgb);
+                        			rgb=$ui.toArr(rgb);
                                     var hex = &#x27;&#x27;,
                                         h, i, c;
                                     for (i = 0; i &lt; rgb.length; i += 1) {
@@ -169,7 +169,7 @@
                                 /**
                                 Convert an RGB array to a HSV array
                         
-                                    var color=oui.color.rgb2hsv([255,0,0]);
+                                    var color=$ui.color.rgb2hsv([255,0,0]);
                                     // color = [0,100,100]
                         
                                 @method rgb2hsv
@@ -177,7 +177,7 @@
                                 @return {Array} Returns array of hue, saturation and value components
                                 */
                                 rgb2hsv: function(rgb) {		
-                        			rgb=oui.toArr(rgb);
+                        			rgb=$ui.toArr(rgb);
                                     var
                                         r = rgb[0],
                                         g = rgb[1],
@@ -213,7 +213,7 @@
                                 /**
                                 Convert an HSV array to a RGB array
                         
-                                    var color=oui.color.hsv2rgb([0,100,100]);
+                                    var color=$ui.color.hsv2rgb([0,100,100]);
                                     // color = [255,0,0]
                         
                                 @method hsv2rgb
@@ -221,7 +221,7 @@
                                 @return {Array} Returns array of red, blue and green components
                                 */
                                 hsv2rgb: function(hsv) {
-                        			hsv=oui.toArr(hsv);
+                        			hsv=$ui.toArr(hsv);
                                     var
                                         r, g, b, i, f, p, q, t, h = hsv[0],
                                         s = hsv[1],
@@ -282,7 +282,7 @@
                                 /**
                                 Convert an RGB array to a HSL array
                         
-                                    var color=oui.color.rgb2hsl([255,0,0]);
+                                    var color=$ui.color.rgb2hsl([255,0,0]);
                                     // color = [0,100,50]
                         
                                 @method rgb2hsl
@@ -290,7 +290,7 @@
                                 @return {Array} Returns array of hue, saturation and lightness components
                                 */		
                                 rgb2hsl: function(rgb) {
-                        			rgb=oui.toArr(rgb);
+                        			rgb=$ui.toArr(rgb);
                                     var r = rgb[0],
                                         g = rgb[1],
                                         b = rgb[2];
@@ -323,7 +323,7 @@
                                 /**
                                 Convert an HSL array to a RGB array
                         
-                                    var color=oui.color.hsl2rgb([0,100,50]);
+                                    var color=$ui.color.hsl2rgb([0,100,50]);
                                     // color = [255,0,0]
                         
                                 @method hsl2rgb
@@ -331,7 +331,7 @@
                                 @return {Array} Returns array of red, green and blue components
                                 */				
                                 hsl2rgb: function(hsl) {
-                        			hsl=oui.toArr(hsl);
+                        			hsl=$ui.toArr(hsl);
                                     var h = hsl[0],
                                         s = hsl[1],
                                         l = hsl[2],
@@ -371,7 +371,7 @@
                                 /**
                                 Convert a HEX color string to a HSL array
                         
-                                    var color=oui.color.hex2hsl(&#x27;#FF0000&#x27;);
+                                    var color=$ui.color.hex2hsl(&#x27;#FF0000&#x27;);
                                     // color = [0,100,50]
                         
                                 @method hex2hsl
@@ -384,7 +384,7 @@
                                 /**
                                 Convert an HSL array to a HEX color string
                         
-                                    var color=oui.color.hsl2hex([0,100,50]);
+                                    var color=$ui.color.hsl2hex([0,100,50]);
                                     // color = &#x27;#FF0000&#x27;
                         
                                 @method hsl2hex
@@ -392,13 +392,13 @@
                                 @return {String} Returns HEX color string
                                 */
                                 hsl2hex: function(hsl) {
-                                    return this.rgb2hex(this.hsl2rgb(oui.toArr(hsl)));
+                                    return this.rgb2hex(this.hsl2rgb($ui.toArr(hsl)));
                                 },
                         		
                                 /**
                                 Convert an HSV array to HSL array
                         
-                                    var color=oui.color.hsv2hsl([0,100,100]);
+                                    var color=$ui.color.hsv2hsl([0,100,100]);
                                     // color = [0,100,50]
                         
                                 @method hsv2hsl
@@ -406,13 +406,13 @@
                                 @return {Array} Returns array of hue, saturation and lightness components
                                 */
                                 hsv2hsl: function(hsv) {
-                                    return this.rgb2hsl(this.hsv2rgb(oui.toArr(hsv)));
+                                    return this.rgb2hsl(this.hsv2rgb($ui.toArr(hsv)));
                                 },
                         			
                                 /**
                                 Convert an HSL array to HSV array
                         
-                                    var color=oui.color.hsl2hsv([0,100,50]);
+                                    var color=$ui.color.hsl2hsv([0,100,50]);
                                     // color = [0,100,100]
                         
                                 @method hsl2hsv
@@ -420,13 +420,13 @@
                                 @return {Array} Returns array of hue, saturation and value components
                                 */
                                 hsl2hsv: function(hsl) {
-                                    return this.rgb2hsv(this.hsl2rgb(oui.toArr(hsl)));
+                                    return this.rgb2hsv(this.hsl2rgb($ui.toArr(hsl)));
                                 },			
                         		
                                 /**
                                 Convert a HEX color string to a HSV array
                         
-                                    var color=oui.color.hex2hsv(&#x27;#FF0000&#x27;);
+                                    var color=$ui.color.hex2hsv(&#x27;#FF0000&#x27;);
                                     // color = [0,100,100]
                         
                                 @method hex2hsv
@@ -439,7 +439,7 @@
                                 /**
                                 Convert an HSV array to a HEX color string
                         
-                                    var color=oui.color.hsv2hex([0,100,100]);
+                                    var color=$ui.color.hsv2hex([0,100,100]);
                                     // color = &#x27;#FF0000&#x27;
                         
                                 @method hsv2hex
@@ -447,12 +447,12 @@
                                 @return {String} Returns HEX color string
                                 */
                                 hsv2hex: function(hsv) {
-                                    return this.rgb2hex(this.hsv2rgb(oui.toArr(hsv)));
+                                    return this.rgb2hex(this.hsv2rgb($ui.toArr(hsv)));
                                 },
                                 /**
                                 Generate a series of color biased (high saturation/lightness) randomized HEX color strings
                         
-                                    var palette=oui.color.random(5);
+                                    var palette=$ui.color.random(5);
                                     // palette = [&quot;#efa6a8&quot;, &quot;#91abb&quot;, &quot;#ebac2c&quot;, &quot;#2b561&quot;, &quot;#7b4b51&quot;]
                         
                                 @method random
@@ -469,13 +469,13 @@
                         			if(hex1 &amp;&amp; hex2){
                         			 var hsv1=this.hex2hsv(hex1),
                         				 hsv2=this.hex2hsv(hex2);
-                        				 h=oui.getRand(Math.min.apply(Math, [hsv1[0], hsv2[0]]), Math.max.apply(Math, [hsv1[0], hsv2[0]]));
-                        				 s=oui.getRand(Math.min.apply(Math, [hsv1[1], hsv2[1]]), Math.max.apply(Math, [hsv1[1], hsv2[1]]));
-                        				 v=oui.getRand(Math.min.apply(Math, [hsv1[2], hsv2[2]]), Math.max.apply(Math, [hsv1[2], hsv2[2]]));
+                        				 h=$ui.getRand(Math.min.apply(Math, [hsv1[0], hsv2[0]]), Math.max.apply(Math, [hsv1[0], hsv2[0]]));
+                        				 s=$ui.getRand(Math.min.apply(Math, [hsv1[1], hsv2[1]]), Math.max.apply(Math, [hsv1[1], hsv2[1]]));
+                        				 v=$ui.getRand(Math.min.apply(Math, [hsv1[2], hsv2[2]]), Math.max.apply(Math, [hsv1[2], hsv2[2]]));
                         			}else{
-                        				h=oui.getRand(0,360);
+                        				h=$ui.getRand(0,360);
                         				s=100;
-                        				v=oui.getRand(75,100);
+                        				v=$ui.getRand(75,100);
                         			}
                         			
                                     for (i = 0; i &lt; count; i += 1) {
@@ -487,10 +487,10 @@
                                 /**
                                 Generate (palette of) complementary color(s) from passed HEX color string
                         		
-                                    var palette=oui.color.complement(&#x27;#FF0000&#x27;, &#x27;split&#x27;);
+                                    var palette=$ui.color.complement(&#x27;#FF0000&#x27;, &#x27;split&#x27;);
                                     // palette = [&quot;#80ff00&quot;, &quot;#00ffff&quot;, &quot;#8000ff&quot;]
                         			
-                                    var palette=oui.color.complement(&#x27;#FF0000&#x27;, &#x27;double&#x27;);
+                                    var palette=$ui.color.complement(&#x27;#FF0000&#x27;, &#x27;double&#x27;);
                                     // palette = [&quot;#80ff00&quot;, &quot;#00ff40&quot;, &quot;#00ffff&quot;, &quot;#0040ff&quot;, &quot;#8000ff&quot;] 			
                         		
                                 @method complement
@@ -524,7 +524,7 @@
                                 /**
                                 Generate triadic color palette
                         		
-                                    var palette=oui.color.triadic(&#x27;#FF0000&#x27;);
+                                    var palette=$ui.color.triadic(&#x27;#FF0000&#x27;);
                                     // palette = [&quot;#ff0000&quot;, &quot;#00ff00&quot;, &quot;#0000ff&quot;] 
                         				
                         		
@@ -538,7 +538,7 @@
                                 /**
                                 Generate tetradic color palette
                         		
-                                    var palette=oui.color.triadic(&#x27;#FF0000&#x27;);
+                                    var palette=$ui.color.triadic(&#x27;#FF0000&#x27;);
                                     // palette = [&quot;#ff0000&quot;, &quot;#80ff00&quot;, &quot;#00ffff&quot;, &quot;#8000ff&quot;] 
                         			
                                 @method tetradic
@@ -554,7 +554,7 @@
                                 /**
                                 Generate pentadic color palette
                         		
-                                    var palette=oui.color.triadic(&#x27;#FF0000&#x27;);
+                                    var palette=$ui.color.triadic(&#x27;#FF0000&#x27;);
                                     // palette = [&quot;#ff0000&quot;, &quot;#ccff00&quot;, &quot;#00ff66&quot;, &quot;#0066ff&quot;, &quot;#cc00ff&quot;] 
                         			
                                 @method pentadic
@@ -579,7 +579,7 @@
                                 /**
                                 Generate a color from a percentage point between two colors
                         		
-                                    var color=oui.color.percentage(0.5);
+                                    var color=$ui.color.percentage(0.5);
                                     // color = &quot;#f2e600&quot;;
                         			
                                 @method percentage
@@ -591,14 +591,14 @@
                         		percentage:function(perc, hex1, hex2){
                         			hex1=hex1 || &#x27;#ff0000&#x27;;
                         			hex2=hex2 || &#x27;#27ae62&#x27;;	
-                        			var hsv1=oui.color.hex2hsv(hex1),
-                        				hsv2=oui.color.hex2hsv(hex2);				
-                        			return oui.color.hsv2hex([Math.round(hsv1[0]+perc*(hsv2[0]-hsv1[0])),Math.round(hsv1[1]+perc*(hsv2[1]-hsv1[1])),Math.round(hsv1[2]+perc*(hsv2[2]-hsv1[2]))]);
+                        			var hsv1=$ui.color.hex2hsv(hex1),
+                        				hsv2=$ui.color.hex2hsv(hex2);				
+                        			return $ui.color.hsv2hex([Math.round(hsv1[0]+perc*(hsv2[0]-hsv1[0])),Math.round(hsv1[1]+perc*(hsv2[1]-hsv1[1])),Math.round(hsv1[2]+perc*(hsv2[2]-hsv1[2]))]);
                         		},		
                         		/**
                                 Scale either hue, saturation or value of a color by a percentage amount
                         		
-                                    var scale=oui.scale.percentage(0.5);
+                                    var scale=$ui.scale.percentage(0.5);
                                     // color = &quot;#f2e600&quot;;
                         			
                                 @method scale
@@ -620,7 +620,7 @@
                         		/**
                                 Lighten a color by a percentage amount
                         		
-                                    var color=oui.color.lighten(&#x27;#840000&#x27;, 70);
+                                    var color=$ui.color.lighten(&#x27;#840000&#x27;, 70);
                                     // color = &quot;#da0000&quot;;
                         			
                                 @method lighten
@@ -636,7 +636,7 @@
                         		/**
                                 Darken a color by a percentage amount
                         		
-                                    var color=oui.color.darken(&#x27;#840000&#x27;, 70);
+                                    var color=$ui.color.darken(&#x27;#840000&#x27;, 70);
                                     // color = &quot;#da0000&quot;;
                         			
                                 @method darken
@@ -652,7 +652,7 @@
                         		/**
                                 Saturate a color by a percentage amount
                         		
-                                    var color=oui.color.saturate(&#x27;#840000&#x27;, 70);
+                                    var color=$ui.color.saturate(&#x27;#840000&#x27;, 70);
                                     // color = &quot;#820000&quot;;
                         			
                                 @method saturate
@@ -668,7 +668,7 @@
                         		/**
                                 Desaturate a color by a percentage amount
                         		
-                                    var color=oui.color.desaturate(&#x27;#840000&#x27;, 70);
+                                    var color=$ui.color.desaturate(&#x27;#840000&#x27;, 70);
                                     // color = &quot;#820000&quot;;
                         			
                                 @method saturate
@@ -684,16 +684,16 @@
                                 /**
                                 Generate algorithmic color palette
                         		
-                                    var palette=oui.color.algorithmic ({hex:&#x27;#FF0000&#x27;});
+                                    var palette=$ui.color.algorithmic ({hex:&#x27;#FF0000&#x27;});
                                     // palette = [&quot;#ff0000&quot;, &quot;#00ff00&quot;, &quot;#0000ff&quot;] 		
                         		
-                                    var palette=oui.color.algorithmic ({hex:&#x27;#FF0000&#x27;, count: 5});
+                                    var palette=$ui.color.algorithmic ({hex:&#x27;#FF0000&#x27;, count: 5});
                                     // palette = [&quot;#ff0000&quot;, &quot;#ccff00&quot;, &quot;#00ff66&quot;, &quot;#0066ff&quot;, &quot;#cc00ff&quot;]  			
                         		
-                                    var palette=oui.color.algorithmic ({hex:&#x27;#FF0000&#x27;, scope: 100, count:4});
+                                    var palette=$ui.color.algorithmic ({hex:&#x27;#FF0000&#x27;, scope: 100, count:4});
                                     // palette = [&quot;#ff00d4&quot;, &quot;#ff0047&quot;, &quot;#ff4700&quot;, &quot;#ffd500&quot;]
                         
-                                    var palette=oui.color.algorithmic ({hex:&#x27;#FF0000&#x27;, type:&#x27;saturation&#x27;, scope:50});
+                                    var palette=$ui.color.algorithmic ({hex:&#x27;#FF0000&#x27;, type:&#x27;saturation&#x27;, scope:50});
                                     // palette = [&quot;#ffffff&quot;, &quot;#ffbfbf&quot;, &quot;#ff8080&quot;]
                         			
                                 @method algorithmic
@@ -742,8 +742,8 @@
                                     return palette; 
                                 }
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

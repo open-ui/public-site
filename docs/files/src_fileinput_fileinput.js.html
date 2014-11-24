@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         
                         /**
                         Create a new fileinput control
@@ -116,16 +116,16 @@
                         
                         Javascript:
                         	
-                        	oui.checkbox({
+                        	$ui.checkbox({
                         		element: document.getElementById(&#x27;fileinput&#x27;)
                         	});
                         	
-                        @class oui.fileinput
+                        @class $ui.fileinput
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to convert to control
                         @param [options.value=0] {String} Value of initially selected option, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
-                        @param [options.name=oui-fileinput-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;oui-fileinput-RandInt&#x60;
+                        @param [options.name=ui-fileinput-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;ui-fileinput-RandInt&#x60;
                         @param [options.label=label] {String} String to use for the control label, defaults to the attribute value set on the passed element, or its &#x60;innerHTML&#x60;
                         @param [options.tabindex=0] {Number} Tabindex of control, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
                         @param [options.disabled=false] {Boolean} Disabled state of control, defaults to the attribute value set on the passed element, or &#x60;false&#x60;
@@ -133,32 +133,32 @@
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
-                        (function(oui) {
-                            oui.fileinput = function(opt) {
+                        (function($ui) {
+                            $ui.fileinput = function(opt) {
                                 var el = opt.element,
                                     //    listeners = opt.listeners === undefined ? {} : opt.listeners,
                                     inputLabel = opt.label || el.getAttribute(&#x27;label&#x27;) || &quot;Browse&quot;,
                         			inputPlaceholder = opt.placeholder || el.getAttribute(&#x27;placeholder&#x27;) || &quot;Please select...&quot;,
-                                    inputMultiple = (Boolean(opt.multiple) === true || oui.attribute(el, &#x27;multiple&#x27;)) ? true : false,
+                                    inputMultiple = (Boolean(opt.multiple) === true || $ui.attribute(el, &#x27;multiple&#x27;)) ? true : false,
                                     inputDisabled = (opt.disabled || el.getAttribute(&#x27;disabled&#x27;)) ? &#x27;disabled&#x27; : &#x27;&#x27;,
-                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;oui-fileinput-&#x27; + oui.getRand(1, 999),
+                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;ui-fileinput-&#x27; + $ui.getRand(1, 999),
                                     listeners = opt.listeners === undefined ? {} : opt.listeners,
                                     inputTabIndex = opt.tabindex || el.getAttribute(&#x27;tabindex&#x27;) || 0;
                          
                         		inputName = (inputMultiple &amp;&amp; inputName.indexOf(&#x27;[]&#x27;) === -1) ? inputName + &#x27;[]&#x27; : inputName.replace(&#x27;[]&#x27;, &#x27;&#x27;);
                           
                                 /*jshint multistr:true */
-                                var str = &quot;&lt;div class=&#x27;oui-fileinput&#x27; for=&#x27;&quot; + inputName + &quot;&#x27;&gt;\
-                        			&lt;ul class=&#x27;oui-file-selected&#x27;&gt;&lt;li&gt;&quot;+inputPlaceholder+&quot;&lt;/li&gt;&lt;/ul&gt;\
-                        			&lt;div class=&#x27;oui-file-browse&#x27;&gt;\
+                                var str = &quot;&lt;div class=&#x27;ui-fileinput&#x27; for=&#x27;&quot; + inputName + &quot;&#x27;&gt;\
+                        			&lt;ul class=&#x27;ui-file-selected&#x27;&gt;&lt;li&gt;&quot;+inputPlaceholder+&quot;&lt;/li&gt;&lt;/ul&gt;\
+                        			&lt;div class=&#x27;ui-file-browse&#x27;&gt;\
                         				&lt;input type = &#x27;file&#x27;  id = &#x27;&quot; + inputName + &quot;&#x27;  name = &#x27;&quot; + inputName + &quot;&#x27;   tabindex = &#x27;&quot; + inputTabIndex + &quot;&#x27; &quot;+(inputMultiple?&quot;multiple=&#x27;multiple&#x27;&quot;:&quot;&quot;)+&quot;/ &gt;\
                         				&lt;button&gt;&quot;+inputLabel+&quot;&lt;/button&gt;\
                         			&lt;/div&gt;\
                         		&lt;/div&gt;&quot;;
                                 el.innerHTML = &#x27;&#x27;;
-                                el = oui.replaceEl(el, str);
+                                el = $ui.replaceEl(el, str);
                          
-                        		oui.bindEvent(&#x27;change&#x27;, el.children[1].children[0], function(e){
+                        		$ui.bindEvent(&#x27;change&#x27;, el.children[1].children[0], function(e){
                         			var selected=&quot;&lt;li&gt;&quot;+inputPlaceholder+&quot;&lt;/li&gt;&quot;;
                         			if(el.children[1].children[0].files[0] &amp;&amp; el.children[1].children[0].files[0].name){
                         				selected=&#x27;&#x27;;
@@ -179,20 +179,20 @@
                                     0: el,
                                     disabled: function(val) {
                                         if (val !== undefined) {
-                                            oui.toggleClass(el, &#x27;oui-disabled&#x27;, Boolean(val));
-                                            oui.attribute(el.children[0], &#x27;disabled&#x27;, Boolean(val));
+                                            $ui.toggleClass(el, &#x27;ui-disabled&#x27;, Boolean(val));
+                                            $ui.attribute(el.children[0], &#x27;disabled&#x27;, Boolean(val));
                                         }
-                                        return oui.attribute(el.children[0], &#x27;disabled&#x27;);
+                                        return $ui.attribute(el.children[0], &#x27;disabled&#x27;);
                                     }
                                 };
                                 if (inputDisabled) {
                                     obj.disabled(true);
                                 }
-                                oui.bindListeners(listeners, el.children[0]);
+                                $ui.bindListeners(listeners, el.children[0]);
                                 return obj;
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

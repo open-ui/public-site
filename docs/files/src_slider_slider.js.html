@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Create a new slider control
                         
@@ -115,7 +115,7 @@
                         	
                         Javascript:
                         
-                        	oui.slider({
+                        	$ui.slider({
                         		element: document.getElementById(&#x27;slider&#x27;),
                         		units: &#x27;mm&#x27;,
                         		min: 30,
@@ -123,7 +123,7 @@
                         		value: 133
                         	});
                         	
-                        @class oui.slider
+                        @class $ui.slider
                         @constructor
                         @param options {Object}
                         @param options.element {Object} DOM element to convert to control
@@ -132,7 +132,7 @@
                         @param [options.min=0] {Number} Minimum value
                         @param [options.max=100] {Number} Maximum value
                         @param [options.decimals=0] {Number} Number of decimal places
-                        @param [options.name=oui-slider-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;oui-slider-RandInt&#x60;
+                        @param [options.name=ui-slider-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;ui-slider-RandInt&#x60;
                         @param [options.tabindex=0] {Number} Tabindex of control, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
                         @param [options.disabled=false] {Boolean} Disabled state of control, defaults to the attribute value set on the passed element, or &#x60;false&#x60;
                         @param [options.listeners] {Object} Object array of event listeners to bind to underlying input(s)
@@ -143,8 +143,8 @@
                         @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
-                        (function(oui) {
-                            oui.slider = function(opt) {
+                        (function($ui) {
+                            $ui.slider = function(opt) {
                                 var el = opt.element,
                                     units = opt.units === undefined ? &#x27;&#x27; : opt.units,
                                     listeners = opt.listeners === undefined ? {} : opt.listeners,
@@ -155,7 +155,7 @@
                                     range = Math.abs(max - min),
                                     inputValue = opt.value || el.getAttribute(&#x27;value&#x27;) || 0,
                                     inputDisabled = (opt.disabled || el.getAttribute(&#x27;disabled&#x27;)) ? &#x27;disabled&#x27; : &#x27;&#x27;,
-                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;oui-slider-&#x27; + oui.getRand(1, 999),
+                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;ui-slider-&#x27; + $ui.getRand(1, 999),
                                     inputTabIndex = opt.tabindex || el.getAttribute(&#x27;tabindex&#x27;) || 0,
                         			circle = opt.circle || false;
                         			// circle=false;
@@ -175,12 +175,12 @@
                                     axis = &quot;x&quot;;
                                 }
                         
-                                var tpl = &quot;&lt;div class=&#x27;oui-slider oui-slider-&quot; + axis + &quot; &quot; + (inputDisabled ? &#x27;oui-disabled&#x27; : &#x27;&#x27;) + &quot; &quot; +(circle ? &#x27;oui-slider-circle&#x27;: &#x27;&#x27;) + &quot;&#x27; tabindex=&#x27;&quot; + inputTabIndex + &quot;&#x27;&gt;\
+                                var tpl = &quot;&lt;div class=&#x27;ui-slider ui-slider-&quot; + axis + &quot; &quot; + (inputDisabled ? &#x27;ui-disabled&#x27; : &#x27;&#x27;) + &quot; &quot; +(circle ? &#x27;ui-slider-circle&#x27;: &#x27;&#x27;) + &quot;&#x27; tabindex=&#x27;&quot; + inputTabIndex + &quot;&#x27;&gt;\
                                     &lt;input type=&#x27;hidden&#x27; name=&#x27;&quot; + inputName + &quot;&#x27; &quot; + inputDisabled + &quot; value=&#x27;&quot; + inputValue + &quot;&#x27;/&gt;\
                                 &lt;/div&gt;&quot;;
                         		
-                                el = oui.replaceEl(el, tpl);
-                        		var l=oui.layout(el);
+                                el = $ui.replaceEl(el, tpl);
+                        		var l=$ui.layout(el);
                         		var d = l.height &gt; l.width ? l.width : l.height;
                         		function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
                         		  var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
@@ -196,26 +196,26 @@
                         				startAngle=endAngle-(circle.length / 2);
                         				endAngle=endAngle+(circle.length / 2);
                         			}
-                        			return oui.svg.arcPath(x, y, radius, startAngle, endAngle);       
+                        			return $ui.svg.arcPath(x, y, radius, startAngle, endAngle);       
                         		}
                         		var pathEl=&#x27;&#x27;;
                         		var innerTpl=&#x27;&#x27;;
                         		if(circle){			
                         			innerTpl=&quot;&lt;svg height=&#x27;&quot;+d+&quot;&#x27; width=&#x27;&quot;+d+&quot;&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;&gt;\
-                        			   &lt;circle class=&#x27;oui-slider-circle&#x27; cx=&#x27;&quot;+d/2+&quot;&#x27; cy=&#x27;&quot;+d/2+&quot;&#x27; r=&#x27;&quot;+((d-Math.max(circle.stroke.inner, circle.stroke.outer))/2)+&quot;&#x27; stroke=&#x27;black&#x27; stroke-width=&#x27;&quot;+circle.stroke.outer+&quot;&#x27; fill=&#x27;none&#x27; /&gt;\
+                        			   &lt;circle class=&#x27;ui-slider-circle&#x27; cx=&#x27;&quot;+d/2+&quot;&#x27; cy=&#x27;&quot;+d/2+&quot;&#x27; r=&#x27;&quot;+((d-Math.max(circle.stroke.inner, circle.stroke.outer))/2)+&quot;&#x27; stroke=&#x27;black&#x27; stroke-width=&#x27;&quot;+circle.stroke.outer+&quot;&#x27; fill=&#x27;none&#x27; /&gt;\
                         			   &lt;path x=&#x27;&quot;+d/2+&quot;&#x27; y=&#x27;&quot;+d/2+&quot;&#x27; fill=&#x27;none&#x27; d=&#x27;&#x27; stroke-width=&#x27;&quot;+circle.stroke.inner+&quot;&#x27;/&gt;\
                         			&lt;/svg&gt;&quot;;
-                        			el.appendChild(oui.createEl(innerTpl));
-                        			el.appendChild(oui.createEl(&quot;&lt;span class=&#x27;oui-slider-monitor&#x27;&gt;&lt;span class=&#x27;oui-slider-value&#x27;&gt;&lt;/span&gt;&lt;span class=&#x27;oui-slider-units&#x27;&gt;&lt;/span&gt;&lt;/span&gt;&quot;));
+                        			el.appendChild($ui.createEl(innerTpl));
+                        			el.appendChild($ui.createEl(&quot;&lt;span class=&#x27;ui-slider-monitor&#x27;&gt;&lt;span class=&#x27;ui-slider-value&#x27;&gt;&lt;/span&gt;&lt;span class=&#x27;ui-slider-units&#x27;&gt;&lt;/span&gt;&lt;/span&gt;&quot;));
                         			
                         			pathEl = el.children[1].childNodes[3]; 
-                        			oui.attribute(pathEl, &#x27;d&#x27;, describeArc(d/2, d/2, (d-Math.max(circle.stroke.inner, circle.stroke.outer))/2, 0, 360));	
+                        			$ui.attribute(pathEl, &#x27;d&#x27;, describeArc(d/2, d/2, (d-Math.max(circle.stroke.inner, circle.stroke.outer))/2, 0, 360));	
                         		}else{
                         			// get biggest dimension
-                        			innerTpl=&quot;&lt;div class=&#x27;oui-slider-bar oui-animated&#x27;&gt;\
-                                        &lt;span class=&#x27;oui-slider-value&#x27;&gt;&lt;/span&gt;&lt;span class=&#x27;oui-slider-units&#x27;&gt;&lt;/span&gt;\
+                        			innerTpl=&quot;&lt;div class=&#x27;ui-slider-bar ui-animated&#x27;&gt;\
+                                        &lt;span class=&#x27;ui-slider-value&#x27;&gt;&lt;/span&gt;&lt;span class=&#x27;ui-slider-units&#x27;&gt;&lt;/span&gt;\
                                     &lt;/div&gt;&quot;;
-                        			el.appendChild(oui.createEl(innerTpl));
+                        			el.appendChild($ui.createEl(innerTpl));
                         		}
                         		
                                 var indicatorEl = circle ? el.children[1].childNodes[1] : el.children[1],
@@ -243,8 +243,8 @@
                                 @param element {Object} Element event fired on
                                 @param event {Object} Event object
                                 */
-                                oui.bindListeners(listeners, inputEl);
-                                oui.drag({
+                                $ui.bindListeners(listeners, inputEl);
+                                $ui.drag({
                                     element: el,
                                     contain: {
                                         element: el
@@ -256,7 +256,7 @@
                                                 return false;
                                             }			
                         					var perc=0;
-                        				    var p =oui.layout(el,e);
+                        				    var p =$ui.layout(el,e);
                         					if(circle){
                         						var origin={
                         							x:p.left+(p.width/2),
@@ -269,7 +269,7 @@
                         						}		
                         						perc=perc/360;						
                         					}else{
-                        						perc = axis === &quot;x&quot; ? (e.dragDist.x + e.dragOffset.x) / oui.layout(el).width : 1 - (e.dragDist.y + e.dragOffset.y) / oui.layout(el).height;
+                        						perc = axis === &quot;x&quot; ? (e.dragDist.x + e.dragOffset.x) / $ui.layout(el).width : 1 - (e.dragDist.y + e.dragOffset.y) / $ui.layout(el).height;
                         						perc = perc &lt; 0 ? 0 : perc;
                         						perc = perc &gt; 1 ? 1 : perc;
                         						
@@ -287,7 +287,7 @@
                                             if (listeners &amp;&amp; listeners.slidestart) {
                                                 listeners.slidestart(el, e);
                                             }
-                                            oui.removeClass(indicatorEl, &#x27;oui-animated&#x27;);
+                                            $ui.removeClass(indicatorEl, &#x27;ui-animated&#x27;);
                                         },
                                         dragend: function(el, e) {
                                             if (obj.disabled()) {
@@ -296,18 +296,18 @@
                                             if (listeners &amp;&amp; listeners.slideend) {
                                                 listeners.slideend(el, e);
                                             }
-                                            oui.addClass(indicatorEl, &#x27;oui-animated&#x27;);
+                                            $ui.addClass(indicatorEl, &#x27;ui-animated&#x27;);
                                         }
                                     }
                                 });
                         		
-                                oui.bindEvent(&#x27;click&#x27;, el, function(e) {
+                                $ui.bindEvent(&#x27;click&#x27;, el, function(e) {
                                     if (obj.disabled()) {
                                         return false;
                                     }
                         			var perc=0;
                         			if(circle){			
-                        				var p =oui.layout(el,e);
+                        				var p =$ui.layout(el,e);
                         				var origin={
                         					x:p.left+(p.width/2),
                         					y:p.top+(p.height/2)
@@ -319,12 +319,12 @@
                         				}		
                         				perc=perc/360;					
                         			}else{
-                        				perc = axis === &quot;x&quot; ? ((e.clientX - el.getBoundingClientRect().left) / oui.layout(el).width) : 1 - ((e.clientY - el.getBoundingClientRect().top) / oui.layout(el).height);
+                        				perc = axis === &quot;x&quot; ? ((e.clientX - el.getBoundingClientRect().left) / $ui.layout(el).width) : 1 - ((e.clientY - el.getBoundingClientRect().top) / $ui.layout(el).height);
                         			}
                                     obj.val(min + Math.round(perc * range));
                                 });
-                                oui.bindEvent(&quot;mousewheel&quot;, el, function(e) {
-                                    oui.preventBubble(e);
+                                $ui.bindEvent(&quot;mousewheel&quot;, el, function(e) {
+                                    $ui.preventBubble(e);
                                     if (obj.disabled()) {
                                         return false;
                                     }
@@ -357,7 +357,7 @@
                                         val = val &gt; max ? max : val;
                                         inputEl.value = val;
                         				if(circle){  
-                        					oui.attribute(pathEl, &#x27;d&#x27;, describeArc(d/2, d/2, (d-Math.max(circle.stroke.inner, circle.stroke.outer))/2, 0, (val - min) *360 / range));						
+                        					$ui.attribute(pathEl, &#x27;d&#x27;, describeArc(d/2, d/2, (d-Math.max(circle.stroke.inner, circle.stroke.outer))/2, 0, (val - min) *360 / range));						
                         				}else{
                         					if (axis === &quot;x&quot;) {
                         						indicatorEl.style.width = (val - min) * 100 / range + &#x27;%&#x27;;
@@ -373,17 +373,17 @@
                                     },
                                     disabled: function(val) {
                                         if (val !== undefined) {
-                                            oui.toggleClass(el, &#x27;oui-disabled&#x27;, val);
-                                            oui.attribute(inputEl, &#x27;disabled&#x27;, val);
+                                            $ui.toggleClass(el, &#x27;ui-disabled&#x27;, val);
+                                            $ui.attribute(inputEl, &#x27;disabled&#x27;, val);
                                         }
-                                        return oui.attribute(inputEl, &#x27;disabled&#x27;);
+                                        return $ui.attribute(inputEl, &#x27;disabled&#x27;);
                                     }
                                 };
                                 obj.val(inputValue, true);
                                 return obj;
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>

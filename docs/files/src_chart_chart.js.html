@@ -44,26 +44,26 @@
                 
                         <div id="api-tabview-panel">
                             <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/oui.html">oui</a></li>
-                                <li><a href="../classes/oui.accordian.html">oui.accordian</a></li>
-                                <li><a href="../classes/oui.carousel.html">oui.carousel</a></li>
-                                <li><a href="../classes/oui.chart.html">oui.chart</a></li>
-                                <li><a href="../classes/oui.checkbox.html">oui.checkbox</a></li>
-                                <li><a href="../classes/oui.color.html">oui.color</a></li>
-                                <li><a href="../classes/oui.colorpicker.html">oui.colorpicker</a></li>
-                                <li><a href="../classes/oui.datepicker.html">oui.datepicker</a></li>
-                                <li><a href="../classes/oui.drag.html">oui.drag</a></li>
-                                <li><a href="../classes/oui.fileinput.html">oui.fileinput</a></li>
-                                <li><a href="../classes/oui.modal.html">oui.modal</a></li>
-                                <li><a href="../classes/oui.notify.html">oui.notify</a></li>
-                                <li><a href="../classes/oui.rating.html">oui.rating</a></li>
-                                <li><a href="../classes/oui.scroll.html">oui.scroll</a></li>
-                                <li><a href="../classes/oui.select.html">oui.select</a></li>
-                                <li><a href="../classes/oui.slider.html">oui.slider</a></li>
-                                <li><a href="../classes/oui.svg.html">oui.svg</a></li>
-                                <li><a href="../classes/oui.switch.html">oui.switch</a></li>
-                                <li><a href="../classes/oui.toggle.html">oui.toggle</a></li>
-                                <li><a href="../classes/oui.tooltip.html">oui.tooltip</a></li>
+                                <li><a href="../classes/$ui.html">$ui</a></li>
+                                <li><a href="../classes/$ui.accordian.html">$ui.accordian</a></li>
+                                <li><a href="../classes/$ui.carousel.html">$ui.carousel</a></li>
+                                <li><a href="../classes/$ui.chart.html">$ui.chart</a></li>
+                                <li><a href="../classes/$ui.checkbox.html">$ui.checkbox</a></li>
+                                <li><a href="../classes/$ui.color.html">$ui.color</a></li>
+                                <li><a href="../classes/$ui.colorpicker.html">$ui.colorpicker</a></li>
+                                <li><a href="../classes/$ui.datepicker.html">$ui.datepicker</a></li>
+                                <li><a href="../classes/$ui.drag.html">$ui.drag</a></li>
+                                <li><a href="../classes/$ui.fileinput.html">$ui.fileinput</a></li>
+                                <li><a href="../classes/$ui.modal.html">$ui.modal</a></li>
+                                <li><a href="../classes/$ui.notify.html">$ui.notify</a></li>
+                                <li><a href="../classes/$ui.rating.html">$ui.rating</a></li>
+                                <li><a href="../classes/$ui.scroll.html">$ui.scroll</a></li>
+                                <li><a href="../classes/$ui.select.html">$ui.select</a></li>
+                                <li><a href="../classes/$ui.slider.html">$ui.slider</a></li>
+                                <li><a href="../classes/$ui.svg.html">$ui.svg</a></li>
+                                <li><a href="../classes/$ui.switch.html">$ui.switch</a></li>
+                                <li><a href="../classes/$ui.toggle.html">$ui.toggle</a></li>
+                                <li><a href="../classes/$ui.tooltip.html">$ui.tooltip</a></li>
                             </ul>
                 
                             <ul id="api-modules" class="apis modules">
@@ -105,7 +105,7 @@
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
-                        var oui = oui || {};
+                        var $ui = $ui || {};
                         /**
                         Create a new chart component
                         
@@ -115,7 +115,7 @@
                         
                         Javascript:
                         
-                        	oui.chart({
+                        	$ui.chart({
                         		element: document.getElementById(&#x27;chart&#x27;),
                         		type:&#x27;pie&#x27;,
                         		data: [
@@ -135,7 +135,7 @@
                         		series: [&#x27;series1&#x27;, &#x27;series2&#x27;]
                         	});
                         	
-                        @class oui.chart
+                        @class $ui.chart
                         @constructor 
                         @beta
                         @param type {String} Chart type to create, &#x60;pie&#x60; (use to create donut charts), &#x60;line&#x60;, &#x60;scatter&#x60; (use to create bubble charts), &#x60;area&#x60;, &#x60;column&#x60; or &#x60;bar&#x60;
@@ -154,12 +154,12 @@
                         
                         @chainable
                         */
-                        (function(oui) {
-                            oui.chart = function(opt) {
-                                var el=oui.replaceEl(opt.element, &quot;&lt;div class=&#x27;oui-chart&#x27;&gt;&lt;/div&gt;&quot;, true),
-                        			l=oui.layout(el),
-                        			svgEl=oui.createEl(&quot;&lt;svg /&gt;&quot;),
-                        			axesEl=oui.createEl(&quot;&lt;g class=&#x27;oui-axes&#x27; /&gt;&quot;),
+                        (function($ui) {
+                            $ui.chart = function(opt) {
+                                var el=$ui.replaceEl(opt.element, &quot;&lt;div class=&#x27;ui-chart&#x27;&gt;&lt;/div&gt;&quot;, true),
+                        			l=$ui.layout(el),
+                        			svgEl=$ui.createEl(&quot;&lt;svg /&gt;&quot;),
+                        			axesEl=$ui.createEl(&quot;&lt;g class=&#x27;ui-axes&#x27; /&gt;&quot;),
                         			data=opt.data || [],
                         			series=opt.series,
                         			seriesMeta={},
@@ -179,46 +179,46 @@
                         				series:0,
                         				category:10
                         			},
-                        			legendEl=oui.createEl(&quot;&lt;div class=&#x27;oui-legend&#x27;&gt;&lt;/div&gt;&quot;), 
+                        			legendEl=$ui.createEl(&quot;&lt;div class=&#x27;ui-legend&#x27;&gt;&lt;/div&gt;&quot;), 
                         			legend=typeof opt.legend===&#x27;function&#x27;?opt.legend:!opt.legend ? false : function(mInf){
                         
                         				if(type===&#x27;pie&#x27;){
-                        					oui.addClass(legendEl, &#x27;oui-table&#x27;);
+                        					$ui.addClass(legendEl, &#x27;ui-table&#x27;);
                         					if(series.length &gt; 1){
-                        						var hTpl=&quot;&lt;div class=&#x27;oui-row oui-legend-header&#x27;&gt;&lt;div class=&#x27;oui-legend-category oui-cell&#x27;&gt;&lt;/div&gt;&quot;;
+                        						var hTpl=&quot;&lt;div class=&#x27;ui-row ui-legend-header&#x27;&gt;&lt;div class=&#x27;ui-legend-category ui-cell&#x27;&gt;&lt;/div&gt;&quot;;
                         						for(var e=0;e&lt;series.length;e++){
-                        							hTpl+=&quot;&lt;div class=&#x27;oui-cell oui-legend-series&#x27;&gt;&quot;+series[e]+&quot;&lt;/div&gt;&quot;;
+                        							hTpl+=&quot;&lt;div class=&#x27;ui-cell ui-legend-series&#x27;&gt;&quot;+series[e]+&quot;&lt;/div&gt;&quot;;
                         						}
                         						legendEl.innerHTML+=hTpl+&quot;&lt;/div&gt;&quot;;
                         					}
                         					
                         					for(var c in mInf){
                         						var sI=0;
-                        						var lTpl=&quot;&lt;div class=&#x27;oui-row oui-legend-entry&#x27;&gt;&quot;;					
+                        						var lTpl=&quot;&lt;div class=&#x27;ui-row ui-legend-entry&#x27;&gt;&quot;;					
                         						if(series.length &gt; 1){
-                        							lTpl+=&quot;&lt;div class=&#x27;oui-cell oui-legend-category&#x27;&gt;&quot;+c+&quot;:&lt;/div&gt;&quot;;
+                        							lTpl+=&quot;&lt;div class=&#x27;ui-cell ui-legend-category&#x27;&gt;&quot;+c+&quot;:&lt;/div&gt;&quot;;
                         						}
                         						for(s in mInf[c]){ 
-                        							lTpl+=&quot;&lt;div class=&#x27;oui-cell oui-legend-series&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s+c).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;span class=&#x27;oui-indicator&#x27; style=&#x27;border-color:&quot;+mInf[c][s].color+&quot;;background-color:&quot;+mInf[c][s].color+&quot;;&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;/span&gt;&quot;+mInf[c][s].percentage+&quot;%&quot;+&quot;&lt;/div&gt;&quot;;
+                        							lTpl+=&quot;&lt;div class=&#x27;ui-cell ui-legend-series&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s+c).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;span class=&#x27;ui-indicator&#x27; style=&#x27;border-color:&quot;+mInf[c][s].color+&quot;;background-color:&quot;+mInf[c][s].color+&quot;;&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;/span&gt;&quot;+mInf[c][s].percentage+&quot;%&quot;+&quot;&lt;/div&gt;&quot;;
                         							sI++;
                         						}   
                         						if(series.length === 1){
-                        							lTpl+=&quot;&lt;div class=&#x27;oui-cell oui-legend-category&#x27;&gt;&quot;+c+&quot;&lt;/div&gt;&quot;;
+                        							lTpl+=&quot;&lt;div class=&#x27;ui-cell ui-legend-category&#x27;&gt;&quot;+c+&quot;&lt;/div&gt;&quot;;
                         						}
                         						lTpl+=&quot;&lt;/div&gt;&quot;; 
                         						legendEl.innerHTML+=lTpl;	 
                         					}	
-                        					oui.addClass(el, (l.height &gt;= l.width ? &quot;oui-legend-bottom&quot; : &quot;oui-legend-right&quot;)); 
+                        					$ui.addClass(el, (l.height &gt;= l.width ? &quot;ui-legend-bottom&quot; : &quot;ui-legend-right&quot;)); 
                         	
                         				}else{
                         					for(s in mInf){
-                        						legendEl.innerHTML+= &quot;&lt;div class=&#x27;oui-legend-series&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;span class=&#x27;oui-indicator&#x27; style=&#x27;border-color:&quot;+colors[s]+&quot;;background-color:&quot;+colors[s]+&quot;;&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;/span&gt;&quot;+s+&quot;&lt;/div&gt;&quot;;						
+                        						legendEl.innerHTML+= &quot;&lt;div class=&#x27;ui-legend-series&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;span class=&#x27;ui-indicator&#x27; style=&#x27;border-color:&quot;+colors[s]+&quot;;background-color:&quot;+colors[s]+&quot;;&#x27; data-rel=&#x27;&quot;+(&#x27;rel&#x27;+s).replace(&#x27; &#x27; ,&#x27;&#x27;)+&quot;&#x27;&gt;&lt;/span&gt;&quot;+s+&quot;&lt;/div&gt;&quot;;						
                         					}					
                         				}
                         				
                         			},
                         			tooltip=typeof opt.tooltip===&#x27;function&#x27;?opt.tooltip:!opt.tooltip ? false : function(tEl, tInf, tO){
-                        				oui.tooltip({element:tEl, content:tInf.series + &#x27;, &#x27;+tInf.values.x + &#x27;: &#x27;+tInf.values.y, position:&#x27;top&#x27;,offset:{x:tO.x}});
+                        				$ui.tooltip({element:tEl, content:tInf.series + &#x27;, &#x27;+tInf.values.x + &#x27;: &#x27;+tInf.values.y, position:&#x27;top&#x27;,offset:{x:tO.x}});
                         			};
                         
                         		 
@@ -228,29 +228,29 @@
                         		margin.x=margin.left+margin.right;
                         		margin.y=margin.top+margin.bottom;
                         		
-                        		oui.addClass(el, &#x27;oui-&#x27;+type+&#x27;-chart&#x27;);
+                        		$ui.addClass(el, &#x27;ui-&#x27;+type+&#x27;-chart&#x27;);
                         			
                         		data.sort(function(a,b) {return (a[axis.x] &gt; b[axis.x]) ? 1 : ((b[axis.x] &gt; a[axis.x]) ? -1 : 0);} );		
                         		
-                        		oui.bindEvent(&#x27;mouseover&#x27;, el, function(e){		
-                        			if(oui.attribute(e.target, &#x27;data-rel&#x27;)){
-                        				var hIt=oui.findEl(el, {attribute:{name:&#x27;data-rel&#x27;, value:oui.attribute(e.target, &#x27;data-rel&#x27;)}});	
+                        		$ui.bindEvent(&#x27;mouseover&#x27;, el, function(e){		
+                        			if($ui.attribute(e.target, &#x27;data-rel&#x27;)){
+                        				var hIt=$ui.findEl(el, {attribute:{name:&#x27;data-rel&#x27;, value:$ui.attribute(e.target, &#x27;data-rel&#x27;)}});	
                         				for(h=0;h&lt;hIt.length;h++){							
-                        					oui.addClass(hIt[h], &#x27;selected&#x27;); 
+                        					$ui.addClass(hIt[h], &#x27;selected&#x27;); 
                         				}	
                         			}				
                         		});
-                        		oui.bindEvent(&#x27;mouseout&#x27;, el, function(e){
-                        			if(oui.attribute(e.target, &#x27;data-rel&#x27;)){
-                        				var hIt=oui.findEl(el, {attribute:{name:&#x27;data-rel&#x27;, value:oui.attribute(e.target, &#x27;data-rel&#x27;)}});	
+                        		$ui.bindEvent(&#x27;mouseout&#x27;, el, function(e){
+                        			if($ui.attribute(e.target, &#x27;data-rel&#x27;)){
+                        				var hIt=$ui.findEl(el, {attribute:{name:&#x27;data-rel&#x27;, value:$ui.attribute(e.target, &#x27;data-rel&#x27;)}});	
                         				for(h=0;h&lt;hIt.length;h++){							
-                        					oui.removeClass(hIt[h], &#x27;selected&#x27;); 
+                        					$ui.removeClass(hIt[h], &#x27;selected&#x27;); 
                         				}	 
                         			}
                         		});		
                         		
                         		
-                        		oui.attribute(svgEl, {height:&#x27;100%&#x27;, width:&#x27;100%&#x27;, &#x27;viewBox&#x27;:&#x27;0 0 &#x27;+(type===&#x27;pie&#x27; ? d : l.width)+&#x27; &#x27;+(type===&#x27;pie&#x27; ? d : l.height)});
+                        		$ui.attribute(svgEl, {height:&#x27;100%&#x27;, width:&#x27;100%&#x27;, &#x27;viewBox&#x27;:&#x27;0 0 &#x27;+(type===&#x27;pie&#x27; ? d : l.width)+&#x27; &#x27;+(type===&#x27;pie&#x27; ? d : l.height)});
                         
                         		
                         		function drawAxis(xy, type){
@@ -258,29 +258,29 @@
                         			// Series of .5 pt adjustments to create crisp edges in IE
                         			var svgTpl=&quot;&quot;;
                         			if(xy===&#x27;x&#x27;){
-                        				svgTpl=&quot;&lt;g class=&#x27;oui-xAxis&#x27; transform=&#x27;translate(&quot;+margin.left+&quot;,&quot;+(l.height-margin.bottom+0.5)+&quot;)&#x27;&gt;\
+                        				svgTpl=&quot;&lt;g class=&#x27;ui-xAxis&#x27; transform=&#x27;translate(&quot;+margin.left+&quot;,&quot;+(l.height-margin.bottom+0.5)+&quot;)&#x27;&gt;\
                         						&lt;line x2=&#x27;&quot;+(l.width-margin.x)+&quot;&#x27;&gt;&lt;/line&gt;&quot;;												 
                         					for(t=0;t&lt;=axesMeta.x.range;t++){
                         						svgTpl+=&quot;&lt;g class=&#x27;tick&#x27; transform=&#x27;translate(&quot;+(Math.floor((t*axesMeta.x.unit)+(type===&#x27;categorical&#x27; ? axesMeta.x.unit: 0))+0.5)+&quot;, 0)&#x27;&gt;\
                         							&lt;line y2=&#x27;5&#x27;&gt;&lt;/line&gt;&quot;;
-                        							if(gridlines &amp;&amp; (t&gt;0 || type===&#x27;categorical&#x27;)){svgTpl+=&quot;&lt;line class=&#x27;oui-tick-line&#x27; y2=&#x27;&quot;+(-1*(l.height-margin.y-1))+&quot;&#x27;&gt;&lt;/line&gt;&quot;;}							
+                        							if(gridlines &amp;&amp; (t&gt;0 || type===&#x27;categorical&#x27;)){svgTpl+=&quot;&lt;line class=&#x27;ui-tick-line&#x27; y2=&#x27;&quot;+(-1*(l.height-margin.y-1))+&quot;&#x27;&gt;&lt;/line&gt;&quot;;}							
                         							svgTpl+=&quot;&lt;text &quot;+ (type===&#x27;categorical&#x27; ? &quot;x=&#x27;-&quot;+(axesMeta.x.unit/2) : &quot;&quot;)+&quot;&#x27; y=&#x27;17&#x27; y=&#x27;4&#x27; text-anchor=&#x27;middle&#x27;&gt;&quot;+(type===&#x27;ordinal&#x27; ? (t+axesMeta.x.min) : axesMeta.x.data[t])+&quot;&lt;/text&gt;\
                         						&lt;/g&gt;&quot;;					
                         					} 
                         					svgTpl+=&quot;&lt;/g&gt;&quot;;
                         			}else if(xy===&#x27;y&#x27;){
-                        				svgTpl=&quot;&lt;g class=&#x27;oui-yAxis&#x27; transform=&#x27;translate(&quot;+(margin.left-0.5)+&quot;,&quot;+margin.top+&quot;)&#x27;&gt;\
+                        				svgTpl=&quot;&lt;g class=&#x27;ui-yAxis&#x27; transform=&#x27;translate(&quot;+(margin.left-0.5)+&quot;,&quot;+margin.top+&quot;)&#x27;&gt;\
                         						&lt;line y2=&#x27;&quot;+(l.height-margin.y)+&quot;&#x27;&gt;&lt;/line&gt;&quot;;
                         					for(var t=0;t&lt;=axesMeta.y.range;t++){
                         						svgTpl+=&quot;&lt;g class=&#x27;tick&#x27; transform=&#x27;translate(-5,&quot;+(Math.floor((t*axesMeta.y.unit))+0.5)+&quot;)&#x27;&gt;\
                         							&lt;line x2=&#x27;5&#x27;&gt;&lt;/line&gt;&quot;;  
-                        							if(gridlines &amp;&amp; (t&lt;axesMeta.y.range|| type===&#x27;categorical&#x27;)){svgTpl+=&quot;&lt;line class=&#x27;oui-tick-line&#x27; x1=&#x27;6&#x27; x2=&#x27;&quot;+(5+l.width-margin.x)+&quot;&#x27;&gt;&lt;/line&gt;&quot;;}
+                        							if(gridlines &amp;&amp; (t&lt;axesMeta.y.range|| type===&#x27;categorical&#x27;)){svgTpl+=&quot;&lt;line class=&#x27;ui-tick-line&#x27; x1=&#x27;6&#x27; x2=&#x27;&quot;+(5+l.width-margin.x)+&quot;&#x27;&gt;&lt;/line&gt;&quot;;}
                         							svgTpl+=&quot;&lt;text x=&#x27;&quot;+(-5)+&quot;&#x27; y=&#x27;&quot;+ (type===&#x27;categorical&#x27; ? (axesMeta.y.unit/2)+2 : &quot;2&quot;)+&quot;&#x27; text-anchor=&#x27;end&#x27;&gt;&quot;+(type===&#x27;ordinal&#x27; ? (axesMeta.y.range+axesMeta.y.min)-t : axesMeta.y.data[t])+&quot;&lt;/text&gt;\
                         						&lt;/g&gt;&quot;;				 	 
                         					} 
                         					svgTpl+=&quot;&lt;/g&gt;&quot;;
                         			}				
-                        			axesEl.appendChild(oui.createEl(svgTpl));			
+                        			axesEl.appendChild($ui.createEl(svgTpl));			
                         		}	
                         
                         		function resolveAxis(xyr, type){
@@ -332,7 +332,7 @@
                         						seriesMeta[series[s]].data.push(data[i][series[s]]);
                         						seriesMeta[series[s]].sum+=Math.abs(parseInt(data[i][series[s]],0));
                         						if(!colors[data[i][axis.x]]){
-                        							colors[data[i][axis.x]]=oui.color.percentage(i/data.length); 
+                        							colors[data[i][axis.x]]=$ui.color.percentage(i/data.length); 
                         						}
                         					}			
                         					seriesMeta[series[s]].min=Math.min.apply(Math, seriesMeta[series[s]].data);
@@ -346,14 +346,14 @@
                         				var ttlArc=0;
                         				for(i=0;i&lt;seriesMeta[s].data.length;i++){	
                         				
-                        					var pathCol=oui.color.darken(colors[data[i][axis.x]], sIndex*(50/series.length));
-                        					var pathEl=oui.createEl(&quot;&lt;path x=&#x27;&quot;+d/2+&quot;&#x27; y=&#x27;&quot;+d/2+&quot;&#x27; fill=&#x27;none&#x27; stroke=&#x27;&quot;+pathCol+&quot;&#x27; d=&#x27;&#x27; stroke-width=&#x27;&quot;+(stroke/series.length+1)+&quot;&#x27;/&gt;&quot;);
+                        					var pathCol=$ui.color.darken(colors[data[i][axis.x]], sIndex*(50/series.length));
+                        					var pathEl=$ui.createEl(&quot;&lt;path x=&#x27;&quot;+d/2+&quot;&#x27; y=&#x27;&quot;+d/2+&quot;&#x27; fill=&#x27;none&#x27; stroke=&#x27;&quot;+pathCol+&quot;&#x27; d=&#x27;&#x27; stroke-width=&#x27;&quot;+(stroke/series.length+1)+&quot;&#x27;/&gt;&quot;);
                         					
                         					svgEl.appendChild(pathEl);
                         					var arc = Math.round((Math.abs(seriesMeta[s].data[i])/seriesMeta[s].sum)*360);
                         					r=((d-stroke/2)/2) - (stroke/2*sIndex);
                         					r = series.length&gt;1 ? r : (d/2)-stroke/2;
-                        					oui.attribute(pathEl, {&#x27;d&#x27;:oui.svg.arcPath(d/2, d/2,  r, ttlArc, ttlArc+arc), &#x27;data-rel&#x27;:(&#x27;rel&#x27;+s+data[i][axis.x]).replace(&#x27; &#x27; ,&#x27;&#x27;)});  
+                        					$ui.attribute(pathEl, {&#x27;d&#x27;:$ui.svg.arcPath(d/2, d/2,  r, ttlArc, ttlArc+arc), &#x27;data-rel&#x27;:(&#x27;rel&#x27;+s+data[i][axis.x]).replace(&#x27; &#x27; ,&#x27;&#x27;)});  
                         					if(typeof legend === &#x27;function&#x27;){
                         						if(!metaObj[data[i][axis.x]]){
                         							metaObj[data[i][axis.x]]={};
@@ -387,7 +387,7 @@
                         			if([&#x27;column&#x27;, &#x27;bar&#x27;].indexOf(type)===-1 &amp;&amp; typeof axis.r === &#x27;string&#x27; &amp;&amp; data[0][axis.r]!==&#x27;undefined&#x27;){	
                         				resolveAxis(&#x27;r&#x27;, &#x27;ordinal&#x27;); 
                         			}
-                        			var groupEl=oui.createEl(&quot;&lt;g class=&#x27;oui-series&#x27;&gt;&lt;/g&gt;&quot;);
+                        			var groupEl=$ui.createEl(&quot;&lt;g class=&#x27;ui-series&#x27;&gt;&lt;/g&gt;&quot;);
                         			svgEl.appendChild(groupEl);
                         		
                         			/*
@@ -397,9 +397,9 @@
                         			sIndex=0;
                         			for(s in seriesMeta){				
                         				if(!colors[s]){
-                        					colors[s]=oui.color.random();  
+                        					colors[s]=$ui.color.random();  
                         				}					
-                        				var seriesEl=oui.createEl(&quot;&lt;g class=&#x27;oui-series-&quot;+sIndex+&quot;&#x27; /&gt;&quot;);
+                        				var seriesEl=$ui.createEl(&quot;&lt;g class=&#x27;ui-series-&quot;+sIndex+&quot;&#x27; /&gt;&quot;);
                         				var sPath=&#x27;&#x27;, aPath=&#x27;&#x27;, sRect=&#x27;&#x27;;
                         				
                         				for(i=0;i&lt;seriesMeta[s].x.data.length;i++){	
@@ -421,13 +421,13 @@
                         					}else if([&#x27;column&#x27;].indexOf(type)!==-1){ 
                         						pxX= Math.floor(margin.left+(sIndex*(axesMeta.x.unit/Object.keys(seriesMeta).length)+(axesMeta.x.unit * axesMeta.x.data.indexOf(seriesMeta[s].x.data[i]))));
                         						pxY=axesMeta.y.unit * (seriesMeta[s].y.data[i]-axesMeta.y.min);
-                        						svgItemEl=oui.createEl(&quot;&lt;rect x=&#x27;&quot;+(pxX-0)+&quot;&#x27; y=&#x27;&quot;+(l.height-margin.bottom-pxY)+&quot;&#x27; height=&#x27;&quot;+pxY+&quot;&#x27; width=&#x27;&quot;+(0+(axesMeta.x.unit/Object.keys(seriesMeta).length))+&quot;&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27;/&gt;&quot;);						
+                        						svgItemEl=$ui.createEl(&quot;&lt;rect x=&#x27;&quot;+(pxX-0)+&quot;&#x27; y=&#x27;&quot;+(l.height-margin.bottom-pxY)+&quot;&#x27; height=&#x27;&quot;+pxY+&quot;&#x27; width=&#x27;&quot;+(0+(axesMeta.x.unit/Object.keys(seriesMeta).length))+&quot;&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27;/&gt;&quot;);						
                         						seriesEl.appendChild(svgItemEl);
                         						ttX+=(0+(axesMeta.x.unit/Object.keys(seriesMeta).length))/2;				
                         					}else if([&#x27;bar&#x27;].indexOf(type)!==-1){		
                         						pxX= Math.round(margin.left + (axesMeta.x.unit * (seriesMeta[s].x.data[i]-axesMeta.x.min)));
                         						pxY= Math.floor(margin.top+(sIndex*(axesMeta.y.unit/Object.keys(seriesMeta).length)+(axesMeta.y.unit * axesMeta.y.data.indexOf(seriesMeta[s].y.data[i]))));
-                        						svgItemEl=oui.createEl(&quot;&lt;rect x=&#x27;&quot;+margin.left+&quot;&#x27; y=&#x27;&quot;+pxY+&quot;&#x27; height=&#x27;&quot;+(0+(axesMeta.y.unit/Object.keys(seriesMeta).length))+&quot;&#x27; width=&#x27;&quot;+(pxX-margin.left)+&quot;&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27;/&gt;&quot;);						
+                        						svgItemEl=$ui.createEl(&quot;&lt;rect x=&#x27;&quot;+margin.left+&quot;&#x27; y=&#x27;&quot;+pxY+&quot;&#x27; height=&#x27;&quot;+(0+(axesMeta.y.unit/Object.keys(seriesMeta).length))+&quot;&#x27; width=&#x27;&quot;+(pxX-margin.left)+&quot;&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27;/&gt;&quot;);						
                         						seriesEl.appendChild(svgItemEl);	
                         						ttX+=ttX+(pxX-margin.left);
                         					}
@@ -443,21 +443,21 @@
                         					if([&#x27;column&#x27;, &#x27;bar&#x27;].indexOf(type)===-1){
                         						// draw points				
                         						r=seriesMeta[s].r &amp;&amp; seriesMeta[s].r.data[i] ? (seriesMeta[s].r.data[i]*20 / axesMeta.r.range)  : typeof axis.r === &#x27;number&#x27; ? axis.r : 5;						
-                        						svgItemEl=oui.createEl(&quot;&lt;circle cx=&#x27;&quot;+pxX+&quot;&#x27; cy=&#x27;&quot;+pxY+&quot;&#x27; r=&#x27;&quot;+r+&quot;&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27; /&gt;&quot;);
+                        						svgItemEl=$ui.createEl(&quot;&lt;circle cx=&#x27;&quot;+pxX+&quot;&#x27; cy=&#x27;&quot;+pxY+&quot;&#x27; r=&#x27;&quot;+r+&quot;&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27; /&gt;&quot;);
                         						seriesEl.appendChild(svgItemEl);  
                         						ttX+=r;		 
                         					}
-                        					if(tooltip &amp;&amp; oui.tooltip){
+                        					if(tooltip &amp;&amp; $ui.tooltip){
                         						tooltip(svgItemEl, {series:s, values:{x:seriesMeta[s].x.data[i], y:seriesMeta[s].y.data[i], r:seriesMeta[s].r ? seriesMeta[s].r.data[i] : 0}}, {x:ttX, y:0}); 	
                         					}
                         				}  
                         				if([&#x27;scatter&#x27;, &#x27;column&#x27;, &#x27;bar&#x27;].indexOf(type)===-1){ 
                         					// draw connecting lines
-                        					seriesEl.insertBefore(oui.createEl(&quot;&lt;path class=&#x27;oui-line&#x27; fill=&#x27;none&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; d=&#x27;&quot;+sPath.trim()+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27; /&gt;&quot;),seriesEl.firstChild );
+                        					seriesEl.insertBefore($ui.createEl(&quot;&lt;path class=&#x27;ui-line&#x27; fill=&#x27;none&#x27; stroke=&#x27;&quot;+colors[s]+&quot;&#x27; d=&#x27;&quot;+sPath.trim()+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27; /&gt;&quot;),seriesEl.firstChild );
                         				}
                         				if([&#x27;area&#x27;].indexOf(type)!==-1){
                         					// draw fill area
-                        					seriesEl.insertBefore(oui.createEl(&quot;&lt;path class=&#x27;oui-area&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; d=&#x27;&quot;+aPath.trim()+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27; /&gt;&quot;),seriesEl.firstChild );
+                        					seriesEl.insertBefore($ui.createEl(&quot;&lt;path class=&#x27;ui-area&#x27; fill=&#x27;&quot;+colors[s]+&quot;&#x27; d=&#x27;&quot;+aPath.trim()+&quot;&#x27; data-rel=&#x27;rel&quot;+s.replace(&#x27; &#x27;,&#x27;&#x27;)+&quot;&#x27; /&gt;&quot;),seriesEl.firstChild );
                         				}
                         				groupEl.appendChild(seriesEl);  
                         				sIndex++;
@@ -476,8 +476,8 @@
                         
                         		
                             };
-                            return oui;
-                        })(oui);
+                            return $ui;
+                        })($ui);
                         
                             </pre>
                         </div>
