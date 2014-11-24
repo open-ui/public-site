@@ -80,6 +80,15 @@
             "fors": {},
             "namespaces": {}
         },
+        "src/fileinput/fileinput.js": {
+            "name": "src/fileinput/fileinput.js",
+            "modules": {},
+            "classes": {
+                "oui.fileinput": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
         "src/modal/modal.js": {
             "name": "src/modal/modal.js",
             "modules": {},
@@ -193,6 +202,7 @@
                 "oui": 1,
                 "oui.datepicker": 1,
                 "oui.drag": 1,
+                "oui.fileinput": 1,
                 "oui.modal": 1,
                 "oui.notify": 1,
                 "oui.rating": 1,
@@ -672,6 +682,81 @@
             ],
             "return": {
                 "description": "Object  Consisting of original DOM element (item `0`)",
+                "type": "Object"
+            },
+            "chainable": 1
+        },
+        "oui.fileinput": {
+            "name": "oui.fileinput",
+            "shortname": "oui.fileinput",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "open-ui",
+            "namespace": "",
+            "file": "src/fileinput/fileinput.js",
+            "line": 3,
+            "description": "Create a new fileinput control\n\nHTML:\n\n\t<input type='file' id='fileinput' />\n\nJavascript:\n\t\n\toui.checkbox({\n\t\telement: document.getElementById('fileinput')\n\t});",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "element",
+                            "description": "DOM element to convert to control",
+                            "type": "Object"
+                        },
+                        {
+                            "name": "value",
+                            "description": "Value of initially selected option, defaults to the attribute value set on the passed element, or `0`",
+                            "type": "String",
+                            "optional": true,
+                            "optdefault": "0"
+                        },
+                        {
+                            "name": "name",
+                            "description": "Name of underlying input control, defaults to the attribute value set on the passed element, or `oui-fileinput-RandInt`",
+                            "type": "String",
+                            "optional": true,
+                            "optdefault": "oui-fileinput-RandInt"
+                        },
+                        {
+                            "name": "label",
+                            "description": "String to use for the control label, defaults to the attribute value set on the passed element, or its `innerHTML`",
+                            "type": "String",
+                            "optional": true,
+                            "optdefault": "label"
+                        },
+                        {
+                            "name": "tabindex",
+                            "description": "Tabindex of control, defaults to the attribute value set on the passed element, or `0`",
+                            "type": "Number",
+                            "optional": true,
+                            "optdefault": "0"
+                        },
+                        {
+                            "name": "disabled",
+                            "description": "Disabled state of control, defaults to the attribute value set on the passed element, or `false`",
+                            "type": "Boolean",
+                            "optional": true,
+                            "optdefault": "false"
+                        },
+                        {
+                            "name": "listeners",
+                            "description": "Object array of event listeners to bind to underlying input(s)",
+                            "type": "Object",
+                            "optional": true
+                        }
+                    ]
+                }
+            ],
+            "return": {
+                "description": "Object  Consisting of original DOM element (item `0`) and class methods (see below)",
                 "type": "Object"
             },
             "chainable": 1
@@ -2127,6 +2212,27 @@
                 }
             ],
             "class": "oui.drag",
+            "module": "open-ui"
+        },
+        {
+            "file": "src/fileinput/fileinput.js",
+            "line": 65,
+            "description": "Gets or sets control disabled state",
+            "itemtype": "method",
+            "name": "disabled",
+            "params": [
+                {
+                    "name": "boolean",
+                    "description": "Disabled state",
+                    "type": "Boolean",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "Returns disabled state",
+                "type": "Boolean"
+            },
+            "class": "oui.fileinput",
             "module": "open-ui"
         },
         {

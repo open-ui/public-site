@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>src/accordian/accordian.js - Open UI</title>
+    <title>src/fileinput/fileinput.js - Open UI</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -101,107 +101,95 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: src/accordian/accordian.js</h1>
+                        <h1 class="file-heading">File: src/fileinput/fileinput.js</h1>
                         
                         <div class="file">
                             <pre class="code prettyprint linenums">
                         var oui = oui || {};
+                        
                         /**
-                        Create a new accordian component from an unordered list element &#x60;&lt;ul&gt;&#x60; with the below structure:
+                        Create a new fileinput control
                         
                         HTML:
                         
-                        	&lt;ul id=&#x27;accordian&#x27;&gt;
-                                &lt;li&gt;
-                                    &lt;h3 class=&#x27;oui-content-header&#x27;&gt;Content header&lt;/h3&gt;
-                                    &lt;div class=&#x27;oui-content&#x27;&gt;
-                        				Content to collapse
-                        			&lt;/div&gt;
-                                &lt;/li&gt;
-                                &lt;li&gt;
-                                    &lt;h3 class=&#x27;oui-content-header&#x27;&gt;Content header&lt;/h3&gt;
-                                    &lt;div class=&#x27;oui-content&#x27;&gt;
-                        				Content to collapse
-                        			&lt;/div&gt;
-                                &lt;/li&gt;
-                                &lt;li&gt;
-                                    &lt;h3 class=&#x27;oui-content-header&#x27;&gt;Content header&lt;/h3&gt;
-                                    &lt;div class=&#x27;oui-content&#x27;&gt;
-                        				Content to collapse
-                        			&lt;/div&gt;
-                                &lt;/li&gt;		
-                            &lt;/ul&gt;
+                        	&lt;input type=&#x27;file&#x27; id=&#x27;fileinput&#x27; /&gt;
                         
                         Javascript:
-                        
-                        	oui.accordian({
-                        		element: document.getElementById(&#x27;accordian&#x27;),
-                        		animate: true,
-                        		multiple: true
-                        	});		
-                        		
-                        @class oui.accordian
+                        	
+                        	oui.checkbox({
+                        		element: document.getElementById(&#x27;fileinput&#x27;)
+                        	});
+                        	
+                        @class oui.fileinput
                         @constructor
                         @param options {Object}
-                        @param options.element {Object} DOM element to convert to component
-                        @param [options.animate=true] {Boolean} Animate expand/collapse actions
-                        @param [options.multiple=true] {Boolean} Allow multiple sections to be expanded simultaneously
-                        @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;)
+                        @param options.element {Object} DOM element to convert to control
+                        @param [options.value=0] {String} Value of initially selected option, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
+                        @param [options.name=oui-fileinput-RandInt] {String} Name of underlying input control, defaults to the attribute value set on the passed element, or &#x60;oui-fileinput-RandInt&#x60;
+                        @param [options.label=label] {String} String to use for the control label, defaults to the attribute value set on the passed element, or its &#x60;innerHTML&#x60;
+                        @param [options.tabindex=0] {Number} Tabindex of control, defaults to the attribute value set on the passed element, or &#x60;0&#x60;
+                        @param [options.disabled=false] {Boolean} Disabled state of control, defaults to the attribute value set on the passed element, or &#x60;false&#x60;
+                        @param [options.listeners] {Object} Object array of event listeners to bind to underlying input(s)
+                        @return Object {Object} Consisting of original DOM element (item &#x60;0&#x60;) and class methods (see below)
                         @chainable
                         */
-                        
                         (function(oui) {
-                            oui.accordian = function(opt) {
+                            oui.fileinput = function(opt) {
                                 var el = opt.element,
-                                    anim = opt.animate === false ? false : opt.animate || true,
-                                    multiple = opt.multiple === false ? false : opt.multiple || true;
-                        
-                        		oui.addClass(el, &#x27;oui-accordian&#x27;);
-                        		
-                                function animHeight(tEl) {
-                                    tEl.style.height = &#x27;auto&#x27;;
-                                    var h = oui.layout(tEl).height;
-                                    tEl.style.height = &#x27;0&#x27;;
-                                    setTimeout(function() {
-                                        tEl.style.height = h + &#x27;px&#x27;;
-                                    }, 10);
-                                }
-                        
-                                function doLayout(tEl) {
-                                    for (var a = 0; a &lt; el.children.length; a++) {
-                                        // loop through each....
-                        
-                                        var content = el.children[a].children[1];
-                                        // if multiple set to false and node passed, hide all other nodes
-                                        if (tEl &amp;&amp; el.children[a] !== tEl &amp;&amp; multiple === false) {
-                                            oui.removeClass(el.children[a], &#x27;oui-show&#x27;);
+                                    //    listeners = opt.listeners === undefined ? {} : opt.listeners,
+                                    inputLabel = opt.label || el.getAttribute(&#x27;label&#x27;) || &quot;Browse&quot;,
+                        			inputPlaceholder = opt.placeholder || el.getAttribute(&#x27;placeholder&#x27;) || &quot;Please select...&quot;,
+                                    inputMultiple = (Boolean(opt.multiple) === true || oui.attribute(el, &#x27;multiple&#x27;)) ? true : false,
+                                    inputDisabled = (opt.disabled || el.getAttribute(&#x27;disabled&#x27;)) ? &#x27;disabled&#x27; : &#x27;&#x27;,
+                                    inputName = opt.name || el.getAttribute(&#x27;name&#x27;) || &#x27;oui-fileinput-&#x27; + oui.getRand(1, 999),
+                                    listeners = opt.listeners === undefined ? {} : opt.listeners,
+                                    inputTabIndex = opt.tabindex || el.getAttribute(&#x27;tabindex&#x27;) || 0;
+                         
+                        		inputName = (inputMultiple &amp;&amp; inputName.indexOf(&#x27;[]&#x27;) === -1) ? inputName + &#x27;[]&#x27; : inputName.replace(&#x27;[]&#x27;, &#x27;&#x27;);
+                          
+                                /*jshint multistr:true */
+                                var str = &quot;&lt;div class=&#x27;oui-fileinput&#x27; for=&#x27;&quot; + inputName + &quot;&#x27;&gt;\
+                        			&lt;ul class=&#x27;oui-file-selected&#x27;&gt;&lt;li&gt;&quot;+inputPlaceholder+&quot;&lt;/li&gt;&lt;/ul&gt;\
+                        			&lt;div class=&#x27;oui-file-browse&#x27;&gt;\
+                        				&lt;input type = &#x27;file&#x27;  id = &#x27;&quot; + inputName + &quot;&#x27;  name = &#x27;&quot; + inputName + &quot;&#x27;   tabindex = &#x27;&quot; + inputTabIndex + &quot;&#x27; &quot;+(inputMultiple?&quot;multiple=&#x27;multiple&#x27;&quot;:&quot;&quot;)+&quot;/ &gt;\
+                        				&lt;button&gt;&quot;+inputLabel+&quot;&lt;/button&gt;\
+                        			&lt;/div&gt;\
+                        		&lt;/div&gt;&quot;;
+                                el.innerHTML = &#x27;&#x27;;
+                                el = oui.replaceEl(el, str);
+                         
+                        		oui.bindEvent(&#x27;change&#x27;, el.children[1].children[0], function(e){
+                        			var selected=&quot;&lt;li&gt;&quot;+inputPlaceholder+&quot;&lt;/li&gt;&quot;;
+                        			if(el.children[1].children[0].files[0] &amp;&amp; el.children[1].children[0].files[0].name){
+                        				selected=&#x27;&#x27;;
+                        				for(var i=0;i&lt;el.children[1].children[0].files.length;i++){
+                        					selected+=&quot;&lt;li&gt;&quot;+el.children[1].children[0].files[i].name+&quot;&lt;/li&gt;&quot;;
+                        				}
+                        			}
+                        			el.children[0].innerHTML= selected;
+                        		}); 
+                        		 
+                                /**
+                                Gets or sets control disabled state
+                                @method disabled
+                                @param [boolean] {Boolean} Disabled state
+                                @return {Boolean} Returns disabled state
+                                */
+                                var obj = {
+                                    0: el,
+                                    disabled: function(val) {
+                                        if (val !== undefined) {
+                                            oui.toggleClass(el, &#x27;oui-disabled&#x27;, Boolean(val));
+                                            oui.attribute(el.children[0], &#x27;disabled&#x27;, Boolean(val));
                                         }
-                                        if (oui.hasClass(el.children[a], &#x27;oui-show&#x27;)) {
-                                            // show...if not already shown
-                                            if (parseInt(content.style.height, 0) === 0 || !content.style.height) {
-                                                if (anim) {
-                                                    animHeight(content);
-                                                } else {
-                                                    content.style.height = &#x27;auto&#x27;;
-                                                }
-                                            }
-                                        } else {
-                                            // hide
-                                            content.style.height = &#x27;0&#x27;;
-                                        }
+                                        return oui.attribute(el.children[0], &#x27;disabled&#x27;);
                                     }
-                                }
-                                oui.bindEvent(&#x27;click&#x27;, el, function(e) {
-                                    if (!oui.hasClass(e.target, &#x27;oui-content-header&#x27;)) {
-                                        return;
-                                    }
-                                    oui.toggleClass(e.target.parentNode, &#x27;oui-show&#x27;);
-                                    doLayout(e.target.parentNode);
-                                });
-                                doLayout();
-                                return {
-                                    0: el
                                 };
+                                if (inputDisabled) {
+                                    obj.disabled(true);
+                                }
+                                oui.bindListeners(listeners, el.children[0]);
+                                return obj;
                             };
                             return oui;
                         })(oui);

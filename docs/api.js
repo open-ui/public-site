@@ -10,6 +10,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "oui.colorpicker",
         "oui.datepicker",
         "oui.drag",
+        "oui.fileinput",
         "oui.modal",
         "oui.notify",
         "oui.rating",

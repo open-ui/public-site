@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>oui.drag - Open UI</title>
+    <title>oui.fileinput - Open UI</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
     <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
@@ -101,12 +101,12 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>oui.drag Class</h1>
+                        <h1>oui.fileinput Class</h1>
                         <div class="box meta">
                         
                         
                                 <div class="foundat">
-                                    Defined in: <a href="../files/src_drag_drag.js.html#l2"><code>src&#x2F;drag&#x2F;drag.js:2</code></a>
+                                    Defined in: <a href="../files/src_fileinput_fileinput.js.html#l3"><code>src&#x2F;fileinput&#x2F;fileinput.js:3</code></a>
                                 </div>
                         
                                     Module: <a href="../modules/open-ui.html">open-ui</a>
@@ -115,36 +115,20 @@
                         
                         
                         <div class="box intro">
-                            <p>Utility class for creating draggable elements</p>
+                            <p>Create a new fileinput control</p>
                         <p>HTML:</p>
-                        <pre class="code prettyprint"><code>&lt;div id=&#39;draggable&#39;&gt;&lt;/div&gt;
+                        <pre class="code prettyprint"><code>&lt;input type=&#39;file&#39; id=&#39;fileinput&#39; /&gt;
                         </code></pre><p>Javascript:</p>
-                        <pre class="code prettyprint"><code>oui.drag({
-                            element: document.getElementById(&#39;draggable&#39;),
-                            move: true,
-                            container:{
-                                element:document.body,
-                                style:&#39;restrict&#39;
-                            },
-                            listeners: {
-                                dragstart: function() {
-                                    // started dragging
-                                },
-                                dragging: function() {
-                                    // dragging
-                                },
-                                dragend: function() {
-                                    // stopped dragging
-                                }
-                            }
+                        <pre class="code prettyprint"><code>oui.checkbox({
+                            element: document.getElementById(&#39;fileinput&#39;)
                         });
                         </code></pre>
                         </div>
                         
                             <div class="constructor">
                                 <h2>Constructor</h2>
-                                <div id="method_oui.drag" class="method item">
-                                    <h3 class="name"><code>oui.drag</code></h3>
+                                <div id="method_oui.fileinput" class="method item">
+                                    <h3 class="name"><code>oui.fileinput</code></h3>
                                 
                                         <div class="args">
                                             <span class="paren">(</span><ul class="args-list inline commas">
@@ -168,7 +152,7 @@
                                     <div class="meta">
                                                 <p>
                                                 Defined in
-                                        <a href="../files/src_drag_drag.js.html#l2"><code>src&#x2F;drag&#x2F;drag.js:2</code></a>
+                                        <a href="../files/src_fileinput_fileinput.js.html#l3"><code>src&#x2F;fileinput&#x2F;fileinput.js:3</code></a>
                                         </p>
                                 
                                 
@@ -198,59 +182,65 @@
                                                                     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>DOM element to attach drag handlers to</p>
+                                                                    <p>DOM element to convert to control</p>
                                 
                                                                 </div>
                                 
                                                             </li>
                                                             <li class="param">
-                                                                    <code class="param-name optional">[handle=element]</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                                                                    <code class="param-name optional">[value=0]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
                                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>DOM element (child of <code>element</code>) to use as drag handle</p>
+                                                                    <p>Value of initially selected option, defaults to the attribute value set on the passed element, or <code>0</code></p>
                                 
                                                                 </div>
                                 
                                                             </li>
                                                             <li class="param">
-                                                                    <code class="param-name">move</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                                                                    <code class="param-name optional">[name=oui-fileinput-RandInt]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>Show movement during drag, either <code>true</code>, <code>false</code> or an object consisting of <code>x</code> and <code>y</code> {Boolean} values</p>
+                                                                    <p>Name of underlying input control, defaults to the attribute value set on the passed element, or <code>oui-fileinput-RandInt</code></p>
                                 
                                                                 </div>
                                 
                                                             </li>
                                                             <li class="param">
-                                                                    <code class="param-name">container</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                                                                    <code class="param-name optional">[label=label]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>Object containing details about container</p>
+                                                                    <p>String to use for the control label, defaults to the attribute value set on the passed element, or its <code>innerHTML</code></p>
                                 
                                                                 </div>
                                 
-                                                                    <ul class="params-list">
-                                                                        <li class="param">
-                                                                                <code class="param-name">element=document.body</code>
-                                                                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[tabindex=0]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
-                                                                            <div class="param-description">
-                                                                                DOM element used as container, defaults to <code>document.body</code>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li class="param">
-                                                                                <code class="param-name">style=restrict</code>
-                                                                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                                                <div class="param-description">
+                                                                    <p>Tabindex of control, defaults to the attribute value set on the passed element, or <code>0</code></p>
                                 
-                                                                            <div class="param-description">
-                                                                                Type of containment, either <code>restrict</code>, <code>snap</code> or {Object} consisting of <code>x</code> and <code>y</code> values calculated relative to <code>container.element</code>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
+                                                                </div>
+                                
+                                                            </li>
+                                                            <li class="param">
+                                                                    <code class="param-name optional">[disabled=false]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
+                                
+                                                                <div class="param-description">
+                                                                    <p>Disabled state of control, defaults to the attribute value set on the passed element, or <code>false</code></p>
+                                
+                                                                </div>
+                                
                                                             </li>
                                                             <li class="param">
                                                                     <code class="param-name optional">[listeners]</code>
@@ -258,7 +248,7 @@
                                                                     <span class="flag optional" title="This parameter is optional.">optional</span>
                                 
                                                                 <div class="param-description">
-                                                                    <p>Object array of event listeners to bind to underlying element(s) - consisting of <code>dragstart</code>, <code>dragend</code> and <code>dragging</code></p>
+                                                                    <p>Object array of event listeners to bind to underlying input(s)</p>
                                 
                                                                 </div>
                                 
@@ -273,7 +263,7 @@
                                 
                                             <div class="returns-description">
                                                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
-                                                    <p>Object  Consisting of original DOM element (item <code>0</code>)</p>
+                                                    <p>Object  Consisting of original DOM element (item <code>0</code>) and class methods (see below)</p>
                                 
                                             </div>
                                         </div>
@@ -285,45 +275,47 @@
                             <ul class="api-class-tabs">
                                 <li class="api-class-tab index"><a href="#index">Index</a></li>
                         
-                                    <li class="api-class-tab events"><a href="#events">Events</a></li>
+                                    <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
                             </ul>
                         
                             <div>
                                 <div id="index" class="api-class-tabpanel index">
                                     <h2 class="off-left">Item Index</h2>
                         
+                                        <div class="index-section methods">
+                                            <h3>Methods</h3>
                         
-                        
-                        
-                                        <div class="index-section events">
-                                            <h3>Events</h3>
-                        
-                                            <ul class="index-list events">
-                                                    <li class="index-item event">
-                                                        <a href="#event_dragend">dragend</a>
-                        
-                                                    </li>
-                                                    <li class="index-item event">
-                                                        <a href="#event_dragging">dragging</a>
-                        
-                                                    </li>
-                                                    <li class="index-item event">
-                                                        <a href="#event_dragstart">dragstart</a>
+                                            <ul class="index-list methods">
+                                                    <li class="index-item method">
+                                                        <a href="#method_disabled">disabled</a>
                         
                                                     </li>
                                             </ul>
                                         </div>
+                        
+                        
+                        
                                 </div>
                         
+                                    <div id="methods" class="api-class-tabpanel">
+                                        <h2 class="off-left">Methods</h2>
                         
-                        
-                        
-                                    <div id="events" class="api-class-tabpanel">
-                                        <h2 class="off-left">Events</h2>
-                        
-                                            <div id="event_dragend" class="events item">
-                                                <h3 class="name"><code>dragend</code></h3>
-                                                <span class="type"></span>
+                                            <div id="method_disabled" class="method item">
+                                                <h3 class="name"><code>disabled</code></h3>
+                                            
+                                                    <div class="args">
+                                                        <span class="paren">(</span><ul class="args-list inline commas">
+                                                            <li class="arg">
+                                                                    <code class="optional">[boolean]</code>
+                                                            </li>
+                                                        </ul><span class="paren">)</span>
+                                                    </div>
+                                            
+                                                    <span class="returns-inline">
+                                                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                                                    </span>
+                                            
+                                            
                                             
                                             
                                             
@@ -332,39 +324,30 @@
                                                 <div class="meta">
                                                             <p>
                                                             Defined in
-                                                    <a href="../files/src_drag_drag.js.html#l99"><code>src&#x2F;drag&#x2F;drag.js:99</code></a>
+                                                    <a href="../files/src_fileinput_fileinput.js.html#l65"><code>src&#x2F;fileinput&#x2F;fileinput.js:65</code></a>
                                                     </p>
+                                            
                                             
                                             
                                                 </div>
                                             
                                                 <div class="description">
-                                                    <p>Fired on drag event ending</p>
+                                                    <p>Gets or sets control disabled state</p>
                                             
                                                 </div>
                                             
                                                     <div class="params">
-                                                        <h4>Event Payload:</h4>
+                                                        <h4>Parameters:</h4>
                                             
                                                         <ul class="params-list">
                                                             <li class="param">
-                                                                    <code class="param-name">element</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                                                                    <code class="param-name optional">[boolean]</code>
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                                                                    <span class="flag optional" title="This parameter is optional.">optional</span>
                                             
                                             
                                                                 <div class="param-description">
-                                                                    <p>Element event fired on</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                            <li class="param">
-                                                                    <code class="param-name">event</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>Event object</p>
+                                                                    <p>Disabled state</p>
                                             
                                                                 </div>
                                             
@@ -372,115 +355,21 @@
                                                         </ul>
                                                     </div>
                                             
+                                                    <div class="returns">
+                                                        <h4>Returns:</h4>
                                             
-                                            </div>
-                                            <div id="event_dragging" class="events item">
-                                                <h3 class="name"><code>dragging</code></h3>
-                                                <span class="type"></span>
+                                                        <div class="returns-description">
+                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                                                                <p>Returns disabled state</p>
                                             
-                                            
-                                            
-                                            
-                                            
-                                                <div class="meta">
-                                                            <p>
-                                                            Defined in
-                                                    <a href="../files/src_drag_drag.js.html#l92"><code>src&#x2F;drag&#x2F;drag.js:92</code></a>
-                                                    </p>
-                                            
-                                            
-                                                </div>
-                                            
-                                                <div class="description">
-                                                    <p>Fired on during drag event</p>
-                                            
-                                                </div>
-                                            
-                                                    <div class="params">
-                                                        <h4>Event Payload:</h4>
-                                            
-                                                        <ul class="params-list">
-                                                            <li class="param">
-                                                                    <code class="param-name">element</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>Element event fired on</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                            <li class="param">
-                                                                    <code class="param-name">event</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>Event object</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                        </ul>
+                                                        </div>
                                                     </div>
-                                            
-                                            
-                                            </div>
-                                            <div id="event_dragstart" class="events item">
-                                                <h3 class="name"><code>dragstart</code></h3>
-                                                <span class="type"></span>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                                <div class="meta">
-                                                            <p>
-                                                            Defined in
-                                                    <a href="../files/src_drag_drag.js.html#l85"><code>src&#x2F;drag&#x2F;drag.js:85</code></a>
-                                                    </p>
-                                            
-                                            
-                                                </div>
-                                            
-                                                <div class="description">
-                                                    <p>Fired on drag event starting</p>
-                                            
-                                                </div>
-                                            
-                                                    <div class="params">
-                                                        <h4>Event Payload:</h4>
-                                            
-                                                        <ul class="params-list">
-                                                            <li class="param">
-                                                                    <code class="param-name">element</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>Element event fired on</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                            <li class="param">
-                                                                    <code class="param-name">event</code>
-                                                                    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                                            
-                                            
-                                                                <div class="param-description">
-                                                                    <p>Event object</p>
-                                            
-                                                                </div>
-                                            
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                            
                                             
                                             </div>
                                     </div>
+                        
+                        
+                        
                             </div>
                         </div>
                     </div>
