@@ -8,6 +8,7 @@ window.onscroll=function(e){
 		pagenav.setAttribute("class",css.replace("navbar-inverse","").trim());
 	}
 };
+/*
 function chartData(){
 	return [{
         block: 'fingers',
@@ -158,3 +159,4 @@ oui.chart({
     },
     series: 'category'
 });
+*/
