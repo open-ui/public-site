@@ -39,7 +39,7 @@ gulp.task('build:styles', function() {
 	.pipe(plugins.minifyCss())
 	.pipe(plugins.rename(pkg.name+'.min.css'))
 	.pipe(plugins.header(banner, { pkg : pkg } ))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('build:js',function() {
@@ -53,14 +53,16 @@ gulp.task('build:js',function() {
 	.pipe(plugins.uglify())
 	.pipe(plugins.rename(pkg.name+'.min.js'))
 	.pipe(plugins.header(banner, { pkg : pkg } ))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('build:html',function() {
-  return gulp.src('**/*.html', {base: './'})
+  return gulp.src(['index.html','src/**/*.html'], {base: './'})
 	.pipe(plugins.plumber())
 	.pipe(plugins.prettify({indent_size: 4}))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./'))
+	.pipe(plugins.replace('dist/', 'ouijs/'))
+	.pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('browser-sync', function () {
@@ -79,7 +81,7 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', ['browser-sync'], function () {
    gulp.watch('src/**/*.less', ['build:styles', 'bump']);
    gulp.watch('src/**/*.js', ['build:js', 'bump']);
-   gulp.watch('*.html', ['build:html']);
+   gulp.watch(['index.html','src/**/*.html'], ['build:html']);
    return true;
 });
 
