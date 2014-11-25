@@ -57,12 +57,12 @@ gulp.task('build:js',function() {
 });
 
 gulp.task('build:html',function() {
-  return gulp.src(['index.html','src/**/*.html'], {base: './'})
+  gulp.src(['index.html','src/**/*.html'], {base: './'})
 	.pipe(plugins.plumber())
 	.pipe(plugins.prettify({indent_size: 4}))
     .pipe(gulp.dest('./'))
 	.pipe(plugins.replace('dist/', 'ouijs/'))
-	.pipe(gulp.dest('./dist/'));
+	.pipe(gulp.dest('dist/'));	
 });
 
 gulp.task('browser-sync', function () {
