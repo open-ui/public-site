@@ -47,7 +47,43 @@ html,body{
 		background:darken(@color-highlight, 10%);
 	}
 }
+.docs-sidebar{
+	a:after{
+		border:none;
+	}
+	ul li ul li:first-of-type a:before{
+		top: 0%;
+		height: 50%;
+	}
+	ul li ul li a{
+		padding-left:40px;
+		display:block;
+		position:relative;
+		padding:5px;
+		&:before,&:after{
+			position:absolute;
+			content:'';
+			left: 20px;
+		}
+		&:before{
+			height: 100%;
+			top: -50%;
+			border-left:1px dotted grey;
+		}
+		
+		&:after{
+			width:10px;
+			top:50%;
+			border-bottom:1px dotted grey;
+			
+		}
+	}
+
+}
 .jumbotron{
+	&.header{
+		height:330px; 
+	}
 	background-color:@color-highlight;
 	color:@color-background;
 	overflow:hidden;
