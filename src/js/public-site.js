@@ -1,7 +1,7 @@
 window.onscroll=function(e){
 	var pagenav=document.getElementById('pagenav'), css=pagenav.getAttribute('class');
-	if(document.body.scrollTop>520){
-		if(css.indexOf("navbar-inverse")<0){
+	if(document.body.scrollTop>document.getElementById('pageheader').clientHeight){
+		if(css.indexOf("navbar-inverse")<0){ 
 			pagenav.setAttribute("class",css.trim()+" navbar-inverse");
 		}	
 	}else{
