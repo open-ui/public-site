@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/css/open-ui.min.css">
+        <link rel="stylesheet" href="dist/css/public-site.min.css">
+        <style>
+        </style>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="lib/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <nav id="pagenav" class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#"><b>Open</b>UI</a> </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a> </li>
+                        <li><a href="#">Components</a> </li>
+                        <li><a href="dist/docs/index.html">API Documentation</a> </li>
+                        <li><a href="https://github.com/open-ui/open-ui">GitHub Repository</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div  id="pageheader" class="jumbotron header">
+            <div class="container">
+                <div class='logo'></div>
+                <h1>Components</h1> </div>
+        </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="docs-sidebar hidden-print hidden-xs hidden-sm affix-top" role="complementary">
+						<ul class="nav bs-docs-sidenav">
+							<li><a href="#overview">Overview</a> </li>
+							<li> <a href="#core">Core</a>
+								<ul class="nav">
+									<li><a href="#core-methods">Methods</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#charts">Charts</a>
+								<ul class="nav">
+									<li><a href="#charts-line">Line</a> </li>
+									<li><a href="#charts-bar">Bar</a> </li>
+									<li><a href="#charts-column">Column</a> </li>
+									<li><a href="#charts-scatter">Scatter</a> </li>
+									<li><a href="#charts-bubble">Bubble</a> </li>
+									<li><a href="#charts-area">Area</a> </li>
+									<li><a href="#charts-pie">Pie</a> </li>
+									<li><a href="#charts-donut">Donut</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#controls">Controls</a>
+								<ul class="nav">
+									<li><a href="#controls-singleselect">Single Select</a> </li>
+									<li><a href="#controls-multiselect">Multi Select</a> </li>
+									<li><a href="#controls-colorpicker">Colorpicker</a> </li>
+									<li><a href="#controls-fileinput">File Input</a> </li>
+									<li><a href="#controls-slider">Slider</a> </li>
+									<li><a href="#controls-toggle">Toggle</a> </li>
+									<li><a href="#controls-switch">Switch</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#components">Components</a>
+								<ul class="nav">
+									<li><a href="#components-scroll">Custom Scrollbars</a> </li>
+									<li><a href="#components-notification">Notification</a> </li>
+									<li><a href="#components-modal">Modal</a> </li>
+									<li><a href="#components-accordian">Accordian</a> </li>
+									<li><a href="#components-tooltip">Tooltip</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#util">Utilities</a>
+								<ul class="nav">
+									<li><a href="#utilities-color">Color</a> </li>
+									<li><a href="#utilities-drag">Drag</a> </li>
+									<li><a href="#utilities-svg">Svg</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-9">
+
+<h1>Charts</h1>
+<hr />
+<h2>Line</h2>
+<div id='uiLineChart'></div>
+<h2>Bar</h2>
+<div id='uiBarChart'></div>
+<h2>Column</h2>
+<div id='uiColumnChart'></div>
+<h2>Scatter</h2>
+<div id='uiScatterChart'></div>
+<h2>Bubble</h2>
+<div id='uiBubbleChart'></div>
+<h2>Area</h2>
+<div id='uiAreaChart'></div>
+<h2>Pie</h2>
+<div id='uiPieChart'></div>
+<h2>Donut</h2>
+<div id='uiDonutChart'></div>
+
+<h1>Controls</h1>
+<hr />
+<h2>Single Select</h2>
+
+         <select id='uiSingleSelectControl'>
+        <option value='val1'>
+            option 1
+        </option>
+
+        <option value='val2'>
+            option 2
+        </option>
+
+        <option value='val3'>
+            option 3
+        </option>
+
+        <option value='val4'>
+            option 4
+        </option>
+
+        <option value='val5'>
+            option 5
+        </option>
+    </select>
+
+<h2>Multi Select</h2>
+<select id='uiMultiSelectControl'>
+        <option value='val1'>
+            option 1
+        </option>
+
+        <option value='val2'>
+            option 2
+        </option>
+
+        <option value='val3'>
+            option 3
+        </option>
+
+        <option value='val4'>
+            option 4
+        </option>
+
+        <option value='val5'>
+            option 5
+        </option>
+    </select>
+<h2>Colorpicker</h2>
+<div id='uiColorpickerControl'></div>
+
+<div id='colorOutput' style='line-height:40px;-webkit-column-count:3;column-width:33%;'>
+	Complement:<div data-color='complement'></div>
+	Complement (split):<div data-color='complement' data-type='split'></div>
+	Complement (double):<div data-color='complement' data-type='double'></div>
+	Triadic:<div data-color='triadic'></div>
+	Tetradic:<div data-color='tetradic'></div>
+	Pentadic:<div data-color='pentadic'></div>
+</div>
+
+
+<h2>File Input</h2>
+<div id='uiFileInputControl'></div>
+<h2>Slider</h2>
+<div id='uiSliderControl1'></div>
+
+<div id='uiSliderControl2'></div>
+
+<div id='uiSliderControl3'></div>
+
+<div id='uiSliderControl4'></div>
+
+<div id='uiSliderControl5'></div>
+
+
+
+<h2>Toggle</h2>
+<div id='uiToggleControl'></div>
+<h2>Switch</h2>
+<div id='uiSwitchControl'></div>
+
+
+<h1>Components</h1>
+<hr />
+
+
+<h2>Custom Scrollbars</h2>
+<div id='uiCustomScrollbarsControl'></div>
+
+
+<h2>Notification</h2>
+<button class="ui-ui" onclick="event.preventDefault();$ui.notify.add({content:'Default message'});">Notify me!</button>
+
+<h2>Modal</h2>
+<button class="ui-ui" onclick="event.preventDefault();$ui.modal({header:'Look, its a modal!',content:'Any content, including HTML can go here', draggable:true});">Modal me!</button>
+<h2>Accordion</h2>
+
+<ul class='ui-accordion' id='uiAccordionComponent'>
+                    <li class='ui-show'>
+                        <h3 class='ui-content-header'>Title Content</h3>
+
+                        <div class='ui-content'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Pellentesque a fermentum turpis, a vulputate
+                            est. Praesent nunc mi, elementum et eleifend in,
+                            semper quis lacus. Duis velit neque, feugiat eget
+                            sodales eget, blandit in lacus. Morbi a varius
+                            urna, id eleifend est. Maecenas varius erat id
+                            augue ullamcorper, at sodales quam condimentum.
+                            Fusce et finibus metus. Sed sed lacinia magna.
+                        </div>
+                    </li>
+
+                    <li>
+                        <h3 class='ui-content-header'>Title Content</h3>
+
+                        <div class='ui-content'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Pellentesque a fermentum turpis, a vulputate
+                            est. Praesent nunc mi, elementum et eleifend in,
+                            semper quis lacus. Duis velit neque, feugiat eget
+                            sodales eget, blandit in lacus. Morbi a varius
+                            urna, id eleifend est. Maecenas varius erat id
+                            augue ullamcorper, at sodales quam condimentum.
+                            Fusce et finibus metus. Sed sed lacinia magna.
+                        </div>
+                    </li>
+
+                    <li>
+                        <h3 class='ui-content-header'>Title Content</h3>
+
+                        <div class='ui-content'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Pellentesque a fermentum turpis, a vulputate
+                            est. Praesent nunc mi, elementum et eleifend in,
+                            semper quis lacus. Duis velit neque, feugiat eget
+                            sodales eget, blandit in lacus. Morbi a varius
+                            urna, id eleifend est. Maecenas varius erat id
+                            augue ullamcorper, at sodales quam condimentum.
+                            Fusce et finibus metus. Sed sed lacinia magna.
+                        </div>
+                    </li>
+                </ul>
+				
+<h2>Tooltip</h2>
+<a href="#" id='uiTooltipComponent1'>Top</a>
+<a href="#" id='uiTooltipComponent2'>Right</a>
+<a href="#" id='uiTooltipComponent3'>Bottom</a>
+<a href="#" id='uiTooltipComponent4'>Left</a>
+
+<h1>Utilities</h1>
+<hr />
+
+				</div>
+			</div>
+		</div>
+        <hr />
+        <footer class="container text-center">
+            <iframe src="http://ghbtns.com/github-btn.html?user=open-ui&repo=open-ui&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=open-ui&repo=open-ui&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=open-ui&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
+            <br />
+            <br />
+            <div class='small'> The OpenUI project is open source and welcomes new contributors, please help and visit the <a href='https://github.com/open-ui/open-ui/' target='_new'>project repository</a>. Code and documentation available under the <a href='https://github.com/open-ui/open-ui/blob/master/README.md'
+                target='_new'>MIT license</a>. </div>
+            <br />
+            <br /> <a href='https://github.com/open-ui/open-ui'>GitHub</a> &bull; <a href=''>Examples</a> &bull; <a href='dist/docs/index.html'>API Docs</a> &bull; <a href='https://github.com/open-ui/open-ui/issues'>Issues</a> &bull; <a href='https://github.com/open-ui/open-ui/releases'>Releases</a>
+            <br />
+            <br /> </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="dist/js/open-ui.min.js"></script>
+        <script src="dist/js/public-site.min.js"></script>		
+		<script>
+		</script>
+    </body>
+
+</html>
