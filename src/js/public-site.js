@@ -248,6 +248,11 @@ $ui.toggle({
     }],
     value: false
 });
+$ui.scroll({
+    element: document.getElementById('uiCustomScrollbarsComponent'),
+    axis: 'xy'
+});
+
 
 $ui.accordion({
     element: document.getElementById('uiAccordionComponent'),
